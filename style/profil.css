@@ -1,0 +1,18 @@
+:root {
+    --primary: #004A99;
+    --secondary: #FFD100;
+    --bg-light: #F8F9FA;
+    --dark: #1A1C1E;
+    --primary-dark: #003B7A;
+    --primary-light: #1A66B3;
+    --secondary-dark: #E0B800;
+    --secondary-light: #FFE666;
+    --white: #FFFFFF;
+    --muted: #6C757D;
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --border: #DDE4F0;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}

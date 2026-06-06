@@ -10,6 +10,337 @@
     <link rel="stylesheet" href="style/k3_apd.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold text-primary-custom" href="#" style="color: var(--primary);">
+                Jasa Marga
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="#">BERANDA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PROFIL</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color: var(--primary); border-bottom: 2px solid var(--secondary);" href="#">K3 & APD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LOKASI & VIDEO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">KONTAK</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <div class="position-relative">
+                        <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                        <input type="text" class="form-control ps-5" placeholder="Cari...">
+                    </div>
+                    <button class="btn btn-primary fw-medium px-4 bg-primary-custom" style="border: none;">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <img src="https://lh3.googleusercontent.com/aida/AP1WRLt3cNfiwLcquvIHn2Ls9BYt5kESxS_CH1iUwUC1c6RfwXXfe4gxX9AgHVoVXuQoqBHlTb6kQhFVgyuvkhH3GSB5aLkQ0roFtRsL42WWzYb-GWh4BSTd92vrxcT3-LGIUMz8zvqJZQ3cESKI_5lfR7jqCVbmt_Y_hNoWKOkAm2lg10nP9TpOue3cxcvgkZHE746gbgkSJS_ho081rfXi9ZAjvnqKriqnfNDEEU5xEqEv-QVaRLshxZ-KVTk" alt="Safety Standards" class="hero-img">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content text-white">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 bg-secondary-custom rounded-pill mb-4" style="font-size: 0.875rem;">
+                            <i class="bi bi-shield-check fs-5"></i>
+                            <span class="fw-semibold">PRIORITAS UTAMA</span>
+                        </div>
+                        <h1 class="display-4 fw-bold mb-4">K3 & Alat Pelindung Diri</h1>
+                        <p class="lead mb-5 opacity-75">
+                            Komitmen Jasa Marga terhadap Kesehatan dan Keselamatan Kerja (K3) adalah pilar fundamental dalam setiap operasional infrastruktur nasional. Kami memastikan setiap individu terlindungi melalui standar APD tertinggi.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <button class="btn btn-custom-secondary px-4 py-3 rounded">LIHAT PANDUAN K3</button>
+                            <button class="btn btn-custom-outline px-4 py-3 rounded">SOP KESELAMATAN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hazard Identification Section -->
+        <section class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="row align-items-end mb-5">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <h2 class="text-primary-custom fw-bold mb-3">Identifikasi Bahaya Lokasi</h2>
+                        <p class="text-muted mb-0">Prosedur proaktif dalam mendeteksi dan mengelola risiko di lingkungan kerja jalan tol, area konstruksi, hingga lingkungan perkantoran.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-white p-3 border rounded d-flex align-items-center justify-content-center gap-4">
+                            <div class="text-center">
+                                <div class="fs-4 fw-bold text-primary-custom">100%</div>
+                                <div class="small text-muted">Risk Compliance</div>
+                            </div>
+                            <div class="vr"></div>
+                            <div class="text-center">
+                                <div class="fs-4 fw-bold text-secondary-custom">ZERO</div>
+                                <div class="small text-muted">Accident Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="bento-card h-100">
+                            <div class="icon-box icon-box-primary">
+                                <i class="bi bi-exclamation-triangle-fill"></i>
+                            </div>
+                            <h4 class="text-primary-custom fw-bold mb-3">Bahaya Fisik</h4>
+                            <p class="text-muted mb-4">Identifikasi risiko terkait mesin berat, kebisingan, getaran, dan paparan cuaca ekstrim di lokasi proyek jalan tol.</p>
+                            <div class="text-primary-custom fw-semibold d-flex align-items-center" style="cursor: pointer;">
+                                DETAIL PROSEDUR <i class="bi bi-arrow-right ms-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bento-card h-100">
+                            <div class="icon-box icon-box-secondary">
+                                <i class="bi bi-droplet-half"></i>
+                            </div>
+                            <h4 class="text-primary-custom fw-bold mb-3">Bahaya Kimia</h4>
+                            <p class="text-muted mb-4">Pengelolaan zat berbahaya seperti aspal panas, bahan bakar, dan material konstruksi kimia guna mencegah keracunan atau iritasi.</p>
+                            <div class="text-primary-custom fw-semibold d-flex align-items-center" style="cursor: pointer;">
+                                DETAIL PROSEDUR <i class="bi bi-arrow-right ms-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bento-card h-100">
+                            <div class="icon-box icon-box-tertiary">
+                                <i class="bi bi-person-arms-up"></i>
+                            </div>
+                            <h4 class="text-primary-custom fw-bold mb-3">Bahaya Ergonomis</h4>
+                            <p class="text-muted mb-4">Mitigasi cedera melalui pengaturan posisi kerja yang benar, alat angkut yang ergonomis, dan manajemen kelelahan operator.</p>
+                            <div class="text-primary-custom fw-semibold d-flex align-items-center" style="cursor: pointer;">
+                                DETAIL PROSEDUR <i class="bi bi-arrow-right ms-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PPE Gallery Section -->
+        <section class="py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="text-primary-custom fw-bold mb-3">Galeri Alat Pelindung Diri (APD)</h2>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">Standarisasi perlengkapan wajib bagi seluruh personil operasional dan kontraktor di area kerja Jasa Marga.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ppe-card h-100 d-flex flex-column">
+                            <div class="ppe-img-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLstDlz6__Fuv3J4HAx37bkfozFplmP9D4r7djp87e2Kw6KOCQKUfD8sLf60snKRrBKJ6qBEEVwHAGyU5qGoY9YJAh-AbES5TdwgbkPNyAZ2kBKARBxRgGWMbMAtelX1irPUzJ-pXU7XvDlEBAIemLHgb_0-R0ULpLgxdf_tYRZoGmKiKDgQ8yXzvDEPgukimzOVMks1E7-3vW3dJnSCMkmccZnP8wMOtCM_PrR0C7EtmxCyPjH9XJv2xO0" alt="Safety Helmet">
+                                <span class="badge bg-primary-custom badge-ppe">Wajib</span>
+                            </div>
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <h5 class="text-primary-custom fw-bold mb-2">Safety Helmet</h5>
+                                <p class="small text-muted mb-3 flex-grow-1">Melindungi kepala dari benturan benda jatuh dan risiko cedera mekanik di area proyek.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar bg-primary-custom" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ppe-card h-100 d-flex flex-column">
+                            <div class="ppe-img-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLv2gLkAcb28h6t1fVlG1R73_Ghvi3773suR7bFT9wASGgOPJykHEekKSDvtIr5mNzWjp0aIkgWobsEAwK4vVZDUG2I5tvkHdfsY5RJMr-TU7gdiXfyvLQnyZ591Wn32aw1pob6e8SC8Gf9PCDobHXmIIhb9l5LFmYwol_BS8H4A1qKrB5JUwHIsw2FrJNfBD2RAwjhrLW0retpr0Rq9CQZs9TM_bkHi0LUEPpxTqMIMehCcS8lMPYEI9Q" alt="High-Vis Vest">
+                                <span class="badge bg-primary-custom badge-ppe">Wajib</span>
+                            </div>
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <h5 class="text-primary-custom fw-bold mb-2">High-Visibility Vest</h5>
+                                <p class="small text-muted mb-3 flex-grow-1">Memastikan visibilitas personil di jalan raya, terutama saat kondisi cahaya rendah atau malam hari.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar bg-primary-custom" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ppe-card h-100 d-flex flex-column">
+                            <div class="ppe-img-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLs9uhn_Ku7oGUdP6bDDpPJmguQ8L3XmbwafKDVbPZiZXySA-XpAMvih9kQfT-b1XnVZxIm6LP2kYhx1wHZWgB6n_is_EP2P1vADrBDmd5MipGhMor0l8MybeRxmX4vI_V6bLvi_IE_J6Xol4B0Rj_98WCb8FRH2s8p52RXhyFecXgy0HFLUiP0A9VNtXio194bYluPuGCoqe3-cMS4hPowjglGiaUfQIczltquidDSA3NgeQCSxYZPZEOg" alt="Safety Shoes">
+                                <span class="badge bg-primary-custom badge-ppe">Wajib</span>
+                            </div>
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <h5 class="text-primary-custom fw-bold mb-2">Safety Shoes</h5>
+                                <p class="small text-muted mb-3 flex-grow-1">Melindungi kaki dari benda tajam, himpitan material berat, dan permukaan jalan yang licin.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar bg-primary-custom" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ppe-card h-100 d-flex flex-column">
+                            <div class="ppe-img-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLvgCnBC7f65sANftgaO9XDUSaE-pMHdyazM8pAc0TeXG-HiaaOPJ8pbO7F6BTNu_eYB8DNGDOiBICZ4spe7Rk3cKxQjMwJ5XE1QKDAGr-rtKx9NsEX1JvGV20jK5U6NY8C2GvRfnPtJ8Ce4-CXRTvifXwG4ksXJQH0wI4eo9iehCrPQX_43mS9C4qK09OcO6-5RWZK2Cqn6RhRj7HyFJvpc1LjQzo_ffSU1_OQP6Tq-8Tii-_dliBpjgDI" alt="Gloves & Goggles">
+                                <span class="badge bg-secondary-custom badge-ppe">Kondisional</span>
+                            </div>
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <h5 class="text-primary-custom fw-bold mb-2">Gloves & Goggles</h5>
+                                <p class="small text-muted mb-3 flex-grow-1">Perlindungan khusus untuk tangan dan mata saat menangani alat berat atau material berisiko.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar bg-primary-custom" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Procedures & Training Section -->
+        <section class="training-section">
+            <i class="bi bi-gear-fill bg-icon-watermark"></i>
+            <div class="container position-relative" style="z-index: 1;">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Program Pelatihan & Prosedur Keselamatan</h2>
+                        <p class="lead mb-5 opacity-75">Jasa Marga menyelenggarakan pelatihan K3 secara berkala untuk memastikan seluruh karyawan memiliki kompetensi dalam menghadapi situasi darurat dan menjalankan SOP keselamatan yang ketat.</p>
+                        
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="bg-secondary-custom rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                    <i class="bi bi-check fw-bold"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Safety Induction Harian</h5>
+                                    <p class="small opacity-75 mb-0">Brifing rutin sebelum memulai aktivitas kerja di lapangan.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="bg-secondary-custom rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                    <i class="bi bi-check fw-bold"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Sertifikasi Keahlian K3</h5>
+                                    <p class="small opacity-75 mb-0">Pelatihan intensif bagi pengawas K3 untuk sertifikasi nasional.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="bg-secondary-custom rounded-circle p-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                                    <i class="bi bi-check fw-bold"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Simulasi Evakuasi Darurat</h5>
+                                    <p class="small opacity-75 mb-0">Latihan kesiapsiagaan bencana dan kecelakaan kerja secara rutin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <div class="training-video-wrapper">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLtaP-1lE0ysH6j5OnEGvKRCpvudCGgNEoG14soG2HtMbnO6-lQJN6-lTNh_5j5faqC-e9PM1gHXWJ0R08NL0rdmWy2usCMVJ4TKZHBf2CSXOxJAvG1akZO6yjD-55xyfRxWpBu009OdHGAMFA8_mVhvn8lWPBjLzMo4jIMRT0XTshnm8GTBI2pKP4COOaCrD95Pk05YMVscN2xh7VcD1KPU2gzjt2D7e6YfdrRLKkoLEmQFx3P6ppnUhUU" alt="Safety Training Session" class="img-fluid w-100 object-fit-cover" style="height: 350px;">
+                                <div class="position-absolute d-flex align-items-center justify-content-center w-100 h-100" style="top:0; left:0;">
+                                    <div class="play-btn">
+                                        <i class="bi bi-play-fill fs-1 text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats-badge d-none d-lg-block">
+                                <div class="fs-3 mb-0" style="font-weight: 900;">250+</div>
+                                <div class="small fw-bold">JAM PELATIHAN / TAHUN</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Center -->
+        <section class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="download-card d-flex flex-column flex-md-row align-items-center gap-4">
+                    <div class="flex-grow-1 text-center text-md-start">
+                        <h3 class="text-primary-custom fw-bold mb-2">Pusat Unduhan K3</h3>
+                        <p class="text-muted mb-0">Dapatkan panduan lengkap mengenai standar operasional, buku saku APD, dan kebijakan HSE Jasa Marga.</p>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="download-item">
+                            <i class="bi bi-file-earmark-pdf fs-4 text-primary-custom"></i>
+                            <div>
+                                <div class="fw-semibold text-primary-custom">Manual K3 2024</div>
+                                <div class="small text-muted">PDF (12.4 MB)</div>
+                            </div>
+                        </a>
+                        <a href="#" class="download-item">
+                            <i class="bi bi-book fs-4 text-primary-custom"></i>
+                            <div>
+                                <div class="fw-semibold text-primary-custom">SOP Penggunaan APD</div>
+                                <div class="small text-muted">PDF (5.8 MB)</div>
+                            </div>
+                        </a>
+                        <button class="btn bg-primary-custom px-4 fw-medium">LIHAT SEMUA</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3">
+                    <h3 class="fw-bold mb-3">Jasa Marga</h3>
+                    <p class="opacity-75 mb-4">Menghubungkan Nusantara melalui infrastruktur jalan tol yang handal, aman, dan berstandar internasional.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-globe"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-share"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-secondary-custom fw-semibold mb-4">Tentang Kami</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><a href="#" class="footer-link">Gambaran Umum</a></li>
+                        <li><a href="#" class="footer-link">Visi & Misi</a></li>
+                        <li><a href="#" class="footer-link">Laporan Tahunan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-secondary-custom fw-semibold mb-4">Informasi K3</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><a href="#" class="footer-link">Galeri APD</a></li>
+                        <li><a href="#" class="footer-link">Prosedur Evakuasi</a></li>
+                        <li><a href="#" class="footer-link">HSE Management System</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-secondary-custom fw-semibold mb-4">Hubungi Kami</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><a href="#" class="footer-link">Pusat Kontak</a></li>
+                        <li class="d-flex align-items-center gap-2 opacity-75">
+                            <i class="bi bi-telephone"></i> 14080 (24 Jam)
+                        </li>
+                        <li class="d-flex align-items-center gap-2 opacity-75">
+                            <i class="bi bi-envelope"></i> info@jasamarga.co.id
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary opacity-25 mb-4"></div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 opacity-75 small">
+                <div>© 2024 Jasa Marga. All Rights Reserved.</div>
+                <div class="d-flex gap-4">
+                    <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

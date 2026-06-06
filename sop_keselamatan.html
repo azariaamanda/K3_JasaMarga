@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Panduan K3 | Jasa Marga</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="style/sop_keselamatan.css" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#454748",
+                        "on-tertiary-fixed": "#191c1d",
+                        "on-secondary-fixed-variant": "#564500",
+                        "surface-container-highest": "#e2e2e5",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#231b00",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#004a99",
+                        "outline-variant": "#c2c6d3",
+                        "surface-bright": "#f9f9fc",
+                        "secondary-container": "#fed000",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f0f0f3",
+                        "tertiary": "#333537",
+                        "surface-dim": "#dadadc",
+                        "secondary-fixed": "#ffe07f",
+                        "primary-fixed": "#d7e2ff",
+                        "on-primary-fixed": "#001b3f",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#e8e8ea",
+                        "surface-variant": "#e2e2e5",
+                        "surface-tint": "#255dad",
+                        "secondary-fixed-dim": "#edc200",
+                        "tertiary-fixed": "#e1e3e4",
+                        "primary-fixed-dim": "#abc7ff",
+                        "on-secondary-container": "#6f5900",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "on-surface-variant": "#424751",
+                        "inverse-surface": "#2f3133",
+                        "outline": "#737783",
+                        "inverse-primary": "#abc7ff",
+                        "error-container": "#ffdad6",
+                        "secondary": "#725c00",
+                        "surface": "#f9f9fc",
+                        "on-primary-fixed-variant": "#00458f",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1a1c1e",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eeeef0",
+                        "on-background": "#1a1c1e",
+                        "primary": "#00346f",
+                        "surface-container-low": "#f3f3f6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#4a4c4d",
+                        "on-primary-container": "#9bbdff",
+                        "on-tertiary-container": "#bbbcbd",
+                        "background": "#f9f9fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "display-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(0, 52, 111, 0.95), rgba(0, 52, 111, 0.4));
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 z-50 w-full bg-surface shadow-sm border-b border-outline-variant h-20">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+<div class="font-headline-md text-headline-md font-bold text-primary">Jasa Marga</div>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">BERANDA</a>
+<div class="group relative">
+<button class="flex items-center text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200">
+                        PROFIL <span class="material-symbols-outlined ml-1 text-[18px]">keyboard_arrow_down</span>
+</button>
+<div class="absolute top-full -left-4 w-48 bg-surface shadow-lg py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant">
+<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Visi &amp; Misi</a>
+<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Struktur Organisasi</a>
+</div>
+</div>
+<a class="text-primary border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md transition-colors duration-200" href="k3_apd.html">K3 &amp; APD</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">LOKASI &amp; VIDEO</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">KONTAK</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary">search</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-80 transition-opacity">LOGIN</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative h-[500px] flex items-center overflow-hidden">
+        <img alt="SOP Keselamatan" class="absolute inset-0 w-full h-full object-cover" src="img/toll_gate_hero.png"/>
+        <div class="absolute inset-0 bg-primary/70 bg-gradient-to-r from-primary/90 to-primary/40"></div>
+        <div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full mb-6 shadow-sm">
+                    <span class="font-label-sm text-sm uppercase font-bold tracking-wider">STANDARD OPERATING PROCEDURE</span>
+                </div>
+                <h1 class="font-display-lg text-4xl md:text-5xl text-on-primary mb-4 font-bold">SOP Keselamatan Operasional</h1>
+                <p class="font-body-lg text-lg text-on-primary/90 mb-8">
+                    Komitmen Jasa Marga dalam mewujudkan <strong class="text-secondary">Zero Accident</strong> melalui standarisasi prosedur kerja yang ketat di seluruh ruas jalan tol di Indonesia.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#prosedur" class="bg-secondary-fixed-dim text-on-secondary-fixed px-8 py-3 font-label-md text-label-md rounded shadow-lg hover:brightness-95 transition-all" style="text-decoration: none;">Pelajari Prosedur</a>
+                    <a href="#dokumen" class="border border-white text-white px-8 py-3 font-label-md text-label-md rounded hover:bg-white/10 transition-all" style="text-decoration: none;">Unduh Dokumen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kategori Keselamatan Kerja -->
+    <section id="prosedur" class="py-20 bg-surface-container-lowest">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-md text-2xl text-on-surface mb-3">Kategori Keselamatan Kerja</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto text-sm">Standar operasional yang terbagi berdasarkan unit kerja untuk memastikan efektivitas dan keamanan maksimal bagi petugas dan pengguna jalan.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-surface rounded-xl p-8 border border-outline-variant hover:border-primary transition-colors flex flex-col">
+                    <div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined text-[24px]">engineering</span>
+                    </div>
+                    <h3 class="font-label-md text-lg font-bold text-on-surface mb-3">Pemeliharaan Jalan</h3>
+                    <p class="text-sm text-on-surface-variant mb-6 flex-grow">Prosedur penanganan perkerasan, jembatan, dan sarana pelengkap jalan dengan standar K3 konstruksi yang ketat.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                            <span class="text-sm text-on-surface-variant">Pengamanan Area Kerja</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                            <span class="text-sm text-on-surface-variant">Penggunaan Alat Pelindung Diri</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center text-on-surface-variant hover:text-primary text-sm font-semibold transition-colors group" style="text-decoration: none;">
+                        Lihat Detail <span class="material-symbols-outlined ml-1 text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-surface rounded-xl p-8 border border-outline-variant hover:border-primary transition-colors flex flex-col">
+                    <div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined text-[24px]">toll</span>
+                    </div>
+                    <h3 class="font-label-md text-lg font-bold text-on-surface mb-3">Layanan Transaksi</h3>
+                    <p class="text-sm text-on-surface-variant mb-6 flex-grow">Prosedur pelayanan di Gerbang Tol, pemeliharaan gardu, dan keamanan transaksi elektronik untuk kenyamanan pengguna.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                            <span class="text-sm text-on-surface-variant">Sterilisasi Area Gerbang</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                            <span class="text-sm text-on-surface-variant">Penanganan Gangguan Peralatan</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center text-on-surface-variant hover:text-primary text-sm font-semibold transition-colors group" style="text-decoration: none;">
+                        Lihat Detail <span class="material-symbols-outlined ml-1 text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-surface rounded-xl p-8 border border-outline-variant hover:border-primary transition-colors flex flex-col">
+                    <div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined text-[24px]">traffic</span>
+                    </div>
+                    <h3 class="font-label-md text-lg font-bold text-on-surface mb-3">Layanan Lalu Lintas</h3>
+                    <p class="text-sm text-on-surface-variant mb-6 flex-grow">Prosedur patroli, derek, dan penanganan kecelakaan di ruas jalan tol secara responsif selama 24 jam.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                            <span class="text-sm text-on-surface-variant">Respon Darurat Medis</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                            <span class="text-sm text-on-surface-variant">Pengaturan Arus Lalu Lintas</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center text-on-surface-variant hover:text-primary text-sm font-semibold transition-colors group" style="text-decoration: none;">
+                        Lihat Detail <span class="material-symbols-outlined ml-1 text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Penanganan Kendaraan Mogok -->
+    <section class="py-20 bg-surface-container-low">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-headline-md text-2xl text-on-surface mb-4">Alur Penanganan Kendaraan Mogok</h2>
+                    <p class="text-on-surface-variant text-sm mb-10 leading-relaxed">Berikut adalah visualisasi langkah demi langkah petugas layanan jalan tol dalam menangani kendaraan yang mengalami kendala teknis untuk mencegah kemacetan dan bahaya sekunder.</p>
+                    
+                    <div class="relative border-l border-outline-variant ml-6 space-y-10">
+                        <!-- Step 1 -->
+                        <div class="relative pl-8">
+                            <div class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs shadow-md">01</div>
+                            <h4 class="font-label-md font-bold text-on-surface mb-2">Identifikasi &amp; Pengamanan</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Petugas patroli mendeteksi kendaraan mogok melalui CCTV atau laporan pengguna jalan. Unit patroli segera meluncur ke lokasi dan memasang rubber cone untuk sterilisasi bahu jalan.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="relative pl-8">
+                            <div class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs shadow-md">02</div>
+                            <h4 class="font-label-md font-bold text-on-surface mb-2">Pengecekan Awal</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Petugas melakukan pengecekan ringan pada kendaraan dan berkoordinasi dengan pengemudi mengenai langkah perbaikan atau evakuasi yang diperlukan.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="relative pl-8">
+                            <div class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs shadow-md">03</div>
+                            <h4 class="font-label-md font-bold text-on-surface mb-2">Evakuasi Derek</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Jika perbaikan di lokasi tidak memungkinkan, unit derek dikerahkan untuk mengevakuasi kendaraan ke pintu keluar tol terdekat atau pool derek resmi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="img/service_car.png" alt="Service Car Breakdown" class="w-full h-auto rounded-2xl shadow-xl object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dokumen SOP Resmi -->
+    <section id="dokumen" class="py-20 bg-surface-container-lowest">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
+                <div>
+                    <h2 class="font-headline-md text-2xl text-on-surface mb-2">Dokumen SOP Resmi</h2>
+                    <p class="text-on-surface-variant text-sm">Unduh panduan lengkap keselamatan kerja dalam format PDF sesuai standar ISO 45001:2018.</p>
+                </div>
+                <button class="flex items-center gap-2 border border-outline px-4 py-2 rounded text-on-surface-variant hover:bg-surface-container transition-colors text-sm">
+                    <span class="material-symbols-outlined text-[18px]">filter_list</span> Filter Dokumen
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Doc 1 -->
+                <div class="border border-outline-variant rounded-xl p-6 bg-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-surface-container flex items-center justify-center rounded text-on-surface">
+                            <span class="material-symbols-outlined">description</span>
+                        </div>
+                        <span class="text-xs text-outline font-medium">2.4 MB</span>
+                    </div>
+                    <h4 class="font-label-md font-bold text-sm text-on-surface mb-1 flex-grow">SOP Keselamatan Konstruksi Jalan</h4>
+                    <p class="text-xs text-outline mb-6">Versi 2.0 - Jan 2024</p>
+                    <a href="#" class="block w-full text-center border border-outline-variant rounded py-2 text-sm text-on-surface-variant hover:bg-surface-container transition-colors" style="text-decoration: none;">Download PDF</a>
+                </div>
+                <!-- Doc 2 -->
+                <div class="border border-outline-variant rounded-xl p-6 bg-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-surface-container flex items-center justify-center rounded text-on-surface">
+                            <span class="material-symbols-outlined">description</span>
+                        </div>
+                        <span class="text-xs text-outline font-medium">1.8 MB</span>
+                    </div>
+                    <h4 class="font-label-md font-bold text-sm text-on-surface mb-1 flex-grow">Panduan Penggunaan APD Lapangan</h4>
+                    <p class="text-xs text-outline mb-6">Versi 1.5 - Okt 2023</p>
+                    <a href="#" class="block w-full text-center border border-outline-variant rounded py-2 text-sm text-on-surface-variant hover:bg-surface-container transition-colors" style="text-decoration: none;">Download PDF</a>
+                </div>
+                <!-- Doc 3 -->
+                <div class="border border-outline-variant rounded-xl p-6 bg-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-surface-container flex items-center justify-center rounded text-on-surface">
+                            <span class="material-symbols-outlined">description</span>
+                        </div>
+                        <span class="text-xs text-outline font-medium">3.1 MB</span>
+                    </div>
+                    <h4 class="font-label-md font-bold text-sm text-on-surface mb-1 flex-grow">Protokol Tanggap Darurat Bencana</h4>
+                    <p class="text-xs text-outline mb-6">Versi 3.2 - Mar 2024</p>
+                    <a href="#" class="block w-full text-center border border-outline-variant rounded py-2 text-sm text-on-surface-variant hover:bg-surface-container transition-colors" style="text-decoration: none;">Download PDF</a>
+                </div>
+                <!-- Doc 4 -->
+                <div class="border border-outline-variant rounded-xl p-6 bg-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-surface-container flex items-center justify-center rounded text-on-surface">
+                            <span class="material-symbols-outlined">description</span>
+                        </div>
+                        <span class="text-xs text-outline font-medium">0.9 MB</span>
+                    </div>
+                    <h4 class="font-label-md font-bold text-sm text-on-surface mb-1 flex-grow">Standar Rambu Pengamanan Jalan</h4>
+                    <p class="text-xs text-outline mb-6">Versi 1.1 - Feb 2024</p>
+                    <a href="#" class="block w-full text-center border border-outline-variant rounded py-2 text-sm text-on-surface-variant hover:bg-surface-container transition-colors" style="text-decoration: none;">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-16 bg-surface-container-low">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="bg-primary text-on-primary rounded-3xl p-12 text-center flex flex-col items-center shadow-lg bg-cover bg-center relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute -top-24 -left-24 w-48 h-48 bg-white opacity-5 rounded-full blur-2xl"></div>
+                <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-secondary opacity-10 rounded-full blur-2xl"></div>
+                
+                <div class="w-16 h-16 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-6 shadow-sm relative z-10">
+                    <span class="material-symbols-outlined text-[32px]">support_agent</span>
+                </div>
+                <h3 class="font-headline-md text-xl mb-3 relative z-10">Butuh bantuan segera di jalan tol?</h3>
+                <p class="text-sm text-on-primary/80 max-w-lg mb-8 relative z-10">Hubungi Call Center Jasa Marga 24 Jam. Petugas kami siap membantu Anda di lokasi kapan saja.</p>
+                <div class="text-2xl font-bold mb-6 tracking-wider relative z-10">14080</div>
+                <a href="tel:14080" class="bg-secondary-fixed-dim text-on-secondary-fixed px-8 py-3 rounded-full font-label-md text-label-md shadow hover:brightness-95 transition-all relative z-10" style="text-decoration: none;">Panggil Sekarang</a>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-headline-lg text-headline-lg font-black text-on-primary">
+                    Jasa Marga
+                </div>
+<p class="text-on-primary/80 font-body-md">
+                    Menghubungkan Nusantara melalui infrastruktur jalan tol yang handal, aman, dan berstandar internasional.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-secondary-container mb-6">Tentang Kami</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Gambaran Umum</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Visi &amp; Misi</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Laporan Tahunan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-secondary-container mb-6">Informasi K3</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Galeri APD</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Prosedur Evakuasi</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">HSE Management System</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-secondary-container mb-6">Hubungi Kami</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Pusat Kontak</a></li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="text-on-primary/80">14080 (24 Jam)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span class="text-on-primary/80">info@jasamarga.co.id</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-on-primary/60 font-label-sm">
+                © 2024 Jasa Marga. All Rights Reserved.
+            </div>
+<div class="flex gap-6 font-label-sm text-on-primary/60">
+<a class="hover:text-white" href="#">Kebijakan Privasi</a>
+<a class="hover:text-white" href="#">Syarat &amp; Ketentuan</a>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -101,33 +101,19 @@
       }
     </script>
 <link rel="stylesheet" href="style/beranda.css">
+<link rel="stylesheet" href="style/navbar.css">
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<header class="fixed top-0 z-50 w-full bg-surface shadow-sm border-b border-outline-variant h-20">
-<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
-<div class="font-headline-md text-headline-md font-bold text-primary">Jasa Marga</div>
-<nav class="hidden md:flex space-x-8 items-center">
-<a class="text-primary border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md transition-colors duration-200" href="#">BERANDA</a>
-<div class="group relative">
-<button class="flex items-center text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200">
-                        PROFIL <span class="material-symbols-outlined ml-1 text-[18px]">keyboard_arrow_down</span>
-</button>
-<div class="absolute top-full -left-4 w-48 bg-surface shadow-lg py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant">
-<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Visi &amp; Misi</a>
-<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Struktur Organisasi</a>
-</div>
-</div>
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">K3 &amp; APD</a>
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">LOKASI &amp; VIDEO</a>
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">KONTAK</a>
-</nav>
-<div class="flex items-center space-x-6">
-<button class="material-symbols-outlined text-primary">search</button>
-<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-80 transition-opacity">LOGIN</button>
-</div>
-</div>
-</header>
+<!-- TopNavBar di-load dari navbar.html -->
+<div id="navbar-placeholder"></div>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+</script>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative h-[870px] flex items-center overflow-hidden">
@@ -196,11 +182,11 @@
 <div class="relative max-w-4xl mx-auto group">
 <div class="aspect-video bg-on-primary-fixed-variant rounded-2xl overflow-hidden shadow-2xl relative">
 <img alt="Toll Road Bridge" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="A grand architectural view of a massive suspension toll bridge spanning a blue waterway in Indonesia. The structure is white and modern, with elegant cable-stayed lines leading toward the horizon. The lighting is mid-day, bright and clear, showcasing the engineering precision. The overall mood is powerful and inspiring, emphasizing the company's role in national infrastructure development with a clean, high-contrast corporate finish." src="https://lh3.googleusercontent.com/aida/AP1WRLtJhCa9q0hOv6-9swVm5DzTzN9CiT0XakQTZoQzjdfcWXypDp0Yxkp0JVOxgEoWn_vph3YDbS_nR2oXU-OM_HNe9AsWDIXKuOvUoX_ZuayRS2E3fFuBQPEAzjU5b9p5FtuDpeG-cY89MNYRVt8bX1-TgAI37BsnYGk08AeJDzLKWE3bqtH4xBG0SPiKAufH5m2axMJaOrZceDLpgb9WoAtZT9TR8j2bBG72uyqJsgBC_t-tb1V20oob_gA"/>
-<button class="absolute inset-0 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+<a href="https://youtu.be/D2B3sJKy7y8?si=UrGhuKyehBEvrwWi" target="_blank" class="absolute inset-0 flex items-center justify-center group-hover:bg-black/20 transition-colors">
 <div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container shadow-lg transform group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
 </div>
-</button>
+</a>
 </div>
 </div>
 </div>

@@ -1,0 +1,4 @@
+/* CSS khusus untuk navbar */
+header {
+    transition: box-shadow 0.3s ease;
+}

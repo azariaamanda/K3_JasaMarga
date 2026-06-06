@@ -105,15 +105,30 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<!-- TopNavBar di-load dari navbar.html -->
-<div id="navbar-placeholder"></div>
-<script>
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-</script>
+<header class="fixed top-0 z-50 w-full bg-surface shadow-sm border-b border-outline-variant h-20">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+<div class="font-headline-md text-headline-md font-bold text-primary">Jasa Marga</div>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-primary border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md transition-colors duration-200" href="beranda.html">BERANDA</a>
+<div class="group relative">
+<button class="flex items-center text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200">
+                        PROFIL <span class="material-symbols-outlined ml-1 text-[18px]">keyboard_arrow_down</span>
+</button>
+<div class="absolute top-full -left-4 w-48 bg-surface shadow-lg py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant">
+<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Visi &amp; Misi</a>
+<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Struktur Organisasi</a>
+</div>
+</div>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="k3_apd.html">K3 &amp; APD</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">LOKASI &amp; VIDEO</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">KONTAK</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary">search</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-80 transition-opacity">LOGIN</button>
+</div>
+</div>
+</header>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative h-[870px] flex items-center overflow-hidden">
@@ -198,7 +213,7 @@
 <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Komitmen Keamanan &amp; Keselamatan</h2>
 <p class="text-on-surface-variant">Keselamatan kerja (K3) adalah prioritas utama kami. Kami menerapkan standar keamanan tertinggi di setiap proyek konstruksi dan operasional jalan tol.</p>
 </div>
-<button class="border border-primary text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all">Lihat Standar K3</button>
+<a href="k3_apd.html" class="border border-primary text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all text-center inline-block">Lihat Standar K3</a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <div class="group relative h-80 overflow-hidden rounded-xl border border-outline-variant">

@@ -1,373 +1,326 @@
-<!DOCTYPE html><html lang="id"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Jasa Marga K3 - Sistem Informasi Keselamatan dan Kesehatan Kerja</title>
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jasa Marga - Menghubungkan Negeri</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "primary-container": "#043cc3",
-                      "secondary": "#735c00",
-                      "surface-container-high": "#e6e8ea",
-                      "secondary-container": "#fccc08",
-                      "on-surface": "#191c1e",
-                      "surface-container-highest": "#e0e3e5",
-                      "on-tertiary-fixed": "#111c2d",
-                      "secondary-fixed": "#ffe086",
-                      "surface": "#f7f9fb",
-                      "on-error": "#ffffff",
-                      "on-primary": "#ffffff",
-                      "error-container": "#ffdad6",
-                      "inverse-surface": "#2d3133",
-                      "on-tertiary-fixed-variant": "#3c475a",
-                      "on-secondary-fixed": "#231b00",
-                      "tertiary-container": "#414c60",
-                      "inverse-primary": "#b8c4ff",
-                      "surface-variant": "#e0e3e5",
-                      "primary-fixed": "#dde1ff",
-                      "on-surface-variant": "#444654",
-                      "surface-container": "#eceef0",
-                      "secondary-fixed-dim": "#efc100",
-                      "primary-fixed-dim": "#b8c4ff",
-                      "on-tertiary-container": "#b1bcd4",
-                      "background": "#f7f9fb",
-                      "tertiary": "#2a3548",
-                      "inverse-on-surface": "#eff1f3",
-                      "error": "#ba1a1a",
-                      "outline-variant": "#c4c5d7",
-                      "tertiary-fixed": "#d8e3fb",
-                      "surface-container-lowest": "#ffffff",
-                      "on-secondary": "#ffffff",
-                      "surface-dim": "#d8dadc",
-                      "on-secondary-container": "#6d5700",
-                      "on-tertiary": "#ffffff",
-                      "primary": "#002990",
-                      "on-primary-container": "#aab9ff",
-                      "on-background": "#191c1e",
-                      "surface-bright": "#f7f9fb",
-                      "on-error-container": "#93000a",
-                      "on-primary-fixed": "#001453",
-                      "outline": "#747686",
-                      "on-secondary-fixed-variant": "#574500",
-                      "surface-container-low": "#f2f4f6",
-                      "on-primary-fixed-variant": "#0037b9",
-                      "surface-tint": "#2951d6",
-                      "tertiary-fixed-dim": "#bcc7de"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "lg": "32px",
-                      "xs": "8px",
-                      "base": "4px",
-                      "container-max": "1280px",
-                      "xl": "48px",
-                      "md": "24px",
-                      "sm": "16px",
-                      "gutter": "24px"
-              },
-              "fontFamily": {
-                      "headline-md": ["Inter"],
-                      "body-md": ["Inter"],
-                      "label-md": ["Inter"],
-                      "headline-lg-mobile": ["Inter"],
-                      "headline-lg": ["Inter"],
-                      "label-sm": ["Inter"],
-                      "headline-xl": ["Inter"],
-                      "body-lg": ["Inter"]
-              },
-              "fontSize": {
-                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
-                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
-                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
-                      "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
-              }
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#6f5900",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dadadc",
+                    "tertiary-fixed": "#e1e3e4",
+                    "inverse-on-surface": "#f0f0f3",
+                    "surface": "#f9f9fc",
+                    "inverse-primary": "#abc7ff",
+                    "secondary": "#725c00",
+                    "surface-variant": "#e2e2e5",
+                    "secondary-fixed": "#ffe07f",
+                    "outline": "#737783",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "on-surface": "#1a1c1e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#564500",
+                    "primary-fixed": "#d7e2ff",
+                    "on-primary-fixed": "#001b3f",
+                    "tertiary-fixed-dim": "#c5c7c8",
+                    "tertiary": "#333537",
+                    "on-primary-fixed-variant": "#00458f",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#424751",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#eeeef0",
+                    "primary-fixed-dim": "#abc7ff",
+                    "primary-container": "#004a99",
+                    "surface-container-low": "#f3f3f6",
+                    "tertiary-container": "#4a4c4d",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#9bbdff",
+                    "on-tertiary-fixed": "#191c1d",
+                    "surface-tint": "#255dad",
+                    "surface-container-high": "#e8e8ea",
+                    "inverse-surface": "#2f3133",
+                    "surface-container-highest": "#e2e2e5",
+                    "surface-bright": "#f9f9fc",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#231b00",
+                    "outline-variant": "#c2c6d3",
+                    "primary": "#00346f",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#bbbcbd",
+                    "on-background": "#1a1c1e",
+                    "secondary-container": "#fed000",
+                    "secondary-fixed-dim": "#edc200",
+                    "background": "#f9f9fc"
             },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "base": "8px",
+                    "section-gap": "80px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Montserrat"],
+                    "display-lg-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
           },
-        }
+        },
+      }
     </script>
-<style>
-        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .hero-gradient {
-            background: linear-gradient(rgba(0, 41, 144, 0.7), rgba(0, 41, 144, 0.4));
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-        }
-    </style>
+<link rel="stylesheet" href="style/beranda.css">
 </head>
-<body class="text-on-surface">
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="bg-surface-container-lowest border-b border-outline-variant shadow-sm sticky top-0 z-50">
-<div class="flex justify-between items-center w-full px-12 h-20 max-w-container-max mx-auto">
-<div class="flex items-center gap-4">
-<img alt="Logo Jasa Marga" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLuKDjf-zBFUKQVh6HCaZ6oZvwIkss0bf7h-wYB7t-O_2wbKfGj7X61Ecwul2REkuo2r_nLdAcVIeoy7fnWnY9IJSla-289d5iWbAmF3DVQSYRzq4ksuOUhWc9BAJW2GfiYdO9bsys8cR4LxcbGLjp5vWKFVhtaG9TnslGpxjtLvNuJ8WB3o0HqVtzrh8VgMuv_FsbYtN4hjRL746vQIf7XMPs-Dog1DK5a58lvd7uQJtP0BGMYtgiVJ6GE">
-<span class="text-headline-md font-headline-md font-bold text-primary">JASA MARGA K3</span>
-</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-label-md font-label-md text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200" href="#">BERANDA</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">PROFIL</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">K3 &amp; APD</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">LOKASI &amp; VIDEO</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">KONTAK</a>
-</div>
-<div class="flex items-center gap-6">
-<button class="material-symbols-outlined text-on-surface-variant hover:text-primary">search</button>
-<button class="px-6 py-2 bg-primary text-white font-label-md rounded-lg hover:brightness-110 active:scale-95 transition-all">Masuk</button>
+<header class="fixed top-0 z-50 w-full bg-surface shadow-sm border-b border-outline-variant h-20">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+<div class="font-headline-md text-headline-md font-bold text-primary">Jasa Marga</div>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-primary border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md transition-colors duration-200" href="#">BERANDA</a>
+<div class="group relative">
+<button class="flex items-center text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200">
+                        PROFIL <span class="material-symbols-outlined ml-1 text-[18px]">keyboard_arrow_down</span>
+</button>
+<div class="absolute top-full -left-4 w-48 bg-surface shadow-lg py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant">
+<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Visi &amp; Misi</a>
+<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Struktur Organisasi</a>
 </div>
 </div>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">K3 &amp; APD</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">LOKASI &amp; VIDEO</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="#">KONTAK</a>
 </nav>
-<main>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary">search</button>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-80 transition-opacity">LOGIN</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
 <!-- Hero Section -->
-<section class="relative h-[600px] flex items-center overflow-hidden">
+<section class="relative h-[870px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img alt="Hero Infrastructure" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvB8TnnX7odF6iey25SSzxgOZov-AZc7Fc5yXDBDKZvwR7kZvfk0oh_53Ivv-vmFdf4e58__ayh3xqWEHLeaRBz5ng7zRg5LXpLj8tiiUACDwYTOQHSq7u4bV7xXyuBDFcfc19cRGgIf0oGa7YSCNg3A8UjN7SbwgwVt_OVBWI0QwIEXaqhvz9EpiT9MjtZwcuphq_O09FwbSBHtd0N6iHZNOK5iCwqElCoNhp4Rd9Z5FBcIclnCSxoi-_B">
-<div class="absolute inset-0 hero-gradient"></div>
+<img alt="Indonesian Toll Road" class="w-full h-full object-cover" data-alt="A cinematic wide shot of a modern multi-lane toll road in Indonesia during the golden hour. The asphalt is pristine and sleek, reflecting the warm orange and pink hues of the sunset. In the background, lush green tropical landscapes and a clear sky create a sense of national progress and connectivity. The lighting is soft yet dramatic, emphasizing the massive scale of the civil engineering infrastructure under a professional corporate aesthetic." src="https://lh3.googleusercontent.com/aida/AP1WRLstZ5_XmJNPq04lcU35KvrrC7p__SnC169wF3mJEYG0xhX2WruNYr2AayZBlZeywKXNb2tY2PBTzBr9F5pNixUdNwx1kz_5l24Gv6rDUDlZPm41usVb8A0Gu4lLhGZAPD4SJVpini1VGAOomlyNlF6Om5F75gLs2Eore8dS5ek3yi259qcgKwT9v_Hb6tGR0lzZly79b2rKr7e96EgMOhhjgYgzJ4gkshbJYGiWh6-BjKPMG-T_GKlBq7A"/>
+<div class="absolute inset-0 hero-overlay"></div>
 </div>
-<div class="relative z-10 max-w-container-max mx-auto px-12 w-full">
-<div class="max-w-3xl">
-<span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm mb-6 uppercase tracking-wider">K3 Information System</span>
-<h1 class="text-headline-xl font-headline-xl text-white mb-6 leading-tight">
-                        Sistem Informasi Keselamatan dan Kesehatan Kerja (K3)
-                    </h1>
-<p class="text-body-lg font-body-lg text-white/90 mb-10">
-                        Membangun Infrastruktur Negeri dengan Standar Keselamatan Tertinggi untuk keberlanjutan masa depan transportasi Indonesia.
-                    </p>
-<div class="flex gap-4">
-<button class="px-8 py-4 bg-secondary-container text-on-secondary-container font-label-md rounded-xl hover:bg-secondary-fixed transition-all flex items-center gap-2">
-                            Pelajari Lebih Lanjut
-                            <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white font-label-md rounded-xl hover:bg-white/20 transition-all">
-                            E-Sertifikasi K3
-                        </button>
+<div class="relative z-10 w-full px-margin-desktop max-w-container-max mx-auto text-on-primary">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg mb-6 text-shadow-sm">Menghubungkan <br/><span class="text-secondary-container">Seluruh Negeri</span></h1>
+<p class="font-body-lg text-body-lg mb-8 text-on-primary/90">Dedikasi Jasa Marga dalam membangun infrastruktur jalan tol yang handal dan berkelanjutan untuk kemajuan bangsa Indonesia.</p>
+<div class="flex space-x-4">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md text-label-md hover:brightness-95 transition-all">Jelajahi Rute</button>
+<button class="border-2 border-on-primary text-on-primary px-8 py-3 rounded-lg font-label-md text-label-md hover:bg-on-primary/10 transition-all">Layanan Mudik</button>
 </div>
 </div>
 </div>
 </section>
-<!-- Stats Section -->
-<section class="relative -mt-20 z-20 px-12 max-w-container-max mx-auto">
+<!-- Company at a Glance (Sekilas Perusahaan) -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 space-y-6">
+<span class="text-primary font-label-md text-label-md tracking-widest">SEKILAS PERUSAHAAN</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Infrastruktur untuk Masa Depan Bangsa</h2>
+<p class="text-on-surface-variant font-body-md text-body-md">Sebagai pelopor penyelenggara jalan tol di Indonesia, Jasa Marga terus berkomitmen meningkatkan kualitas pelayanan dan konektivitas nasional melalui inovasi berkelanjutan dan operasional yang prima.</p>
+<a class="inline-flex items-center text-primary font-label-md text-label-md font-bold group" href="#">
+                        BACA SELENGKAPNYA <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-[40px] mb-4">distance</span>
+<div class="font-display-lg text-headline-lg text-primary font-bold">1,260+ KM</div>
+<div class="text-on-surface-variant font-label-md text-label-md">Total Panjang Jalan Tol Operasi</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-[40px] mb-4">corporate_fare</span>
+<div class="font-display-lg text-headline-lg text-primary font-bold">36 Ruas</div>
+<div class="text-on-surface-variant font-label-md text-label-md">Ruas Jalan Tol yang Dikelola</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-[40px] mb-4">history</span>
+<div class="font-display-lg text-headline-lg text-primary font-bold">46 Tahun</div>
+<div class="text-on-surface-variant font-label-md text-label-md">Melayani Konektivitas Indonesia</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-[40px] mb-4">group</span>
+<div class="font-display-lg text-headline-lg text-primary font-bold">8,000+</div>
+<div class="text-on-surface-variant font-label-md text-label-md">Karyawan Berdedikasi</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Section -->
+<section class="bg-primary py-section-gap relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full fill-white" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<circle cx="200" cy="200" r="150"></circle>
+</svg>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-4">Video Pengenalan Jasa Marga</h2>
+<p class="text-on-primary/80 max-w-2xl mx-auto">Saksikan dedikasi kami dalam membangun negeri melalui visualisasi proyek strategis dan pelayanan operasional di seluruh Indonesia.</p>
+</div>
+<div class="relative max-w-4xl mx-auto group">
+<div class="aspect-video bg-on-primary-fixed-variant rounded-2xl overflow-hidden shadow-2xl relative">
+<img alt="Toll Road Bridge" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="A grand architectural view of a massive suspension toll bridge spanning a blue waterway in Indonesia. The structure is white and modern, with elegant cable-stayed lines leading toward the horizon. The lighting is mid-day, bright and clear, showcasing the engineering precision. The overall mood is powerful and inspiring, emphasizing the company's role in national infrastructure development with a clean, high-contrast corporate finish." src="https://lh3.googleusercontent.com/aida/AP1WRLtJhCa9q0hOv6-9swVm5DzTzN9CiT0XakQTZoQzjdfcWXypDp0Yxkp0JVOxgEoWn_vph3YDbS_nR2oXU-OM_HNe9AsWDIXKuOvUoX_ZuayRS2E3fFuBQPEAzjU5b9p5FtuDpeG-cY89MNYRVt8bX1-TgAI37BsnYGk08AeJDzLKWE3bqtH4xBG0SPiKAufH5m2axMJaOrZceDLpgb9WoAtZT9TR8j2bBG72uyqJsgBC_t-tb1V20oob_gA"/>
+<button class="absolute inset-0 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Infrastructure & K3 Focus -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Komitmen Keamanan &amp; Keselamatan</h2>
+<p class="text-on-surface-variant">Keselamatan kerja (K3) adalah prioritas utama kami. Kami menerapkan standar keamanan tertinggi di setiap proyek konstruksi dan operasional jalan tol.</p>
+</div>
+<button class="border border-primary text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all">Lihat Standar K3</button>
+</div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="bg-surface-container-lowest p-8 rounded-xl shadow-lg border-l-4 border-primary hover:translate-y-[-8px] transition-transform duration-300">
-<div class="flex items-center justify-between mb-4">
-<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
-</div>
-<span class="text-label-sm font-label-sm text-on-surface-variant">+24% Bulan Ini</span>
-</div>
-<h3 class="text-headline-md font-headline-md text-primary mb-1">1000+</h3>
-<p class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wide">Karyawan Terlatih</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-xl shadow-lg border-l-4 border-secondary-container hover:translate-y-[-8px] transition-transform duration-300">
-<div class="flex items-center justify-between mb-4">
-<div class="w-12 h-12 bg-secondary-container/20 rounded-lg flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-</div>
-<span class="text-label-sm font-label-sm text-green-600 font-bold">TERCAPAI</span>
-</div>
-<h3 class="text-headline-md font-headline-md text-primary mb-1">Zero Accident</h3>
-<p class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wide">Target Keselamatan</p>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-xl shadow-lg border-l-4 border-primary hover:translate-y-[-8px] transition-transform duration-300">
-<div class="flex items-center justify-between mb-4">
-<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nest_cam_wired_stand</span>
-</div>
-<span class="text-label-sm font-label-sm text-on-surface-variant">Real-time Data</span>
-</div>
-<h3 class="text-headline-md font-headline-md text-primary mb-1">24/7</h3>
-<p class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wide">Monitoring Sistem</p>
-</div>
-</div>
-</section>
-<!-- Video Profil Section -->
-<section class="py-xl px-12 max-w-container-max mx-auto">
-<div class="flex flex-col lg:flex-row gap-16 items-center">
-<div class="w-full lg:w-1/2">
-<div class="relative group cursor-pointer overflow-hidden rounded-2xl shadow-2xl bg-black aspect-video">
-<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="A sophisticated corporate video thumbnail featuring diverse engineering professionals in high-visibility safety gear and white helmets, standing in a brightly lit, modern office environment with digital blueprint displays. The atmosphere is professional, clean, and collaborative, representing the high standards of Jasa Marga's corporate safety culture. Lighting is even and professional, emphasizing reliability and technical excellence." src="https://lh3.googleusercontent.com/aida/AP1WRLsU3R5okllE1JkmvIBnJKuRQQ9e12k_NsEQ9v4iRSX38kAhW18ZZ_sYS8Rek-kjHvuT6VnmDKs_SS925hbXRxI2Rcr6f7AiZjDeYqdYUdMbNdrXuUWoPq6lZYe8z50W3d7zgIvYJSA_7t6Djidpe0BVk5fdtIIc9uz-8hJlTqWmEljtGTaApckjfIzenIo8EUs7rOnvo9PDy1Kz8vQp-CW5RJoHozkaIDJL1et2Qsd_ohu1PRzWrhWNuXAj">
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-all duration-300">
-<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
-</div>
-<div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl">
-<p class="text-label-md font-label-md text-primary font-bold">VIDEO PROFIL K3 2024</p>
-</div>
-</div>
-</div>
-<div class="w-full lg:w-1/2 space-y-6">
-<div class="space-y-2">
-<h2 class="text-headline-lg font-headline-lg text-primary">Komitmen Tanpa Henti Terhadap Keselamatan Kerja</h2>
-<div class="h-1.5 w-24 bg-secondary-container"></div>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
-                        PT Jasa Marga (Persero) Tbk mengintegrasikan nilai-nilai keselamatan ke dalam setiap aspek operasional jalan tol. Kami percaya bahwa setiap pekerja berhak mendapatkan lingkungan kerja yang aman, dan setiap pengguna jalan tol berhak mendapatkan perjalanan yang nyaman.
-                    </p>
-<ul class="space-y-4">
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div class="group relative h-80 overflow-hidden rounded-xl border border-outline-variant">
+<img alt="Construction Work" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional close-up shot of an Indonesian construction worker wearing high-visibility safety gear including a bright yellow helmet and orange reflective vest. He is inspecting a steel bridge structure against a bright blue sky. The lighting is sharp and professional, highlighting the textures of the safety gear and the steel. The image conveys a strong sense of safety, professionalism, and rigorous industrial standards." src="https://lh3.googleusercontent.com/aida/AP1WRLuWzEEunyY351z93nFRQ20oJiNdSj3v9dv-YCY5wtcFBOX2rOBtDLACwR4X2pFsmMi8ZE4vSiJkQetfQXbe4NkUOF0XQR6uNuPTL97uJsVSUDGdaunvyZ_M-Ciu8Kt_5frk2PteOKpzx96PWLq3JEQQh44i8AODevUt6sXYDaF6C_LG1ZN8U0PAqCemwMn7Bxa5sFYO2BRPy7jBo6dMFah_5TiffhSI-gROxiSd6gBmqhXWY0KooRc9YOI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
 <div>
-<h4 class="font-bold text-on-surface">Audit Berkala</h4>
-<p class="text-label-sm text-on-surface-variant">Melakukan inspeksi rutin di seluruh ruas tol operasi.</p>
+<h3 class="text-on-primary font-headline-md text-headline-md mb-2">Budaya K3L</h3>
+<p class="text-on-primary/80 text-label-sm">Implementasi nihil kecelakaan kerja di seluruh unit bisnis.</p>
 </div>
-</li>
-<li class="flex gap-4 items-start">
-<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+</div>
+</div>
+<div class="group relative h-80 overflow-hidden rounded-xl border border-outline-variant">
+<img alt="Modern Building" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A low-angle shot of a modern glass office building representing Jasa Marga's corporate headquarters. The glass reflects a clear blue sky and wispy white clouds. The architecture is sharp and minimalist, symbolizing transparency and corporate integrity. The lighting is crisp and airy, following a bright light-mode aesthetic that feels fresh and professional." src="https://lh3.googleusercontent.com/aida/AP1WRLtpN67bkjalr9ApJetzKKQzhlm7WYMcse6mFOJthzWovxp6fN8cLxQchNn9pGEuRExJqf3CbY3GP2xyrqGpx_hdZbrw4UKHPHPzVjfeQ--1q7GyMDvAkHBpvS1kk5r3Cp9cMaTW7XGroEVFPp2239MmAnrtIsgRmoDEPBb9JYQ-_p4ciz8c0t7ZHczgxxOl9ghas_uhdEqI5KAVlOjXuIPpRq6fdPNE-EV42T4ZP5pUMlsedxabSCyGSA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
 <div>
-<h4 class="font-bold text-on-surface">Sertifikasi Internasional</h4>
-<p class="text-label-sm text-on-surface-variant">Standar ISO 45001 dalam Manajemen Kesehatan dan Keselamatan Kerja.</p>
-</div>
-</li>
-</ul>
-<button class="text-primary font-label-md flex items-center gap-2 hover:gap-4 transition-all">
-                        Baca Selengkapnya tentang Budaya K3 Kami
-                        <span class="material-symbols-outlined">trending_flat</span>
-</button>
+<h3 class="text-on-primary font-headline-md text-headline-md mb-2">Inovasi Digital</h3>
+<p class="text-on-primary/80 text-label-sm">Monitoring real-time lalu lintas dengan teknologi AI terbaru.</p>
 </div>
 </div>
-</section>
-<!-- Features Bento Grid -->
-<section class="py-xl bg-surface-container-low px-12">
-<div class="max-w-container-max mx-auto">
-<div class="text-center mb-16">
-<h2 class="text-headline-lg font-headline-lg text-primary mb-4">Layanan &amp; Fitur Unggulan</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Ekosistem digital terpadu untuk memantau, melaporkan, dan meningkatkan standar keselamatan di seluruh area kerja Jasa Marga.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-auto md:h-[600px]">
-<div class="md:col-span-2 md:row-span-2 bg-primary rounded-3xl p-10 text-white flex flex-col justify-between group overflow-hidden relative">
-<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/5 rounded-full group-hover:scale-110 transition-all duration-500"></div>
-<div class="z-10">
-<span class="material-symbols-outlined text-5xl mb-6">shield_with_heart</span>
-<h3 class="text-headline-md font-headline-md mb-4">Sistem Pelaporan Insiden Real-time</h3>
-<p class="text-white/80 body-md">Pelaporan insiden secara instan langsung dari lapangan menggunakan platform mobile yang terintegrasi pusat komando.</p>
-</div>
-<button class="z-10 w-fit px-6 py-2 bg-white text-primary rounded-lg font-label-md mt-8">Buka Dashboard</button>
-</div>
-<div class="md:col-span-2 bg-secondary-container rounded-3xl p-8 flex items-center gap-8 group">
-<div class="w-24 h-24 bg-white/30 rounded-2xl flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-4xl text-on-secondary-container">engineering</span>
-</div>
+<div class="group relative h-80 overflow-hidden rounded-xl border border-outline-variant">
+<img alt="Control Room" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A high-tech traffic control center with multiple glowing screens displaying live video feeds from Indonesian highways and complex map data. Operators are visible in silhouette, working in a dimly lit room with blue ambient lighting. The scene looks like a modern command center, projecting an image of advanced technology, efficiency, and tireless surveillance for public safety." src="https://lh3.googleusercontent.com/aida/AP1WRLsJkLI-VjyZ4Re-IUy7dU6Vq7B8k7x2mgCo2enGj8PC4PKRi70vZ0WGHTNRGq00GtnsXr_oAtG5iEgrQwIIyIlGvGsycU_CZiSjCpAFm9qnMYU4ogNF7T7lAAMvMprMYunC_Mm_pwNdeX5nIkylB-sMSlMbzS9s711HyQw4j1W4s3sIUqv_yf4RQ55aAAcOTsnUgFCiPx1i4CDIVjiH0Dx1lQQFid_HlRLqDoA49sehy2BRZSmhTlxUync"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
 <div>
-<h3 class="text-headline-md font-headline-md text-on-secondary-container mb-2">Manajemen APD</h3>
-<p class="text-on-secondary-fixed-variant body-md">Inventarisasi dan pengecekan kelayakan Alat Pelindung Diri secara otomatis.</p>
+<h3 class="text-on-primary font-headline-md text-headline-md mb-2">Pelayanan Pelanggan</h3>
+<p class="text-on-primary/80 text-label-sm">Bantuan jalan tol 24 jam untuk kenyamanan pengguna jalan.</p>
 </div>
-</div>
-<div class="bg-surface-container-lowest border border-outline-variant rounded-3xl p-8 hover:shadow-xl transition-all">
-<span class="material-symbols-outlined text-primary text-3xl mb-4">analytics</span>
-<h4 class="font-bold mb-2">Analitik Data</h4>
-<p class="text-label-sm text-on-surface-variant">Visualisasi data kecelakaan untuk mitigasi risiko di masa depan.</p>
-</div>
-<div class="bg-surface-container-lowest border border-outline-variant rounded-3xl p-8 hover:shadow-xl transition-all">
-<span class="material-symbols-outlined text-primary text-3xl mb-4">map</span>
-<h4 class="font-bold mb-2">GIS Mapping</h4>
-<p class="text-label-sm text-on-surface-variant">Pemetaan area rawan kecelakaan di seluruh ruas tol secara geografis.</p>
 </div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-highest border-t border-outline-variant py-12">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-12 max-w-container-max mx-auto mb-12">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-4 mb-6">
-<img alt="Logo Jasa Marga" class="h-10 w-10" src="https://lh3.googleusercontent.com/aida/AP1WRLuKDjf-zBFUKQVh6HCaZ6oZvwIkss0bf7h-wYB7t-O_2wbKfGj7X61Ecwul2REkuo2r_nLdAcVIeoy7fnWnY9IJSla-289d5iWbAmF3DVQSYRzq4ksuOUhWc9BAJW2GfiYdO9bsys8cR4LxcbGLjp5vWKFVhtaG9TnslGpxjtLvNuJ8WB3o0HqVtzrh8VgMuv_FsbYtN4hjRL746vQIf7XMPs-Dog1DK5a58lvd7uQJtP0BGMYtgiVJ6GE">
-<span class="text-headline-md font-headline-md font-bold text-primary">JASA MARGA</span>
+<footer class="bg-primary text-on-primary py-section-gap border-t border-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-headline-lg text-headline-lg font-black text-on-primary">Jasa Marga</div>
+<p class="text-on-primary/80 font-body-md text-body-md">Membangun konektivitas untuk kemajuan bangsa dengan pelayanan jalan tol terbaik di Indonesia.</p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined">phone_in_talk</span></a>
 </div>
-<p class="text-body-md text-on-surface-variant leading-relaxed">
-                    Sistem Informasi K3 Terpadu untuk menunjang keselamatan operasional di seluruh jaringan jalan tol Indonesia.
-                </p>
 </div>
-<div>
-<h4 class="text-primary font-bold mb-6">Navigasi</h4>
-<ul class="space-y-4">
-<li><a class="text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Tentang Kami</a></li>
-<li><a class="text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Layanan Pelanggan</a></li>
-<li><a class="text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Karir</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-primary font-bold mb-6">Bantuan</h4>
-<ul class="space-y-4">
-<li><a class="text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Bantuan</a></li>
-<li><a class="text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Syarat &amp; Ketentuan</a></li>
-<li><a class="text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Kebijakan Privasi</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-primary font-bold mb-6">Hubungi Kami</h4>
 <div class="space-y-4">
-<p class="text-label-sm text-on-surface-variant flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">mail</span>
-                        k3@jasamarga.co.id
-                    </p>
-<p class="text-label-sm text-on-surface-variant flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">call</span>
-                        14080 (Call Center 24 Jam)
-                    </p>
-<div class="flex gap-4 mt-6">
-<a class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:scale-110 transition-transform" href="#">
-<span class="material-symbols-outlined text-sm">public</span>
-</a>
-<a class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:scale-110 transition-transform" href="#">
-<span class="material-symbols-outlined text-sm">chat</span>
-</a>
+<h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Tentang Kami</h4>
+<ul class="space-y-3">
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Gambaran Umum</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Visi &amp; Misi</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Tata Kelola Perusahaan</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Laporan Keuangan</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Layanan</h4>
+<ul class="space-y-3">
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Galeri APD</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Prosedur Evakuasi</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Informasi Tarif</a></li>
+<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Peta Jalan Tol</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Hubungi Kami</h4>
+<ul class="space-y-3">
+<li class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary-container">location_on</span>
+<span class="text-on-primary/80 text-body-md">Plaza Tol Ciputat, Jl. Pajajaran No.1, Tangerang Selatan</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary-container">call</span>
+<span class="text-on-primary/80 text-body-md">14080 (Pusat Kontak)</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary-container">mail</span>
+<span class="text-on-primary/80 text-body-md">kontak@jasamarga.co.id</span>
+</li>
+</ul>
 </div>
 </div>
-</div>
-</div>
-<div class="border-t border-outline-variant pt-8 text-center px-12 max-w-container-max mx-auto">
-<p class="text-label-sm text-on-surface-variant">
-                © 2024 PT Jasa Marga (Persero) Tbk. All Rights Reserved. Keselamatan dan Kesehatan Kerja (K3) Information System.
-            </p>
+<div class="mt-section-gap border-t border-white/10 pt-8 text-center px-margin-desktop max-w-container-max mx-auto">
+<p class="text-on-primary/60 text-label-sm font-label-sm">© 2024 Jasa Marga. All Rights Reserved.</p>
 </div>
 </footer>
 <script>
-        // Smooth scroll interaction for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // Smooth shadow transition for header on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
         });
 
-        // Simple animation for numbers (Observer pattern)
-        const observerOptions = {
-            threshold: 0.5
-        };
-
-        const statsObserver = new IntersectionObserver((entries) => {
+        // Simple animation trigger for stats
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    entry.target.classList.add('translate-y-0', 'opacity-100');
+                    entry.target.classList.remove('translate-y-8', 'opacity-0');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        document.querySelectorAll('.stat-card').forEach(card => {
-            statsObserver.observe(card);
+        document.querySelectorAll('.grid > div').forEach(div => {
+            div.classList.add('transition-all', 'duration-700', 'translate-y-8', 'opacity-0');
+            observer.observe(div);
         });
     </script>
 </body></html>

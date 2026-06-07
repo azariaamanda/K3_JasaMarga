@@ -1,487 +1,443 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>K3 &amp; APD | Jasa Marga</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-tertiary-fixed-variant": "#454748",
-                        "on-tertiary-fixed": "#191c1d",
-                        "on-secondary-fixed-variant": "#564500",
-                        "surface-container-highest": "#e2e2e5",
-                        "on-secondary": "#ffffff",
-                        "on-secondary-fixed": "#231b00",
-                        "surface-container-lowest": "#ffffff",
-                        "primary-container": "#004a99",
-                        "outline-variant": "#c2c6d3",
-                        "surface-bright": "#f9f9fc",
-                        "secondary-container": "#fed000",
-                        "error": "#ba1a1a",
-                        "inverse-on-surface": "#f0f0f3",
-                        "tertiary": "#333537",
-                        "surface-dim": "#dadadc",
-                        "secondary-fixed": "#ffe07f",
-                        "primary-fixed": "#d7e2ff",
-                        "on-primary-fixed": "#001b3f",
-                        "on-error": "#ffffff",
-                        "surface-container-high": "#e8e8ea",
-                        "surface-variant": "#e2e2e5",
-                        "surface-tint": "#255dad",
-                        "secondary-fixed-dim": "#edc200",
-                        "tertiary-fixed": "#e1e3e4",
-                        "primary-fixed-dim": "#abc7ff",
-                        "on-secondary-container": "#6f5900",
-                        "tertiary-fixed-dim": "#c5c7c8",
-                        "on-surface-variant": "#424751",
-                        "inverse-surface": "#2f3133",
-                        "outline": "#737783",
-                        "inverse-primary": "#abc7ff",
-                        "error-container": "#ffdad6",
-                        "secondary": "#725c00",
-                        "surface": "#f9f9fc",
-                        "on-primary-fixed-variant": "#00458f",
-                        "on-primary": "#ffffff",
-                        "on-surface": "#1a1c1e",
-                        "on-error-container": "#93000a",
-                        "surface-container": "#eeeef0",
-                        "on-background": "#1a1c1e",
-                        "primary": "#00346f",
-                        "surface-container-low": "#f3f3f6",
-                        "on-tertiary": "#ffffff",
-                        "tertiary-container": "#4a4c4d",
-                        "on-primary-container": "#9bbdff",
-                        "on-tertiary-container": "#bbbcbd",
-                        "background": "#f9f9fc"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "margin-mobile": "16px",
-                        "container-max": "1280px",
-                        "base": "8px",
-                        "margin-desktop": "40px",
-                        "section-gap": "80px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Montserrat"],
-                        "body-md": ["Inter"],
-                        "label-sm": ["Inter"],
-                        "label-md": ["Inter"],
-                        "headline-md": ["Montserrat"],
-                        "body-lg": ["Inter"],
-                        "display-lg-mobile": ["Montserrat"],
-                        "display-lg": ["Montserrat"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(233, 236, 239, 0.5);
-        }
-        .hero-gradient {
-            background: linear-gradient(to right, rgba(0, 52, 111, 0.95), rgba(0, 52, 111, 0.4));
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K3 &amp; APD | Jasa Marga</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS (Konsisten dengan Profil) -->
+    <link rel="stylesheet" href="style/profil.css">
+
+    <style>
+        /* Beberapa styling spesifik untuk k3_apd jika dibutuhkan yang tidak ada di profil.css */
+        .hover-shadow-up { transition: all 0.3s ease; }
+        .hover-shadow-up:hover { transform: translateY(-5px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
+        .bg-primary-jm { background-color: var(--primary); }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<header class="fixed top-0 z-50 w-full bg-surface shadow-sm border-b border-outline-variant h-20">
-<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
-<div class="font-headline-md text-headline-md font-bold text-primary">Jasa Marga</div>
-<nav class="hidden md:flex space-x-8 items-center">
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="beranda.html">BERANDA</a>
-<div class="group relative">
-<button class="flex items-center text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200">
-                        PROFIL <span class="material-symbols-outlined ml-1 text-[18px]">keyboard_arrow_down</span>
-</button>
-<div class="absolute top-full -left-4 w-48 bg-surface shadow-lg py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant">
-<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Visi &amp; Misi</a>
-<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Struktur Organisasi</a>
-</div>
-</div>
-<a class="text-primary border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md transition-colors duration-200" href="#">K3 &amp; APD</a>
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="lokasi_media.html">LOKASI &amp; VIDEO</a>
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="kontak.html">KONTAK</a>
-</nav>
-<div class="flex items-center space-x-6">
-<button class="material-symbols-outlined text-primary">search</button>
-<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-80 transition-opacity">LOGIN</button>
-</div>
-</div>
-</header>
+<body>
 
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative h-[600px] flex items-center overflow-hidden">
-<img alt="Safety Standards" class="absolute inset-0 w-full h-full object-cover" data-alt="A wide-angle cinematic shot of a professional road construction site at dawn." src="https://lh3.googleusercontent.com/aida/AP1WRLt3cNfiwLcquvIHn2Ls9BYt5kESxS_CH1iUwUC1c6RfwXXfe4gxX9AgHVoVXuQoqBHlTb6kQhFVgyuvkhH3GSB5aLkQ0roFtRsL42WWzYb-GWh4BSTd92vrxcT3-LGIUMz8zvqJZQ3cESKI_5lfR7jqCVbmt_Y_hNoWKOkAm2lg10nP9TpOue3cxcvgkZHE746gbgkSJS_ho081rfXi9ZAjvnqKriqnfNDEEU5xEqEv-QVaRLshxZ-KVTk"/>
-<div class="absolute inset-0 hero-gradient"></div>
-<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
-<div class="max-w-2xl">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full mb-6">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-<span class="font-label-md text-label-md">PRIORITAS UTAMA</span>
-</div>
-<h1 class="font-display-lg text-display-lg text-on-primary mb-6">K3 &amp; Alat Pelindung Diri</h1>
-<p class="font-body-lg text-body-lg text-on-primary/90 mb-8">
+    <!-- Navbar persis seperti profil.html -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="beranda.html">
+            <div class="nav-logo-icon">
+                <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga">
+            </div>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Perusahaan</a></li>
+            <li><a href="k3_apd.html" class="active">K3 &amp; APD</a></li>
+            <li><a href="lokasi_media.html">Lokasi &amp; Video</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+
+        <div class="nav-burger" id="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section-hero" id="hero">
+            <div class="hero-bg">
+                <img src="https://lh3.googleusercontent.com/aida/AP1WRLt3cNfiwLcquvIHn2Ls9BYt5kESxS_CH1iUwUC1c6RfwXXfe4gxX9AgHVoVXuQoqBHlTb6kQhFVgyuvkhH3GSB5aLkQ0roFtRsL42WWzYb-GWh4BSTd92vrxcT3-LGIUMz8zvqJZQ3cESKI_5lfR7jqCVbmt_Y_hNoWKOkAm2lg10nP9TpOue3cxcvgkZHE746gbgkSJS_ho081rfXi9ZAjvnqKriqnfNDEEU5xEqEv-QVaRLshxZ-KVTk" class="hero-img" alt="Road Construction">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content container">
+                <div class="hero-text reveal">
+                    <span class="hero-badge"><i class="bi bi-shield-check me-2"></i>PRIORITAS UTAMA</span>
+                    <h1 class="hero-title">K3 &amp; Alat Pelindung Diri</h1>
+                    <p class="hero-subtitle">
                         Komitmen Jasa Marga terhadap Kesehatan dan Keselamatan Kerja (K3) adalah pilar fundamental dalam setiap operasional infrastruktur nasional. Kami memastikan setiap individu terlindungi melalui standar APD tertinggi.
                     </p>
-<div class="flex gap-4">
-<a href="panduan_k3.html" class="bg-secondary-container text-on-secondary-container px-8 py-4 font-label-md text-label-md rounded shadow-lg hover:brightness-95 transition-all text-decoration-none">LIHAT PANDUAN K3</a>
-<a href="sop_keselamatan.html" class="border border-white text-white px-8 py-4 font-label-md text-label-md rounded hover:bg-white/10 transition-all inline-block text-center text-decoration-none" style="text-decoration: none;">SOP KESELAMATAN</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Hazard Identification Section (Bento Grid Style) -->
-<section class="py-section-gap bg-surface-container-low">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-<div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Identifikasi Bahaya Lokasi</h2>
-<p class="text-on-surface-variant">Prosedur proaktif dalam mendeteksi dan mengelola risiko di lingkungan kerja jalan tol, area konstruksi, hingga lingkungan perkantoran.</p>
-</div>
-<div class="bg-white p-4 border border-outline-variant rounded flex gap-8">
-<div class="text-center">
-<div class="text-headline-md font-bold text-primary">100%</div>
-<div class="text-label-sm text-outline">Risk Compliance</div>
-</div>
-<div class="h-10 w-px bg-outline-variant"></div>
-<div class="text-center">
-<div class="text-headline-md font-bold text-secondary">ZERO</div>
-<div class="text-label-sm text-outline">Accident Goal</div>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Hazard Card 1 -->
-<div class="group p-8 bg-white border border-outline-variant rounded hover:border-primary transition-all duration-300">
-<div class="w-12 h-12 bg-primary-fixed rounded flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-[32px]">warning</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Bahaya Fisik</h3>
-<p class="text-on-surface-variant mb-6">Identifikasi risiko terkait mesin berat, kebisingan, getaran, dan paparan cuaca ekstrim di lokasi proyek jalan tol.</p>
-<div class="flex items-center text-primary font-label-md text-label-md cursor-pointer">
-                            DETAIL PROSEDUR <span class="material-symbols-outlined ml-2">arrow_forward</span>
-</div>
-</div>
-<!-- Hazard Card 2 -->
-<div class="group p-8 bg-white border border-outline-variant rounded hover:border-primary transition-all duration-300">
-<div class="w-12 h-12 bg-secondary-fixed rounded flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-secondary text-[32px]">science</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Bahaya Kimia</h3>
-<p class="text-on-surface-variant mb-6">Pengelolaan zat berbahaya seperti aspal panas, bahan bakar, dan material konstruksi kimia guna mencegah keracunan atau iritasi.</p>
-<div class="flex items-center text-primary font-label-md text-label-md cursor-pointer">
-                            DETAIL PROSEDUR <span class="material-symbols-outlined ml-2">arrow_forward</span>
-</div>
-</div>
-<!-- Hazard Card 3 -->
-<div class="group p-8 bg-white border border-outline-variant rounded hover:border-primary transition-all duration-300">
-<div class="w-12 h-12 bg-tertiary-fixed rounded flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-tertiary text-[32px]">accessibility_new</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Bahaya Ergonomis</h3>
-<p class="text-on-surface-variant mb-6">Mitigasi cedera melalui pengaturan posisi kerja yang benar, alat angkut yang ergonomis, dan manajemen kelelahan operator.</p>
-<div class="flex items-center text-primary font-label-md text-label-md cursor-pointer">
-                            DETAIL PROSEDUR <span class="material-symbols-outlined ml-2">arrow_forward</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- PPE Gallery Section -->
-<section class="py-section-gap">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Galeri Alat Pelindung Diri (APD)</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Standarisasi perlengkapan wajib bagi seluruh personil operasional dan kontraktor di area kerja Jasa Marga.</p>
-</div>
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- PPE Item 1 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="Safety Helmet" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLstDlz6__Fuv3J4HAx37bkfozFplmP9D4r7djp87e2Kw6KOCQKUfD8sLf60snKRrBKJ6qBEEVwHAGyU5qGoY9YJAh-AbES5TdwgbkPNyAZ2kBKARBxRgGWMbMAtelX1irPUzJ-pXU7XvDlEBAIemLHgb_0-R0ULpLgxdf_tYRZoGmKiKDgQ8yXzvDEPgukimzOVMks1E7-3vW3dJnSCMkmccZnP8wMOtCM_PrR0C7EtmxCyPjH9XJv2xO0"/>
-<span class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 text-label-sm rounded-full">Wajib</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">Safety Helmet</h4>
-<p class="text-label-sm text-outline mb-4">Melindungi kepala dari benturan benda jatuh dan risiko cedera mekanik di area proyek.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-<!-- PPE Item 2 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="High-Vis Vest" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLv2gLkAcb28h6t1fVlG1R73_Ghvi3773suR7bFT9wASGgOPJykHEekKSDvtIr5mNzWjp0aIkgWobsEAwK4vVZDUG2I5tvkHdfsY5RJMr-TU7gdiXfyvLQnyZ591Wn32aw1pob6e8SC8Gf9PCDobHXmIIhb9l5LFmYwol_BS8H4A1qKrB5JUwHIsw2FrJNfBD2RAwjhrLW0retpr0Rq9CQZs9TM_bkHi0LUEPpxTqMIMehCcS8lMPYEI9Q"/>
-<span class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 text-label-sm rounded-full">Wajib</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">High-Visibility Vest</h4>
-<p class="text-label-sm text-outline mb-4">Memastikan visibilitas personil di jalan raya, terutama saat kondisi cahaya rendah atau malam hari.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-<!-- PPE Item 3 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="Safety Shoes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLs9uhn_Ku7oGUdP6bDDpPJmguQ8L3XmbwafKDVbPZiZXySA-XpAMvih9kQfT-b1XnVZxIm6LP2kYhx1wHZWgB6n_is_EP2P1vADrBDmd5MipGhMor0l8MybeRxmX4vI_V6bLvi_IE_J6Xol4B0Rj_98WCb8FRH2s8p52RXhyFecXgy0HFLUiP0A9VNtXio194bYluPuGCoqe3-cMS4hPowjglGiaUfQIczltquidDSA3NgeQCSxYZPZEOg"/>
-<span class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 text-label-sm rounded-full">Wajib</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">Safety Shoes</h4>
-<p class="text-label-sm text-outline mb-4">Melindungi kaki dari benda tajam, himpitan material berat, dan permukaan jalan yang licin.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-<!-- PPE Item 4 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="Gloves &amp; Eye Protection" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvgCnBC7f65sANftgaO9XDUSaE-pMHdyazM8pAc0TeXG-HiaaOPJ8pbO7F6BTNu_eYB8DNGDOiBICZ4spe7Rk3cKxQjMwJ5XE1QKDAGr-rtKx9NsEX1JvGV20jK5U6NY8C2GvRfnPtJ8Ce4-CXRTvifXwG4ksXJQH0wI4eo9iehCrPQX_43mS9C4qK09OcO6-5RWZK2Cqn6RhRj7HyFJvpc1LjQzo_ffSU1_OQP6Tq-8Tii-_dliBpjgDI"/>
-<span class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 text-label-sm rounded-full">Kondisional</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">Gloves &amp; Goggles</h4>
-<p class="text-label-sm text-outline mb-4">Perlindungan khusus untuk tangan dan mata saat menangani alat berat atau material berisiko.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-<!-- PPE Item 5 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="Full Body Harness" class="w-full h-full object-cover" src="img/harness.png"/>
-<span class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 text-label-sm rounded-full">Wajib Ketinggian</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">Full Body Harness</h4>
-<p class="text-label-sm text-outline mb-4">Mengamankan pekerja dari risiko jatuh bebas saat melakukan aktivitas di ketinggian lebih dari 1.8 meter.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-<!-- PPE Item 6 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="Ear Muffs" class="w-full h-full object-cover" src="img/earmuffs.png"/>
-<span class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 text-label-sm rounded-full">Kondisional</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">Safety Ear Muffs</h4>
-<p class="text-label-sm text-outline mb-4">Melindungi pendengaran dari paparan kebisingan alat berat (di atas 85 dB) di area konstruksi.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-<!-- PPE Item 7 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="Respirator Mask" class="w-full h-full object-cover" src="img/respirator.png"/>
-<span class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 text-label-sm rounded-full">Kondisional</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">Respirator Mask</h4>
-<p class="text-label-sm text-outline mb-4">Mencegah terhirupnya partikel debu halus, bahan kimia, atau emisi saat pengaspalan dan pemeliharaan.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-<!-- PPE Item 8 -->
-<div class="bg-white border border-outline-variant rounded-lg overflow-hidden hover:shadow-lg transition-all">
-<div class="h-64 bg-surface-container-high relative flex items-center justify-center">
-<img alt="Traffic Baton" class="w-full h-full object-cover" src="img/baton.png"/>
-<span class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 text-label-sm rounded-full">Wajib Lalin</span>
-</div>
-<div class="p-6">
-<h4 class="font-label-md text-label-md text-primary mb-2">Traffic Baton</h4>
-<p class="text-label-sm text-outline mb-4">Alat isyarat cahaya untuk mengatur lalu lintas dan memberi peringatan pada pengemudi saat malam hari.</p>
-<div class="h-1 bg-primary w-full rounded-full opacity-20"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Procedures & Training Section -->
-<section class="py-section-gap bg-primary-container text-on-primary overflow-hidden relative">
-<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
-<span class="material-symbols-outlined text-[400px]" style="font-variation-settings: 'wght' 700;">engineering</span>
-</div>
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-<div>
-<h2 class="font-headline-lg text-headline-lg mb-6">Program Pelatihan &amp; Prosedur Keselamatan</h2>
-<p class="font-body-lg text-body-lg mb-8 opacity-90">Jasa Marga menyelenggarakan pelatihan K3 secara berkala untuk memastikan seluruh karyawan memiliki kompetensi dalam menghadapi situasi darurat dan menjalankan SOP keselamatan yang ketat.</p>
-<div class="space-y-4">
-<div class="flex items-start gap-4">
-<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-secondary-container text-sm">check</span>
-</div>
-<div>
-<h5 class="font-label-md mb-1">Safety Induction Harian</h5>
-<p class="text-sm opacity-80">Brifing rutin sebelum memulai aktivitas kerja di lapangan.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-secondary-container text-sm">check</span>
-</div>
-<div>
-<h5 class="font-label-md mb-1">Sertifikasi Keahlian K3</h5>
-<p class="text-sm opacity-80">Pelatihan intensif bagi pengawas K3 untuk sertifikasi nasional.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-secondary-container text-sm">check</span>
-</div>
-<div>
-<h5 class="font-label-md mb-1">Simulasi Evakuasi Darurat</h5>
-<p class="text-sm opacity-80">Latihan kesiapsiagaan bencana dan kecelakaan kerja secara rutin.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="relative">
-<div class="aspect-video rounded-xl overflow-hidden border-4 border-white/20 shadow-2xl">
-<img alt="Safety Training Session" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtaP-1lE0ysH6j5OnEGvKRCpvudCGgNEoG14soG2HtMbnO6-lQJN6-lTNh_5j5faqC-e9PM1gHXWJ0R08NL0rdmWy2usCMVJ4TKZHBf2CSXOxJAvG1akZO6yjD-55xyfRxWpBu009OdHGAMFA8_mVhvn8lWPBjLzMo4jIMRT0XTshnm8GTBI2pKP4COOaCrD95Pk05YMVscN2xh7VcD1KPU2gzjt2D7e6YfdrRLKkoLEmQFx3P6ppnUhUU"/>
-<div class="absolute inset-0 flex items-center justify-center group cursor-pointer">
-<div class="w-16 h-16 bg-white/20 backdrop-blur rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white text-4xl">play_arrow</span>
-</div>
-</div>
-</div>
-<div class="absolute -bottom-6 -right-6 p-6 bg-secondary-container text-on-secondary-container rounded shadow-xl hidden lg:block">
-<div class="text-headline-md font-black">250+</div>
-<div class="text-label-sm font-bold">JAM PELATIHAN / TAHUN</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Download Center -->
-<section class="py-section-gap bg-surface">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="bg-white border border-outline-variant p-10 rounded-xl shadow-sm flex flex-col md:flex-row items-center gap-10">
-<div class="flex-1 text-center md:text-left">
-<h2 class="font-headline-md text-headline-md text-primary mb-2">Pusat Unduhan K3</h2>
-<p class="text-on-surface-variant">Dapatkan panduan lengkap mengenai standar operasional, buku saku APD, dan kebijakan HSE Jasa Marga.</p>
-</div>
-<div class="flex flex-wrap gap-4 justify-center">
-<a class="inline-flex items-center gap-3 px-6 py-3 bg-surface-container border border-outline-variant hover:border-primary transition-all rounded" href="docs/manual_k3_2024.pdf" download="Manual_K3_2024.pdf">
-<span class="material-symbols-outlined text-primary">picture_as_pdf</span>
-<div class="text-left">
-<div class="text-label-md text-primary">Manual K3 2024</div>
-<div class="text-label-sm text-outline">PDF (12.4 MB)</div>
-</div>
-</a>
-<a class="inline-flex items-center gap-3 px-6 py-3 bg-surface-container border border-outline-variant hover:border-primary transition-all rounded" href="docs/sop_penggunaan_apd.pdf" download="SOP_Penggunaan_APD.pdf">
-<span class="material-symbols-outlined text-primary">book</span>
-<div class="text-left">
-<div class="text-label-md text-primary">SOP Penggunaan APD</div>
-<div class="text-label-sm text-outline">PDF (5.8 MB)</div>
-</div>
-</a>
-
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer Shell -->
-<footer class="bg-primary text-on-primary">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
-<div class="space-y-6">
-<div class="font-headline-lg text-headline-lg font-black text-on-primary">
-                    Jasa Marga
+                    <div class="hero-cta d-flex flex-wrap gap-3" style="position: relative; z-index: 9999; pointer-events: auto;">
+                        <a href="panduan_k3.html" class="btn-hero-primary text-decoration-none">Lihat Panduan K3 <i class="bi bi-arrow-right-circle"></i></a>
+                        <a href="sop_keselamatan.html" class="btn btn-outline-light rounded-pill px-4 fw-bold d-inline-flex align-items-center gap-2" style="padding-top: 1rem; padding-bottom: 1rem; border: 2px solid white; color: white;">SOP Keselamatan <i class="bi bi-file-earmark-check"></i></a>
+                    </div>
                 </div>
-<p class="text-on-primary/80 font-body-md">
-                    Menghubungkan Nusantara melalui infrastruktur jalan tol yang handal, aman, dan berstandar internasional.
-                </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
-<span class="material-symbols-outlined">share</span>
-</a>
-</div>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-secondary-container mb-6">Tentang Kami</h4>
-<ul class="space-y-4">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Gambaran Umum</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Visi &amp; Misi</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Laporan Tahunan</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-secondary-container mb-6">Informasi K3</h4>
-<ul class="space-y-4">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Galeri APD</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Prosedur Evakuasi</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">HSE Management System</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-secondary-container mb-6">Hubungi Kami</h4>
-<ul class="space-y-4">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Pusat Kontak</a></li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px]">call</span>
-<span class="text-on-primary/80">14080 (24 Jam)</span>
-</li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px]">mail</span>
-<span class="text-on-primary/80">info@jasamarga.co.id</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-white/10 py-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-<div class="text-on-primary/60 font-label-sm">
-                © 2024 Jasa Marga. All Rights Reserved.
             </div>
-<div class="flex gap-6 font-label-sm text-on-primary/60">
-<a class="hover:text-white" href="#">Kebijakan Privasi</a>
-<a class="hover:text-white" href="#">Syarat &amp; Ketentuan</a>
-</div>
-</div>
-</footer>
-<script>
+            <div class="hero-scroll-hint">
+                <div class="scroll-dot"></div>
+            </div>
+        </section>
+
+        <!-- Hazard Identification Section -->
+        <section style="background-color: var(--bg-light);">
+            <div class="container">
+                <div class="row align-items-end mb-5 gy-4 reveal">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Identifikasi Bahaya Lokasi</h2>
+                        <p class="text-muted mb-0">Prosedur proaktif dalam mendeteksi dan mengelola risiko di lingkungan kerja jalan tol, area konstruksi, hingga lingkungan perkantoran.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <div class="bg-white p-3 border rounded d-inline-flex gap-4 shadow-sm align-items-center">
+                            <div class="text-center">
+                                <div class="h3 fw-bold mb-0" style="color: var(--primary);">100%</div>
+                                <div class="small text-muted">Risk Compliance</div>
+                            </div>
+                            <div class="border-start border-2 h-50"></div>
+                            <div class="text-center">
+                                <div class="h3 fw-bold mb-0" style="color: var(--secondary-dark);">ZERO</div>
+                                <div class="small text-muted">Accident Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 reveal">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-4 hover-shadow-up">
+                            <div class="mb-4 rounded d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(0, 74, 153, 0.1); color: var(--primary);">
+                                <i class="bi bi-cone-striped fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Bahaya Fisik</h4>
+                            <p class="text-muted mb-4 flex-grow-1">Identifikasi risiko terkait mesin berat, kebisingan, getaran, dan paparan cuaca ekstrim di lokasi proyek jalan tol.</p>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-4 hover-shadow-up">
+                            <div class="mb-4 rounded d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(255, 209, 0, 0.2); color: var(--secondary-dark);">
+                                <i class="bi bi-exclamation-triangle-fill fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Bahaya Kimia</h4>
+                            <p class="text-muted mb-4 flex-grow-1">Pengelolaan zat berbahaya seperti aspal panas, bahan bakar, dan material konstruksi kimia guna mencegah keracunan atau iritasi.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-4 hover-shadow-up">
+                            <div class="mb-4 rounded d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(26, 28, 30, 0.1); color: var(--dark);">
+                                <i class="bi bi-person-workspace fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Bahaya Ergonomis</h4>
+                            <p class="text-muted mb-4 flex-grow-1">Mitigasi cedera melalui pengaturan posisi kerja yang benar, alat angkut yang ergonomis, dan manajemen kelelahan operator.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PPE Gallery Section -->
+        <section>
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Galeri Alat Pelindung Diri (APD)</h2>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">Standarisasi perlengkapan wajib bagi seluruh personil operasional dan kontraktor di area kerja Jasa Marga.</p>
+                </div>
+
+                <div class="row g-4 reveal">
+                    <!-- PPE Item 1 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLstDlz6__Fuv3J4HAx37bkfozFplmP9D4r7djp87e2Kw6KOCQKUfD8sLf60snKRrBKJ6qBEEVwHAGyU5qGoY9YJAh-AbES5TdwgbkPNyAZ2kBKARBxRgGWMbMAtelX1irPUzJ-pXU7XvDlEBAIemLHgb_0-R0ULpLgxdf_tYRZoGmKiKDgQ8yXzvDEPgukimzOVMks1E7-3vW3dJnSCMkmccZnP8wMOtCM_PrR0C7EtmxCyPjH9XJv2xO0" class="w-100 h-100" style="object-fit: cover;" alt="Safety Helmet">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--primary);">Wajib</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">Safety Helmet</h5>
+                                <p class="small text-muted mb-3">Melindungi kepala dari benturan benda jatuh dan risiko cedera mekanik.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PPE Item 2 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLv2gLkAcb28h6t1fVlG1R73_Ghvi3773suR7bFT9wASGgOPJykHEekKSDvtIr5mNzWjp0aIkgWobsEAwK4vVZDUG2I5tvkHdfsY5RJMr-TU7gdiXfyvLQnyZ591Wn32aw1pob6e8SC8Gf9PCDobHXmIIhb9l5LFmYwol_BS8H4A1qKrB5JUwHIsw2FrJNfBD2RAwjhrLW0retpr0Rq9CQZs9TM_bkHi0LUEPpxTqMIMehCcS8lMPYEI9Q" class="w-100 h-100" style="object-fit: cover;" alt="High-Vis Vest">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--primary);">Wajib</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">High-Vis Vest</h5>
+                                <p class="small text-muted mb-3">Memastikan visibilitas personil di jalan raya saat kondisi minim cahaya.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PPE Item 3 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLs9uhn_Ku7oGUdP6bDDpPJmguQ8L3XmbwafKDVbPZiZXySA-XpAMvih9kQfT-b1XnVZxIm6LP2kYhx1wHZWgB6n_is_EP2P1vADrBDmd5MipGhMor0l8MybeRxmX4vI_V6bLvi_IE_J6Xol4B0Rj_98WCb8FRH2s8p52RXhyFecXgy0HFLUiP0A9VNtXio194bYluPuGCoqe3-cMS4hPowjglGiaUfQIczltquidDSA3NgeQCSxYZPZEOg" class="w-100 h-100" style="object-fit: cover;" alt="Safety Shoes">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--primary);">Wajib</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">Safety Shoes</h5>
+                                <p class="small text-muted mb-3">Melindungi kaki dari benda tajam, himpitan material berat, dan licin.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PPE Item 4 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="https://lh3.googleusercontent.com/aida/AP1WRLvgCnBC7f65sANftgaO9XDUSaE-pMHdyazM8pAc0TeXG-HiaaOPJ8pbO7F6BTNu_eYB8DNGDOiBICZ4spe7Rk3cKxQjMwJ5XE1QKDAGr-rtKx9NsEX1JvGV20jK5U6NY8C2GvRfnPtJ8Ce4-CXRTvifXwG4ksXJQH0wI4eo9iehCrPQX_43mS9C4qK09OcO6-5RWZK2Cqn6RhRj7HyFJvpc1LjQzo_ffSU1_OQP6Tq-8Tii-_dliBpjgDI" class="w-100 h-100" style="object-fit: cover;" alt="Gloves & Goggles">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--secondary-dark); color: #fff;">Kondisional</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">Gloves &amp; Goggles</h5>
+                                <p class="small text-muted mb-3">Perlindungan khusus untuk tangan dan mata saat aktivitas berisiko.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PPE Item 5 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="img/harness.png" class="w-100 h-100" style="object-fit: cover;" alt="Full Body Harness">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--primary);">Wajib Ketinggian</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">Full Body Harness</h5>
+                                <p class="small text-muted mb-3">Mengamankan pekerja dari risiko jatuh bebas saat di atas 1.8 meter.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PPE Item 6 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="img/earmuffs.png" class="w-100 h-100" style="object-fit: cover;" alt="Ear Muffs">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--secondary-dark); color: #fff;">Kondisional</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">Safety Ear Muffs</h5>
+                                <p class="small text-muted mb-3">Melindungi pendengaran dari paparan kebisingan alat berat.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PPE Item 7 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="img/respirator.png" class="w-100 h-100" style="object-fit: cover;" alt="Respirator">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--secondary-dark); color: #fff;">Kondisional</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">Respirator Mask</h5>
+                                <p class="small text-muted mb-3">Mencegah terhirupnya partikel debu halus dan emisi aspal.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PPE Item 8 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border border-light shadow-sm hover-shadow-up">
+                            <div class="position-relative" style="height: 200px; background-color: #eee;">
+                                <img src="img/baton.png" class="w-100 h-100" style="object-fit: cover;" alt="Baton">
+                                <span class="badge position-absolute top-0 end-0 m-3" style="background-color: var(--primary);">Wajib Lalin</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-2" style="color: var(--primary);">Traffic Baton</h5>
+                                <p class="small text-muted mb-3">Alat isyarat cahaya untuk mengatur lalu lintas malam hari.</p>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" style="width: 100%; background-color: var(--primary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Procedures & Training Section -->
+        <section class="position-relative overflow-hidden" style="background-color: var(--primary); color: white;">
+            <!-- Decor icon -->
+            <div class="position-absolute end-0 top-0 opacity-10" style="font-size: 350px; transform: translate(10%, -10%); pointer-events: none;">
+                <i class="bi bi-tools"></i>
+            </div>
+            
+            <div class="container position-relative z-2">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4" style="font-family: var(--font-heading);">Program Pelatihan &amp; Prosedur Keselamatan</h2>
+                        <p class="lead opacity-75 mb-5" style="font-family: var(--font-body);">Jasa Marga menyelenggarakan pelatihan K3 secara berkala untuk memastikan seluruh karyawan memiliki kompetensi dalam menghadapi situasi darurat dan menjalankan SOP keselamatan yang ketat.</p>
+                        
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex gap-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: var(--secondary); color: var(--primary-dark);">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Safety Induction Harian</h6>
+                                    <p class="small opacity-75 mb-0">Brifing rutin sebelum memulai aktivitas kerja di lapangan.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: var(--secondary); color: var(--primary-dark);">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Sertifikasi Keahlian K3</h6>
+                                    <p class="small opacity-75 mb-0">Pelatihan intensif bagi pengawas K3 untuk sertifikasi nasional.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: var(--secondary); color: var(--primary-dark);">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Simulasi Evakuasi Darurat</h6>
+                                    <p class="small opacity-75 mb-0">Latihan kesiapsiagaan bencana dan kecelakaan kerja secara rutin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 position-relative mt-5 mt-lg-0">
+                        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg border border-3 border-light border-opacity-25" style="cursor: pointer;">
+                            <img src="https://lh3.googleusercontent.com/aida/AP1WRLtaP-1lE0ysH6j5OnEGvKRCpvudCGgNEoG14soG2HtMbnO6-lQJN6-lTNh_5j5faqC-e9PM1gHXWJ0R08NL0rdmWy2usCMVJ4TKZHBf2CSXOxJAvG1akZO6yjD-55xyfRxWpBu009OdHGAMFA8_mVhvn8lWPBjLzMo4jIMRT0XTshnm8GTBI2pKP4COOaCrD95Pk05YMVscN2xh7VcD1KPU2gzjt2D7e6YfdrRLKkoLEmQFx3P6ppnUhUU" class="object-fit-cover w-100 h-100" alt="Training Session">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center hover-shadow-up" style="background: rgba(0,0,0,0.2);">
+                                <div class="rounded-circle border border-white d-flex align-items-center justify-content-center" style="width: 64px; height: 64px; background: rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
+                                    <i class="bi bi-play-fill fs-2 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute bottom-0 end-0 p-4 rounded shadow-lg d-none d-lg-block" style="background-color: var(--secondary); color: var(--primary-dark); transform: translate(10%, 20%); z-index: 3;">
+                            <div class="display-6 fw-bold">250+</div>
+                            <div class="small fw-bold">JAM PELATIHAN / TAHUN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Center Section -->
+        <section style="background-color: var(--bg-light);">
+            <div class="container">
+                <div class="bg-white p-4 p-md-5 rounded shadow-sm border">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-5 text-center text-lg-start">
+                            <h3 class="fw-bold mb-2" style="color: var(--primary); font-family: var(--font-heading);">Pusat Unduhan K3</h3>
+                            <p class="text-muted mb-0">Dapatkan panduan lengkap mengenai standar operasional, buku saku APD, dan kebijakan HSE Jasa Marga.</p>
+                        </div>
+                        <div class="col-lg-7 d-flex flex-column flex-sm-row justify-content-center justify-content-lg-end gap-3">
+                            <a href="docs/manual_k3_2024.pdf" download="Manual_K3_2024.pdf" class="btn btn-light border d-flex align-items-center gap-3 px-4 py-3 text-start hover-shadow-up" style="text-decoration: none;">
+                                <i class="bi bi-file-earmark-pdf fs-2" style="color: var(--primary);"></i>
+                                <div>
+                                    <div class="fw-bold" style="color: var(--primary);">Manual K3 2024</div>
+                                    <div class="small text-muted">PDF (12.4 MB)</div>
+                                </div>
+                            </a>
+                            <a href="docs/sop_penggunaan_apd.pdf" download="SOP_Penggunaan_APD.pdf" class="btn btn-light border d-flex align-items-center gap-3 px-4 py-3 text-start hover-shadow-up" style="text-decoration: none;">
+                                <i class="bi bi-journal-text fs-2" style="color: var(--primary);"></i>
+                                <div>
+                                    <div class="fw-bold" style="color: var(--primary);">SOP Penggunaan APD</div>
+                                    <div class="small text-muted">PDF (5.8 MB)</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--primary); color: white; padding-top: 60px;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <h3 class="fw-bold mb-4" style="font-family: var(--font-heading);">Jasa Marga</h3>
+                    <p class="opacity-75 small mb-4">Menghubungkan Nusantara melalui infrastruktur jalan tol yang handal, aman, dan berstandar internasional.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 40px; height: 40px;"><i class="bi bi-globe"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 40px; height: 40px;"><i class="bi bi-share"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4" style="color: var(--secondary);">Tentang Kami</h5>
+                    <ul class="list-unstyled small opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-shadow-up">Gambaran Umum</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Visi &amp; Misi</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Laporan Tahunan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4" style="color: var(--secondary);">Informasi K3</h5>
+                    <ul class="list-unstyled small opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Galeri APD</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Prosedur Evakuasi</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">HSE Management System</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4" style="color: var(--secondary);">Hubungi Kami</h5>
+                    <ul class="list-unstyled small opacity-75">
+                        <li class="mb-3"><a href="#" class="text-white text-decoration-none">Pusat Kontak</a></li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone"></i>
+                            <span>14080 (24 Jam)</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope"></i>
+                            <span>info@jasamarga.co.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-top border-light border-opacity-25 py-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <div class="small opacity-50">© 2024 Jasa Marga. All Rights Reserved.</div>
+                <div class="d-flex gap-4 small opacity-75">
+                    <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none">Syarat &amp; Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script/profil.js"></script>
+    <script>
         // Smooth scroll implementation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
             });
         });
     </script>

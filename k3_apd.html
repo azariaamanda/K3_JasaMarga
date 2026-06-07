@@ -75,12 +75,12 @@
         </section>
 
         <!-- Hazard Identification Section -->
-        <section style="background-color: var(--bg-light);">
+        <section style="background-color: var(--bg-light);" id="identifikasi-bahaya">
             <div class="container">
                 <div class="row align-items-end mb-5 gy-4 reveal">
                     <div class="col-lg-8">
                         <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Identifikasi Bahaya Lokasi</h2>
-                        <p class="text-muted mb-0">Prosedur proaktif dalam mendeteksi dan mengelola risiko di lingkungan kerja jalan tol, area konstruksi, hingga lingkungan perkantoran.</p>
+                        <p class="text-muted mb-0">Prosedur proaktif dalam mendeteksi dan mengelola risiko di lingkungan kerja jalan tol, area konstruksi, hingga lingkungan perkantoran sesuai dengan Standar Manajemen K3 Jasa Marga.</p>
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <div class="bg-white p-3 border rounded d-inline-flex gap-4 shadow-sm align-items-center">
@@ -97,37 +97,223 @@
                     </div>
                 </div>
 
-                <div class="row g-4 reveal">
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm p-4 hover-shadow-up">
-                            <div class="mb-4 rounded d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(0, 74, 153, 0.1); color: var(--primary);">
-                                <i class="bi bi-cone-striped fs-3"></i>
+                <div class="row reveal">
+                    <div class="col-12">
+                        <div class="accordion shadow-sm" id="accordionHazards">
+                            
+                            <!-- Proyek Konstruksi -->
+                            <div class="accordion-item border-0 mb-3 rounded overflow-hidden">
+                                <h2 class="accordion-header" id="headingKonstruksi">
+                                    <button class="accordion-button fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKonstruksi" aria-expanded="true" aria-controls="collapseKonstruksi" style="background-color: white; color: var(--primary); font-family: var(--font-heading);">
+                                        <i class="bi bi-cone-striped fs-4 me-3" style="color: var(--secondary-dark);"></i> 1. Proyek Konstruksi Jalan Tol
+                                    </button>
+                                </h2>
+                                <div id="collapseKonstruksi" class="accordion-collapse collapse show" aria-labelledby="headingKonstruksi" data-bs-parent="#accordionHazards">
+                                    <div class="accordion-body p-4 bg-white border-top">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover align-middle mb-0">
+                                                <thead class="table-light text-muted small">
+                                                    <tr>
+                                                        <th style="width: 20%;">Sumber Bahaya</th>
+                                                        <th style="width: 30%;">Jenis Bahaya</th>
+                                                        <th style="width: 30%;">Pencegahan</th>
+                                                        <th style="width: 20%;">APD Wajib</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Alat Berat (Excavator, Crane)</td>
+                                                        <td class="small text-muted">Tertimpa alat berat, kegagalan mesin, kelelahan operator (Fisik, Mekanik, Ergonomi).</td>
+                                                        <td class="small text-muted">SIO (Surat Izin Operator), Pengecekan Harian, Zona eksklusif, Safety briefing.</td>
+                                                        <td><span class="badge bg-primary rounded-pill mb-1">Helm</span> <span class="badge bg-secondary text-dark rounded-pill mb-1">Rompi</span> <span class="badge bg-dark rounded-pill">Sepatu Safety</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Pekerjaan di Ketinggian</td>
+                                                        <td class="small text-muted">Jatuh dari ketinggian, tertimpa material dari atas.</td>
+                                                        <td class="small text-muted">Safety net, Scaffolding berstandar, Pengawasan K3 yang ketat.</td>
+                                                        <td><span class="badge bg-danger rounded-pill mb-1">Harness</span> <span class="badge bg-primary rounded-pill">Helm</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Material Konstruksi (Aspal, Besi)</td>
+                                                        <td class="small text-muted">Iritasi aspal panas, tertimpa material, ISPA akibat debu semen.</td>
+                                                        <td class="small text-muted">Prosedur handling, MSDS, Ventilasi area kerja.</td>
+                                                        <td><span class="badge bg-dark rounded-pill mb-1">Sarung Tangan Panas</span> <span class="badge bg-info text-dark rounded-pill">Masker N95</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h4 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Bahaya Fisik</h4>
-                            <p class="text-muted mb-4 flex-grow-1">Identifikasi risiko terkait mesin berat, kebisingan, getaran, dan paparan cuaca ekstrim di lokasi proyek jalan tol.</p>
 
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm p-4 hover-shadow-up">
-                            <div class="mb-4 rounded d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(255, 209, 0, 0.2); color: var(--secondary-dark);">
-                                <i class="bi bi-exclamation-triangle-fill fs-3"></i>
+                            <!-- Gerbang Tol -->
+                            <div class="accordion-item border-0 mb-3 rounded overflow-hidden">
+                                <h2 class="accordion-header" id="headingGerbang">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGerbang" aria-expanded="false" aria-controls="collapseGerbang" style="background-color: white; color: var(--primary); font-family: var(--font-heading);">
+                                        <i class="bi bi-ticket-detailed fs-4 me-3" style="color: var(--secondary-dark);"></i> 2. Gerbang Tol (Gardu Tol)
+                                    </button>
+                                </h2>
+                                <div id="collapseGerbang" class="accordion-collapse collapse" aria-labelledby="headingGerbang" data-bs-parent="#accordionHazards">
+                                    <div class="accordion-body p-4 bg-white border-top">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover align-middle mb-0">
+                                                <thead class="table-light text-muted small">
+                                                    <tr>
+                                                        <th style="width: 20%;">Sumber Bahaya</th>
+                                                        <th style="width: 30%;">Jenis Bahaya</th>
+                                                        <th style="width: 30%;">Pencegahan</th>
+                                                        <th style="width: 20%;">APD Wajib</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Kendaraan Bermotor Tinggi</td>
+                                                        <td class="small text-muted">Tertabrak kendaraan, stres akibat antrian panjang (Fisik, Psikologis).</td>
+                                                        <td class="small text-muted">Barrier otomatis, CCTV, Pencahayaan memadai, Shift teratur.</td>
+                                                        <td><span class="badge bg-secondary text-dark rounded-pill mb-1">Rompi Reflektif</span> <span class="badge bg-dark rounded-pill">Sepatu Safety</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Peralatan Elektronik (Mesin Tol)</td>
+                                                        <td class="small text-muted">Sengatan listrik, postur kerja tidak ergonomis, jenuh.</td>
+                                                        <td class="small text-muted">Grounding peralatan, Meja kerja ergonomis, Rotasi pekerjaan.</td>
+                                                        <td><span class="badge bg-warning text-dark rounded-pill mb-1">Alas Karet</span> <span class="badge bg-light text-dark border rounded-pill">Kursi Ergonomis</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Paparan Polutan (CO, NOx)</td>
+                                                        <td class="small text-muted">Keracunan gas buang, ISPA akibat partikel debu jalanan.</td>
+                                                        <td class="small text-muted">Pemantauan kualitas udara, Gardu ber-AC, Rotasi tugas.</td>
+                                                        <td><span class="badge bg-info text-dark rounded-pill">Masker Respirator</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h4 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Bahaya Kimia</h4>
-                            <p class="text-muted mb-4 flex-grow-1">Pengelolaan zat berbahaya seperti aspal panas, bahan bakar, dan material konstruksi kimia guna mencegah keracunan atau iritasi.</p>
 
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm p-4 hover-shadow-up">
-                            <div class="mb-4 rounded d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(26, 28, 30, 0.1); color: var(--dark);">
-                                <i class="bi bi-person-workspace fs-3"></i>
+                            <!-- Jalur Jalan Tol -->
+                            <div class="accordion-item border-0 mb-3 rounded overflow-hidden">
+                                <h2 class="accordion-header" id="headingJalur">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJalur" aria-expanded="false" aria-controls="collapseJalur" style="background-color: white; color: var(--primary); font-family: var(--font-heading);">
+                                        <i class="bi bi-sign-turn-right fs-4 me-3" style="color: var(--secondary-dark);"></i> 3. Jalur Jalan Tol (Area Pemeliharaan)
+                                    </button>
+                                </h2>
+                                <div id="collapseJalur" class="accordion-collapse collapse" aria-labelledby="headingJalur" data-bs-parent="#accordionHazards">
+                                    <div class="accordion-body p-4 bg-white border-top">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover align-middle mb-0">
+                                                <thead class="table-light text-muted small">
+                                                    <tr>
+                                                        <th style="width: 20%;">Sumber Bahaya</th>
+                                                        <th style="width: 30%;">Jenis Bahaya</th>
+                                                        <th style="width: 30%;">Pencegahan</th>
+                                                        <th style="width: 20%;">APD Wajib</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Kendaraan Melaju Cepat</td>
+                                                        <td class="small text-muted">Petugas tertabrak, kecelakaan lalu lintas di zona kerja pemeliharaan.</td>
+                                                        <td class="small text-muted">Rambu peringatan, Traffic cone, TMC, Pekerjaan pada jam rendah lalin.</td>
+                                                        <td><span class="badge bg-secondary text-dark rounded-pill mb-1">Rompi Reflektif</span> <span class="badge bg-primary rounded-pill mb-1">Helm</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Pekerjaan Perkerasan (Pengaspalan)</td>
+                                                        <td class="small text-muted">Luka bakar aspal (140-180°C), Getaran tangan-lengan (HAVS).</td>
+                                                        <td class="small text-muted">Waktu paparan terbatas, Rotasi pekerja, Pendingin area kerja.</td>
+                                                        <td><span class="badge bg-dark rounded-pill mb-1">Sarung Tangan Kulit</span> <span class="badge bg-dark rounded-pill mb-1">Sepatu Safety</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h4 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Bahaya Ergonomis</h4>
-                            <p class="text-muted mb-4 flex-grow-1">Mitigasi cedera melalui pengaturan posisi kerja yang benar, alat angkut yang ergonomis, dan manajemen kelelahan operator.</p>
 
+                            <!-- Rest Area -->
+                            <div class="accordion-item border-0 mb-3 rounded overflow-hidden">
+                                <h2 class="accordion-header" id="headingRestArea">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRestArea" aria-expanded="false" aria-controls="collapseRestArea" style="background-color: white; color: var(--primary); font-family: var(--font-heading);">
+                                        <i class="bi bi-cup-hot fs-4 me-3" style="color: var(--secondary-dark);"></i> 4. Rest Area & Fasilitas
+                                    </button>
+                                </h2>
+                                <div id="collapseRestArea" class="accordion-collapse collapse" aria-labelledby="headingRestArea" data-bs-parent="#accordionHazards">
+                                    <div class="accordion-body p-4 bg-white border-top">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover align-middle mb-0">
+                                                <thead class="table-light text-muted small">
+                                                    <tr>
+                                                        <th style="width: 20%;">Sumber Bahaya</th>
+                                                        <th style="width: 30%;">Jenis Bahaya</th>
+                                                        <th style="width: 30%;">Pencegahan</th>
+                                                        <th style="width: 20%;">APD Wajib</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Area Parkir & SPBU</td>
+                                                        <td class="small text-muted">Kendaraan berat mundur, terpeleset di area basah, tertabrak.</td>
+                                                        <td class="small text-muted">Marka parkir tegas, Cermin tikungan, Petugas parkir, CCTV.</td>
+                                                        <td><span class="badge bg-secondary text-dark rounded-pill mb-1">Rompi Reflektif</span> <span class="badge bg-dark rounded-pill mb-1">Sepatu Antiselip</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Area Makanan / Dapur Restoran</td>
+                                                        <td class="small text-muted">Luka bakar minyak panas, ledakan gas, terpeleset/jatuh.</td>
+                                                        <td class="small text-muted">Instalasi gas SNI, APAR, Matting anti-selip, SOP peralatan dapur.</td>
+                                                        <td><span class="badge bg-warning text-dark rounded-pill mb-1">Celemek</span> <span class="badge bg-dark rounded-pill mb-1">Sarung Tangan</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Kantor Pusat -->
+                            <div class="accordion-item border-0 rounded overflow-hidden">
+                                <h2 class="accordion-header" id="headingKantor">
+                                    <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKantor" aria-expanded="false" aria-controls="collapseKantor" style="background-color: white; color: var(--primary); font-family: var(--font-heading);">
+                                        <i class="bi bi-building fs-4 me-3" style="color: var(--secondary-dark);"></i> 5. Kantor Pusat / Regional & Workshop
+                                    </button>
+                                </h2>
+                                <div id="collapseKantor" class="accordion-collapse collapse" aria-labelledby="headingKantor" data-bs-parent="#accordionHazards">
+                                    <div class="accordion-body p-4 bg-white border-top">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover align-middle mb-0">
+                                                <thead class="table-light text-muted small">
+                                                    <tr>
+                                                        <th style="width: 20%;">Sumber Bahaya</th>
+                                                        <th style="width: 30%;">Jenis Bahaya</th>
+                                                        <th style="width: 30%;">Pencegahan</th>
+                                                        <th style="width: 20%;">APD Wajib</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Peralatan Kantor & Layar Komputer</td>
+                                                        <td class="small text-muted">Sengatan listrik kabel terbuka, nyeri punggung (ergonomi), CVS (mata).</td>
+                                                        <td class="small text-muted">Meja ergonomis, Istirahat mata 20-20-20, Manajemen kabel, MCB/ELCB.</td>
+                                                        <td><span class="badge bg-light text-dark border rounded-pill mb-1">Kacamata Anti-radiasi</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Kebakaran & Evakuasi Gedung</td>
+                                                        <td class="small text-muted">Terjebak asap, terpeleset di tangga evakuasi, lift macet.</td>
+                                                        <td class="small text-muted">APAR di setiap lantai, Sprinkler, Fire alarm, Simulasi kebakaran rutin.</td>
+                                                        <td><span class="badge bg-danger rounded-pill mb-1">Masker Darurat</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold text-dark">Workshop / Bengkel Alat Berat</td>
+                                                        <td class="small text-muted">Percikan api las, keracunan asap las, terpeleset tumpahan oli mesin.</td>
+                                                        <td class="small text-muted">Tirai pengaman las, Exhaust fan, Prosedur pembuangan limbah B3.</td>
+                                                        <td><span class="badge bg-dark rounded-pill mb-1">Helm Las</span> <span class="badge bg-dark rounded-pill mb-1">Sarung Tangan Kulit</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -275,62 +461,43 @@
             </div>
         </section>
 
-        <!-- Procedures & Training Section -->
-        <section class="position-relative overflow-hidden" style="background-color: var(--primary); color: white;">
+        <!-- Video Edukasi & Training Section -->
+        <section class="position-relative overflow-hidden reveal" style="background-color: var(--primary); color: white;">
             <!-- Decor icon -->
             <div class="position-absolute end-0 top-0 opacity-10" style="font-size: 350px; transform: translate(10%, -10%); pointer-events: none;">
-                <i class="bi bi-tools"></i>
+                <i class="bi bi-camera-video"></i>
             </div>
             
             <div class="container position-relative z-2">
-                <div class="row align-items-center g-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold mb-3" style="font-family: var(--font-heading);">Video Edukasi &amp; Pelatihan K3</h2>
+                    <p class="opacity-75 mx-auto" style="max-width: 700px;">Saksikan panduan keselamatan interaktif sebagai bagian dari program induction dan edukasi K3 wajib bagi seluruh personel Jasa Marga dan kontraktor terkait.</p>
+                </div>
+                
+                <div class="row g-5 align-items-stretch">
+                    <!-- Video 1 -->
                     <div class="col-lg-6">
-                        <h2 class="fw-bold mb-4" style="font-family: var(--font-heading);">Program Pelatihan &amp; Prosedur Keselamatan</h2>
-                        <p class="lead opacity-75 mb-5" style="font-family: var(--font-body);">Jasa Marga menyelenggarakan pelatihan K3 secara berkala untuk memastikan seluruh karyawan memiliki kompetensi dalam menghadapi situasi darurat dan menjalankan SOP keselamatan yang ketat.</p>
-                        
-                        <div class="d-flex flex-column gap-4">
-                            <div class="d-flex gap-3">
-                                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: var(--secondary); color: var(--primary-dark);">
-                                    <i class="bi bi-check-lg"></i>
-                                </div>
-                                <div>
-                                    <h6 class="fw-bold mb-1">Safety Induction Harian</h6>
-                                    <p class="small opacity-75 mb-0">Brifing rutin sebelum memulai aktivitas kerja di lapangan.</p>
-                                </div>
+                        <div class="card h-100 border-0 bg-transparent">
+                            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg border border-2 border-light border-opacity-25 mb-4 hover-shadow-up">
+                                <iframe src="https://www.youtube.com/embed/ifkujLi23Vc" title="10 Tips Keselamatan di Proyek Konstruksi !!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <div class="d-flex gap-3">
-                                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: var(--secondary); color: var(--primary-dark);">
-                                    <i class="bi bi-check-lg"></i>
-                                </div>
-                                <div>
-                                    <h6 class="fw-bold mb-1">Sertifikasi Keahlian K3</h6>
-                                    <p class="small opacity-75 mb-0">Pelatihan intensif bagi pengawas K3 untuk sertifikasi nasional.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex gap-3">
-                                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: var(--secondary); color: var(--primary-dark);">
-                                    <i class="bi bi-check-lg"></i>
-                                </div>
-                                <div>
-                                    <h6 class="fw-bold mb-1">Simulasi Evakuasi Darurat</h6>
-                                    <p class="small opacity-75 mb-0">Latihan kesiapsiagaan bencana dan kecelakaan kerja secara rutin.</p>
-                                </div>
+                            <div class="px-2">
+                                <h5 class="fw-bold mb-2 text-white" style="font-family: var(--font-heading);">10 Tips Keselamatan di Proyek Konstruksi</h5>
+                                <p class="small opacity-75 mb-0">Video ini membahas 10 tips keselamatan harian yang wajib diterapkan di proyek konstruksi, termasuk penggunaan APD, inspeksi alat, kepatuhan rambu K3, hingga prosedur darurat.</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="col-lg-6 position-relative mt-5 mt-lg-0">
-                        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg border border-3 border-light border-opacity-25" style="cursor: pointer;">
-                            <img src="https://lh3.googleusercontent.com/aida/AP1WRLtaP-1lE0ysH6j5OnEGvKRCpvudCGgNEoG14soG2HtMbnO6-lQJN6-lTNh_5j5faqC-e9PM1gHXWJ0R08NL0rdmWy2usCMVJ4TKZHBf2CSXOxJAvG1akZO6yjD-55xyfRxWpBu009OdHGAMFA8_mVhvn8lWPBjLzMo4jIMRT0XTshnm8GTBI2pKP4COOaCrD95Pk05YMVscN2xh7VcD1KPU2gzjt2D7e6YfdrRLKkoLEmQFx3P6ppnUhUU" class="object-fit-cover w-100 h-100" alt="Training Session">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center hover-shadow-up" style="background: rgba(0,0,0,0.2);">
-                                <div class="rounded-circle border border-white d-flex align-items-center justify-content-center" style="width: 64px; height: 64px; background: rgba(255,255,255,0.2); backdrop-filter: blur(4px);">
-                                    <i class="bi bi-play-fill fs-2 text-white"></i>
-                                </div>
+                    <!-- Video 2 -->
+                    <div class="col-lg-6">
+                        <div class="card h-100 border-0 bg-transparent">
+                            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg border border-2 border-light border-opacity-25 mb-4 hover-shadow-up">
+                                <iframe src="https://www.youtube.com/embed/e5ib5rlZHGE" title="Safety Induction PT Jasamarga Tollroad Operator" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                        </div>
-                        <div class="position-absolute bottom-0 end-0 p-4 rounded shadow-lg d-none d-lg-block" style="background-color: var(--secondary); color: var(--primary-dark); transform: translate(10%, 20%); z-index: 3;">
-                            <div class="display-6 fw-bold">250+</div>
-                            <div class="small fw-bold">JAM PELATIHAN / TAHUN</div>
+                            <div class="px-2">
+                                <h5 class="fw-bold mb-2 text-white" style="font-family: var(--font-heading);">Safety Induction Jasa Marga Tollroad Operator</h5>
+                                <p class="small opacity-75 mb-0">Panduan lengkap prosedur tanggap darurat, evakuasi, dan aturan keselamatan di lingkungan Kantor Pusat PT Jasa Marga Tollroad Operator.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -4,12 +4,566 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K3 PT Jasa Marga</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style/profil.css">
 </head>
 <body>
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="beranda.html">
+            <div class="nav-logo-icon">
+                <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga">
+            </div>
+        </a>
 
+        <ul class="nav-links" id="navLinks">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="profil.html" class="active">Profil Perusahaan</a></li>
+            <li><a href="k3_apd.html">K3 & APD</a></li>
+            <li><a href="lokasi_media.html">Lokasi & Video</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+
+        <div class="nav-burger" id="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="section-hero" id="hero">
+        <div class="hero-bg">
+            <img src="img/profil/hero-bg.png" alt="Jasa Marga Hero" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-text reveal">
+                <span class="hero-badge">Profil Perusahaan</span>
+                <h1 class="hero-title">PT Jasa Marga Persero Tbk</h1>
+                <p class="hero-subtitle">Menghubungkan Nusantara melalui infrastruktur jalan tol yang handal, aman, dan berkelanjutan dengan Standar Keselamatan Tertinggi untuk keberlanjutan masa depan transportasi Indonesia.</p>
+                <div class="hero-cta">
+                    <a href="#tentang-kami" class="btn-hero-primary">Pelajari Lebih Lanjut <i class="bi bi-arrow-down-circle"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <section class="section-tentang" id="tentang-kami">
+        <div class="container">
+
+            <!-- Tentang Kami -->
+            <div class="section-header reveal">
+                <span class="section-badge">Tentang Kami</span>
+                <h2 class="section-title">Tentang Kami</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="tentang-content">
+                <div class="tentang-stat-row reveal">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="45" data-suffix="%">0%</span>
+                        <span class="stat-label">Pangsa Pasar Jalan Tol Komersial</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="1286" data-prefix="±" data-suffix="km">0km</span>
+                        <span class="stat-label">Panjang Jalan Tol Beroperasi</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="36">0</span>
+                        <span class="stat-label">Konsesi Jalan Tol Dikelola</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="46" data-suffix="+">0+</span>
+                        <span class="stat-label">Tahun Pengalaman Beroperasi</span>
+                    </div>
+                </div>
+
+                <div class="tentang-text-box reveal">
+                    <p>
+                        Jasa Marga merupakan pengembang dan operator jalan tol pertama serta terbesar di Indonesia. Saat ini mengelola <strong>36 konsesi jalan tol</strong> dengan total panjang jalan <strong>1.736 km</strong>. Sebagai salah satu Badan Usaha Milik Negara, <strong>70% saham Jasa Marga dimiliki oleh Pemerintah Indonesia</strong>. Sejak 2007, Jasa Marga menjadi perusahaan publik melalui IPO dan mencatatkan sahamnya di Bursa Efek Indonesia.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Regional & Subholding -->
+            <div class="section-header mt-5 reveal">
+                <h2 class="section-title">Regional &amp; Subholding</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="row g-4 regional-cards">
+
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="regional-card">
+                        <div class="regional-card-img">
+                            <img src="img/profil/regional-jabodetabek.png" alt="Jasamarga Metropolitan Tollroad" class="regional-photo">
+                            <div class="regional-photo-overlay"></div>
+                            <div class="regional-badge">Regional Division</div>
+                        </div>
+                        <div class="regional-card-body">
+                            <h5 class="regional-card-title">Jasamarga Metropolitan Tollroad</h5>
+                            <p class="regional-card-text">Salah satu divisi regional Jasa Marga yang berkantor pusat di Plaza Tol Cililitan, Jln. Cililitan Besar, Jakarta 13510. Regional ini meliputi jaringan jalan tol di kawasan Jabodetabek.</p>
+                            <div class="regional-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Jakarta, DKI Jakarta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="regional-card">
+                        <div class="regional-card-img">
+                            <img src="img/profil/regional-nusantara.png" alt="Jasamarga Nusantara Tollroad" class="regional-photo">
+                            <div class="regional-photo-overlay"></div>
+                            <div class="regional-badge">Regional Division</div>
+                        </div>
+                        <div class="regional-card-body">
+                            <h5 class="regional-card-title">Jasamarga Nusantara Tollroad</h5>
+                            <p class="regional-card-text">Salah satu divisi regional Jasa Marga berkantor pusat di Medan, Sumatera Utara. Meliputi jaringan jalan tol di Sumatera Utara, Kalimantan Timur, Sulawesi Utara, dan Bali.</p>
+                            <div class="regional-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Medan, Sumatera Utara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="regional-card">
+                        <div class="regional-card-img">
+                            <img src="img/profil/regional-transjawa.png" alt="PT Jasamarga Transjawa Tol" class="regional-photo">
+                            <div class="regional-photo-overlay"></div>
+                            <div class="regional-badge subholding">Subholding</div>
+                        </div>
+                        <div class="regional-card-body">
+                            <h5 class="regional-card-title">PT Jasamarga Transjawa Tol</h5>
+                            <p class="regional-card-text">Salah satu anak perusahaan (subholding) Jasa Marga berkantor pusat di Bekasi. Meliputi jaringan jalan tol di Provinsi Jawa Barat, Jawa Tengah, dan Jawa Timur.</p>
+                            <div class="regional-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Bekasi, Jawa Barat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-visi-misi" id="visi-misi">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge light">Arah Perusahaan</span>
+                <h2 class="section-title light">Visi &amp; Misi</h2>
+                <div class="title-underline yellow"></div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-5 reveal">
+                    <div class="visi-card">
+                        <div class="vm-icon-wrap">
+                            <i class="bi bi-eye-fill"></i>
+                        </div>
+                        <h3 class="vm-label">Visi</h3>
+                        <p class="vm-text visi-text">"Inovasi menuju peningkatan nilai yang berkelanjutan."</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal">
+                    <div class="misi-card">
+                        <div class="vm-icon-wrap">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h3 class="vm-label">Misi</h3>
+                        <ul class="misi-list">
+                            <li>
+                                <span class="misi-bullet"><i class="bi bi-chevron-right"></i></span>
+                                Mengembangkan jaringan jalan tol dan menjalankan usaha di rantai nilai bisnis dalam skala nasional maupun internasional.
+                            </li>
+                            <li>
+                                <span class="misi-bullet"><i class="bi bi-chevron-right"></i></span>
+                                Mengembangkan inovasi untuk memberikan pelayanan unggul, meningkatkan keselamatan, kenyamanan, dan kemudahan perjalanan, serta menjalankan operasi dan proses bisnis Perusahaan dengan efisien dan berkesinambungan.
+                            </li>
+                            <li>
+                                <span class="misi-bullet"><i class="bi bi-chevron-right"></i></span>
+                                Menerapkan prinsip-prinsip lingkungan, sosial, dan tata kelola Perusahaan yang baik untuk memastikan ketahanan usaha.
+                            </li>
+                            <li>
+                                <span class="misi-bullet"><i class="bi bi-chevron-right"></i></span>
+                                Mendorong peningkatan manfaat yang berkelanjutan bagi masyarakat, pemegang saham, dan stakeholder lainnya, serta peningkatan nilai Perusahaan secara menyeluruh.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-rekam-jejak" id="rekam-jejak">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Perjalanan Kami</span>
+                <h2 class="section-title">Rekam Jejak Perusahaan</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline-zigzag">
+
+                <!-- Item 1 — KIRI -->
+                <div class="tz-item tz-left reveal">
+                    <div class="tz-content">
+                        <div class="tz-number-badge">1978</div>
+                        <h5>Pendirian &amp; Jalan Tol Pertama</h5>
+                        <p>Jasa Marga didirikan dengan fokus pengelolaan usaha, pemeliharaan, dan pengadaan jaringan jalan tol. Jagorawi merupakan jalan tol pertama yang mulai dioperasikan di Indonesia.</p>
+                    </div>
+                    <div class="tz-year-bubble"></div>
+                    <div class="tz-spacer"></div>
+                </div>
+
+                <!-- Item 2 — KANAN -->
+                <div class="tz-item tz-right reveal">
+                    <div class="tz-spacer"></div>
+                    <div class="tz-year-bubble2"></div>
+                    <div class="tz-content">
+                        <div class="tz-number-badge">1987</div>
+                        <h5>Keterbukaan Swasta &amp; Ekspansi</h5>
+                        <p>Pemerintah menawarkan kesempatan kepada pihak swasta untuk berpartisipasi di bisnis jalan tol melalui sistem BOT (Build, Operate, and Transfer). Jalan tol Jakarta dioperasikan secara bertahap.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 — KIRI -->
+                <div class="tz-item tz-left reveal">
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2004</div>
+                        <h5>Regulasi Baru — BPJT</h5>
+                        <p>Fungsi kewenangan pengatur jalan tol dikembalikan kepada Badan Pengatur Jalan Tol (BPJT) di bawah Kementerian PUPR.</p>
+                    </div>
+                    <div class="tz-year-bubble"></div>
+                    <div class="tz-spacer"></div>
+                </div>
+
+                <!-- Item 4 — KANAN -->
+                <div class="tz-item tz-right reveal">
+                    <div class="tz-spacer"></div>
+                    <div class="tz-year-bubble2"></div>
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2007</div>
+                        <h5>IPO di Bursa Efek Indonesia</h5>
+                        <p>Jasa Marga menjadi perusahaan publik melalui Penawaran Umum Perdana Saham (IPO) dan mencatatkan sahamnya di Bursa Efek Indonesia.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 — KIRI -->
+                <div class="tz-item tz-left reveal">
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2017</div>
+                        <h5>Sistem Elektronik &amp; Inovasi Pendanaan</h5>
+                        <p>Sistem pembayaran elektronik diimplementasikan di seluruh jalan tol. Menerbitkan produk alternatif pendanaan: Sekuritisasi Jagorawi, Project Bond MLJ, dan Komodo Bond.</p>
+                    </div>
+                    <div class="tz-year-bubble"></div>
+                    <div class="tz-spacer"></div>
+                </div>
+
+                <!-- Item 6 — KANAN -->
+                <div class="tz-item tz-right reveal">
+                    <div class="tz-spacer"></div>
+                    <div class="tz-year-bubble2"></div>
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2018</div>
+                        <h5>Tol Trans Jawa Tersambung</h5>
+                        <p>Mengoperasikan sepanjang ±1.000 km. Sukses menyambungkan kota Jakarta dan Surabaya dengan pengoperasian Tol Trans Jawa. Menerbitkan Reksa Dana Penyertaan Terbatas.</p>
+                    </div>
+                </div>
+
+                <!-- Item 7 — KIRI -->
+                <div class="tz-item tz-left reveal">
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2019</div>
+                        <h5>28 Konsesi &amp; Inovasi DINFRA</h5>
+                        <p>Menggandakan bisnis dengan mengoperasikan 28 konsesi jalan tol sepanjang ±1.162 km. Menerbitkan Dana Investasi Infrastruktur (DINFRA) dan Sukuk Ijarah di ruas Gempol-Pandaan.</p>
+                    </div>
+                    <div class="tz-year-bubble"></div>
+                    <div class="tz-spacer"></div>
+                </div>
+
+                <!-- Item 8 — KANAN -->
+                <div class="tz-item tz-right reveal">
+                    <div class="tz-spacer"></div>
+                    <div class="tz-year-bubble2"></div>
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2020</div>
+                        <h5>Ekspansi 1.191 km</h5>
+                        <p>Mengoperasikan jalan tol sepanjang 1.191 km. Menerbitkan Surat Berharga Komersial (SBK) dan Obligasi Penawaran Umum Berkelanjutan Tahap I.</p>
+                    </div>
+                </div>
+
+                <!-- Item 9 — KIRI -->
+                <div class="tz-item tz-left reveal">
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2021</div>
+                        <h5>Pusat Komando ITS Pertama</h5>
+                        <p>Menambah 55,9 km pengoperasian jalan tol menjadi ±1.246 km dan meresmikan Jasa Marga Tollroad Command Center berbasis Intelligent Transportation System pertama di Indonesia.</p>
+                    </div>
+                    <div class="tz-year-bubble"></div>
+                    <div class="tz-spacer"></div>
+                </div>
+
+                <!-- Item 10 — KANAN -->
+                <div class="tz-item tz-right reveal">
+                    <div class="tz-spacer"></div>
+                    <div class="tz-year-bubble2"></div>
+                    <div class="tz-content">
+                        <div class="tz-number-badge">2022</div>
+                        <h5>Spin Off Transjawa Tollroad</h5>
+                        <p>Spin Off Transjawa Tollroad Regional Division menjadi sub holding PT Jasamarga Transjawa Tol, memperkuat struktur bisnis perusahaan secara keseluruhan.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-landasan-hukum" id="landasan-hukum">
+
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Regulasi</span>
+                <h2 class="section-title">Landasan Hukum</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Kerangka peraturan yang mendasari penerapan K3 di PT Jasa Marga</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="hukum-tab-nav reveal">
+                <button class="hukum-tab-btn active" data-tab="uu" onclick="switchTab(this, 'uu')">
+                    <i class="bi bi-book-fill"></i>
+                    <span>Undang-Undang</span>
+                    <span class="tab-count">4</span>
+                </button>
+                <button class="hukum-tab-btn" data-tab="pp" onclick="switchTab(this, 'pp')">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                    <span>Peraturan Pemerintah</span>
+                    <span class="tab-count">4</span>
+                </button>
+                <button class="hukum-tab-btn" data-tab="pm" onclick="switchTab(this, 'pm')">
+                    <i class="bi bi-journal-check"></i>
+                    <span>Peraturan Menteri</span>
+                    <span class="tab-count">5</span>
+                </button>
+                <button class="hukum-tab-btn" data-tab="iso" onclick="switchTab(this, 'iso')">
+                    <i class="bi bi-globe2"></i>
+                    <span>Standar Internasional</span>
+                    <span class="tab-count">4</span>
+                </button>
+            </div>
+
+            <!-- Tab Panels -->
+            <div class="hukum-tab-panels">
+
+                <!-- UU -->
+                <div class="hukum-tab-panel active" id="tab-uu">
+                    <div class="row g-4">
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">01</div><h5 class="hukum-title">UU No. 1 Tahun 1970 tentang Keselamatan Kerja</h5><p class="hukum-desc">Mengatur keselamatan tenaga kerja di tempat kerja, termasuk penggunaan alat, bahan, dan lingkungan kerja yang aman.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">02</div><h5 class="hukum-title">UU No. 13 Tahun 2003 tentang Ketenagakerjaan</h5><p class="hukum-desc">Pasal 86: setiap pekerja berhak atas perlindungan K3. Pasal 87: setiap perusahaan wajib menerapkan Sistem Manajemen K3 (SMK3).</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">03</div><h5 class="hukum-title">UU No. 2 Tahun 2017 tentang Jasa Konstruksi</h5><p class="hukum-desc">Mengatur penyelenggaraan jasa konstruksi, termasuk standar keselamatan dalam proyek konstruksi jalan tol.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">04</div><h5 class="hukum-title">UU No. 22 Tahun 2009 tentang LLAJ</h5><p class="hukum-desc">Relevan untuk operasional jalan tol, keselamatan pengguna jalan, dan manajemen lalu lintas angkutan jalan.</p></div></div>
+                    </div>
+                </div>
+
+                <!-- PP -->
+                <div class="hukum-tab-panel" id="tab-pp">
+                    <div class="row g-4">
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">01</div><h5 class="hukum-title">PP No. 22 Tahun 2020 tentang Jasa Konstruksi</h5><p class="hukum-desc">Mengatur lebih detail aspek keselamatan konstruksi termasuk Standar Keamanan, Keselamatan, Kesehatan, dan Keberlanjutan (K4).</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">02</div><h5 class="hukum-title">PP No. 50 Tahun 2012 tentang Penerapan SMK3</h5><p class="hukum-desc">Wajib bagi perusahaan dengan risiko tinggi seperti konstruksi jalan tol untuk menerapkan sistem manajemen K3 secara terintegrasi.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">03</div><h5 class="hukum-title">PP No. 15 Tahun 2005 tentang Jalan Tol</h5><p class="hukum-desc">Mengatur penyelenggaraan jalan tol, termasuk aspek keselamatan dan pelayanan kepada pengguna jalan.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">04</div><h5 class="hukum-title">PP No. 34 Tahun 2006 tentang Jalan</h5><p class="hukum-desc">Mengatur penyelenggaraan jalan termasuk aspek pembangunan dan pemeliharaan infrastruktur jalan.</p></div></div>
+                    </div>
+                </div>
+
+                <!-- Peraturan Menteri -->
+                <div class="hukum-tab-panel" id="tab-pm">
+                    <div class="row g-4">
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">01</div><h5 class="hukum-title">Permenaker No. 5 Tahun 2018 tentang K3 Lingkungan Kerja</h5><p class="hukum-desc">Mengatur faktor fisika, kimia, biologi, dan ergonomi di tempat kerja sebagai dasar penerapan SMK3.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">02</div><h5 class="hukum-title">Permenaker No. 9 Tahun 2016 tentang K3 Ketinggian</h5><p class="hukum-desc">Mengatur tata cara bekerja di ketinggian yang relevan dengan pekerjaan konstruksi jembatan dan jalan layang.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">03</div><h5 class="hukum-title">Permen PUPR No. 21/PRT/M/2019 tentang SMKK</h5><p class="hukum-desc">Mengatur penerapan K3 di seluruh proyek konstruksi bidang pekerjaan umum, termasuk jalan tol.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">04</div><h5 class="hukum-title">Permen PUPR No. 10 Tahun 2021 tentang SMKK</h5><p class="hukum-desc">Mengatur lebih lanjut penyelenggaraan konstruksi yang aman dan mewajibkan Rencana K3 Kontrak (RK3K).</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card"><div class="hukum-number-badge">05</div><h5 class="hukum-title">Permenaker No. 8 Tahun 2020 tentang APD</h5><p class="hukum-desc">Mengatur jenis, standar, dan kewajiban penggunaan Alat Pelindung Diri (APD) di tempat kerja.</p></div></div>
+                    </div>
+                </div>
+
+                <!-- Standar Internasional -->
+                <div class="hukum-tab-panel" id="tab-iso">
+                    <div class="row g-4">
+                        <div class="col-lg-6 reveal"><div class="hukum-card iso-card"><div class="hukum-number-badge iso">ISO</div><h5 class="hukum-title">ISO 45001:2018 — OHS Management System</h5><p class="hukum-desc">Standar internasional untuk sistem manajemen keselamatan dan kesehatan kerja. Pengganti OHSAS 18001 yang lebih komprehensif.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card iso-card"><div class="hukum-number-badge iso">ISO</div><h5 class="hukum-title">ISO 9001:2015 — Quality Management System</h5><p class="hukum-desc">Menjamin kualitas dalam proses konstruksi dan operasional jalan tol secara konsisten dan terstandar.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card iso-card"><div class="hukum-number-badge iso">ISO</div><h5 class="hukum-title">ISO 14001:2015 — Environmental Management System</h5><p class="hukum-desc">Mengatur pengelolaan dampak lingkungan dari proyek dan operasional jalan tol secara berkelanjutan.</p></div></div>
+                        <div class="col-lg-6 reveal"><div class="hukum-card iso-card"><div class="hukum-number-badge iso">OHSAS</div><h5 class="hukum-title">OHSAS 18001 (Referensi Historis)</h5><p class="hukum-desc">Standar K3 lama yang kini telah digantikan ISO 45001, namun masih sering dijadikan referensi dalam dokumen lama perusahaan.</p></div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-struktur" id="struktur-organisasi">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <span class="section-badge">Tata Kelola</span>
+                <h2 class="section-title">Struktur Organisasi</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="org-chart-wrapper reveal">
+                <div class="org-chart-placeholder">
+                    <img src="img/profil/StrukturOrganisasi.jpeg" alt="Struktur Organisasi Jasa Marga" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="section-header mt-5 reveal">
+                <h2 class="section-title">Alur Pelaksanaan K3</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="k3-flow-wrapper reveal">
+                <div class="k3-flow">
+
+                    <div class="k3-flow-item">
+                        <div class="k3-flow-step">
+                            <div class="k3-step-number">1</div>
+                            <div class="k3-step-icon"><i class="bi bi-person-badge-fill"></i></div>
+                            <div class="k3-step-title">DIRUT</div>
+                            <div class="k3-step-sub">Direktur Utama</div>
+                        </div>
+                        <div class="k3-step-desc">Menetapkan kebijakan K3</div>
+                    </div>
+
+                    <div class="k3-flow-arrow"><i class="bi bi-chevron-right"></i></div>
+
+                    <div class="k3-flow-item">
+                        <div class="k3-flow-step">
+                            <div class="k3-step-number">2</div>
+                            <div class="k3-step-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <div class="k3-step-title">DIR KEU &amp; MR</div>
+                            <div class="k3-step-sub">Dir. Keuangan &amp; Manajemen Risiko</div>
+                        </div>
+                        <div class="k3-step-desc">Mengelola risiko</div>
+                    </div>
+
+                    <div class="k3-flow-arrow"><i class="bi bi-chevron-right"></i></div>
+
+                    <div class="k3-flow-item">
+                        <div class="k3-flow-step">
+                            <div class="k3-step-number">3</div>
+                            <div class="k3-step-icon"><i class="bi bi-shield-check"></i></div>
+                            <div class="k3-step-title">RISK &amp; QHSE</div>
+                            <div class="k3-step-sub">Group Head</div>
+                        </div>
+                        <div class="k3-step-desc">Menyusun prosedur &amp; SOP</div>
+                    </div>
+
+                    <div class="k3-flow-arrow"><i class="bi bi-chevron-right"></i></div>
+
+                    <div class="k3-flow-item">
+                        <div class="k3-flow-step">
+                            <div class="k3-step-number">4</div>
+                            <div class="k3-step-icon"><i class="bi bi-people-fill"></i></div>
+                            <div class="k3-step-title">UNIT KERJA</div>
+                            <div class="k3-step-sub">Operasi, Layanan &amp; Karyawan</div>
+                        </div>
+                        <div class="k3-step-desc">Melaksanakan K3 di lapangan</div>
+                    </div>
+
+                    <div class="k3-flow-arrow"><i class="bi bi-chevron-right"></i></div>
+
+                    <div class="k3-flow-item">
+                        <div class="k3-flow-step">
+                            <div class="k3-step-number">5</div>
+                            <div class="k3-step-icon"><i class="bi bi-clipboard2-check-fill"></i></div>
+                            <div class="k3-step-title">INTERNAL AUDIT</div>
+                            <div class="k3-step-sub">Auditor Independen</div>
+                        </div>
+                        <div class="k3-step-desc">Mengawasi &amp; evaluasi</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="k3-accordion-wrapper">
+                <h4 class="accordion-section-title reveal">Detail Peran &amp; Tanggung Jawab</h4>
+
+                <div class="k3-accordion" id="accordionK3">
+
+                    <div class="k3-accordion-item reveal">
+                        <button class="k3-accordion-btn" data-step="1" onclick="toggleAccordion(this)">
+                            <span class="acc-step-num">1</span>
+                            <span class="acc-step-label">Direktur Utama (DIRUT)</span>
+                            <i class="bi bi-chevron-down acc-icon"></i>
+                        </button>
+                        <div class="k3-accordion-body">
+                            <p>Direktur Utama berperan sebagai pemangku kebijakan tertinggi yang menetapkan visi, misi, dan arah kebijakan strategis perusahaan terkait keselamatan kerja (K3).</p>
+                        </div>
+                    </div>
+
+                    <div class="k3-accordion-item reveal">
+                        <button class="k3-accordion-btn" data-step="2" onclick="toggleAccordion(this)">
+                            <span class="acc-step-num">2</span>
+                            <span class="acc-step-label">Direktur Keuangan &amp; Manajemen Risiko (DIR KEU &amp; MR)</span>
+                            <i class="bi bi-chevron-down acc-icon"></i>
+                        </button>
+                        <div class="k3-accordion-body">
+                            <p>Bertanggung jawab menerima arah kebijakan dari Dirut dan bertugas melakukan pengelolaan serta pengendalian berbagai risiko perusahaan secara finansial maupun operasional.</p>
+                        </div>
+                    </div>
+
+                    <div class="k3-accordion-item reveal">
+                        <button class="k3-accordion-btn" data-step="3" onclick="toggleAccordion(this)">
+                            <span class="acc-step-num">3</span>
+                            <span class="acc-step-label">Risk &amp; QHSE Group Head</span>
+                            <i class="bi bi-chevron-down acc-icon"></i>
+                        </button>
+                        <div class="k3-accordion-body">
+                            <p>Menerjemahkan kebijakan dari direksi menjadi prosedur operasional, standar operasional prosedur (SOP), pedoman kerja konkret, serta merancang program pelatihan K3 di lingkungan kerja.</p>
+                        </div>
+                    </div>
+
+                    <div class="k3-accordion-item reveal">
+                        <button class="k3-accordion-btn" data-step="4" onclick="toggleAccordion(this)">
+                            <span class="acc-step-num">4</span>
+                            <span class="acc-step-label">Unit Kerja (Operasi, Layanan &amp; Karyawan)</span>
+                            <i class="bi bi-chevron-down acc-icon"></i>
+                        </button>
+                        <div class="k3-accordion-body">
+                            <p>Menjadi eksekutor di lapangan. Seluruh divisi operasional jalan tol, pemeliharaan, gerbang tol, hingga seluruh staf wajib menjalankan prosedur keselamatan secara disiplin demi mengurangi risiko kecelakaan.</p>
+                        </div>
+                    </div>
+
+                    <div class="k3-accordion-item reveal">
+                        <button class="k3-accordion-btn" data-step="5" onclick="toggleAccordion(this)">
+                            <span class="acc-step-num">5</span>
+                            <span class="acc-step-label">Internal Audit</span>
+                            <i class="bi bi-chevron-down acc-icon"></i>
+                        </button>
+                        <div class="k3-accordion-body">
+                            <p>Berperan melakukan pengawasan, inspeksi berkala, serta evaluasi independen untuk memastikan seluruh unit kerja telah menerapkan standar K3 sesuai dengan aturan hukum dan prosedur yang berlaku.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="script/profil.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

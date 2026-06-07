@@ -16,9 +16,16 @@
     --border: #DDE4F0;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Poppins', sans-serif;
+
+    --bs-body-font-family: var(--font-body);
+    --bs-body-color: var(--dark);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-heading) !important;
+}
 
 body {
     font-family: var(--font-body);

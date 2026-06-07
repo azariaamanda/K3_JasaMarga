@@ -116,34 +116,33 @@
     transition: transform 0.3s ease;
   }
 </style>
+<link rel="stylesheet" href="style/navbar.css">
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 
 <!-- Navbar -->
-<header class="fixed top-0 z-50 w-full bg-surface shadow-sm border-b border-outline-variant h-20">
-  <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
-    <div class="font-headline-md text-headline-md font-bold text-primary">Jasa Marga</div>
-    <nav class="hidden md:flex space-x-8 items-center">
-      <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="beranda.html">BERANDA</a>
-      <div class="group relative">
-        <button class="flex items-center text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200">
-          PROFIL <span class="material-symbols-outlined ml-1 text-[18px]">keyboard_arrow_down</span>
-        </button>
-        <div class="absolute top-full -left-4 w-48 bg-surface shadow-lg py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant">
-          <a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Visi &amp; Misi</a>
-          <a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Struktur Organisasi</a>
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <a class="nav-logo" href="beranda.html">
+        <div class="nav-logo-icon">
+            <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga">
         </div>
-      </div>
-      <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="k3_apd.html">K3 &amp; APD</a>
-      <a class="text-primary border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md transition-colors duration-200" href="lokasi_media.html">LOKASI &amp; VIDEO</a>
-      <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="kontak.html">KONTAK</a>
-    </nav>
-    <div class="flex items-center space-x-6">
-      <button class="material-symbols-outlined text-primary">search</button>
-      <button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-80 transition-opacity">LOGIN</button>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="profil.html">Profil Perusahaan</a></li>
+        <li><a href="k3_apd.html">K3 & APD</a></li>
+        <li><a href="lokasi_media.html" class="active">Lokasi & Video</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-  </div>
-</header>
+</nav>
 
 <main class="pt-20">
 
@@ -611,5 +610,6 @@
     });
   });
 </script>
+<script src="script/profil.js"></script>
 </body>
 </html>

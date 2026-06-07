@@ -1,482 +1,457 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Panduan K3 | Jasa Marga</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-tertiary-fixed-variant": "#454748",
-                        "on-tertiary-fixed": "#191c1d",
-                        "on-secondary-fixed-variant": "#564500",
-                        "surface-container-highest": "#e2e2e5",
-                        "on-secondary": "#ffffff",
-                        "on-secondary-fixed": "#231b00",
-                        "surface-container-lowest": "#ffffff",
-                        "primary-container": "#004a99",
-                        "outline-variant": "#c2c6d3",
-                        "surface-bright": "#f9f9fc",
-                        "secondary-container": "#fed000",
-                        "error": "#ba1a1a",
-                        "inverse-on-surface": "#f0f0f3",
-                        "tertiary": "#333537",
-                        "surface-dim": "#dadadc",
-                        "secondary-fixed": "#ffe07f",
-                        "primary-fixed": "#d7e2ff",
-                        "on-primary-fixed": "#001b3f",
-                        "on-error": "#ffffff",
-                        "surface-container-high": "#e8e8ea",
-                        "surface-variant": "#e2e2e5",
-                        "surface-tint": "#255dad",
-                        "secondary-fixed-dim": "#edc200",
-                        "tertiary-fixed": "#e1e3e4",
-                        "primary-fixed-dim": "#abc7ff",
-                        "on-secondary-container": "#6f5900",
-                        "tertiary-fixed-dim": "#c5c7c8",
-                        "on-surface-variant": "#424751",
-                        "inverse-surface": "#2f3133",
-                        "outline": "#737783",
-                        "inverse-primary": "#abc7ff",
-                        "error-container": "#ffdad6",
-                        "secondary": "#725c00",
-                        "surface": "#f9f9fc",
-                        "on-primary-fixed-variant": "#00458f",
-                        "on-primary": "#ffffff",
-                        "on-surface": "#1a1c1e",
-                        "on-error-container": "#93000a",
-                        "surface-container": "#eeeef0",
-                        "on-background": "#1a1c1e",
-                        "primary": "#00346f",
-                        "surface-container-low": "#f3f3f6",
-                        "on-tertiary": "#ffffff",
-                        "tertiary-container": "#4a4c4d",
-                        "on-primary-container": "#9bbdff",
-                        "on-tertiary-container": "#bbbcbd",
-                        "background": "#f9f9fc"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "margin-mobile": "16px",
-                        "container-max": "1280px",
-                        "base": "8px",
-                        "margin-desktop": "40px",
-                        "section-gap": "80px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Montserrat"],
-                        "body-md": ["Inter"],
-                        "label-sm": ["Inter"],
-                        "label-md": ["Inter"],
-                        "headline-md": ["Montserrat"],
-                        "body-lg": ["Inter"],
-                        "display-lg-mobile": ["Montserrat"],
-                        "display-lg": ["Montserrat"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .hero-gradient {
-            background: linear-gradient(to right, rgba(0, 52, 111, 0.95), rgba(0, 52, 111, 0.4));
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan K3 | Jasa Marga</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS (Konsisten dengan Profil) -->
+    <link rel="stylesheet" href="style/profil.css">
+
+    <style>
+        /* Beberapa styling spesifik untuk panduan_k3 jika dibutuhkan yang tidak ada di profil.css */
+        .hover-shadow-up { transition: all 0.3s ease; }
+        .hover-shadow-up:hover { transform: translateY(-5px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<header class="fixed top-0 z-50 w-full bg-surface shadow-sm border-b border-outline-variant h-20">
-<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
-<div class="font-headline-md text-headline-md font-bold text-primary">Jasa Marga</div>
-<nav class="hidden md:flex space-x-8 items-center">
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="beranda.html">BERANDA</a>
-<div class="group relative">
-<button class="flex items-center text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200">
-                        PROFIL <span class="material-symbols-outlined ml-1 text-[18px]">keyboard_arrow_down</span>
-</button>
-<div class="absolute top-full -left-4 w-48 bg-surface shadow-lg py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant">
-<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Visi &amp; Misi</a>
-<a class="block px-6 py-2 hover:bg-surface-container text-label-sm text-on-surface" href="#">Struktur Organisasi</a>
-</div>
-</div>
-<a class="text-primary border-b-2 border-secondary font-bold pb-1 font-label-md text-label-md transition-colors duration-200" href="k3_apd.html">K3 &amp; APD</a>
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="lokasi_media.html">LOKASI &amp; VIDEO</a>
-<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="kontak.html">KONTAK</a>
-</nav>
-<div class="flex items-center space-x-6">
-<button class="material-symbols-outlined text-primary">search</button>
-<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-80 transition-opacity">LOGIN</button>
-</div>
-</div>
-</header>
-<main class="pt-20">
-    <!-- Hero Section -->
-    <section class="relative h-[400px] flex items-center overflow-hidden">
-        <img alt="Construction Site" class="absolute inset-0 w-full h-full object-cover" src="img/hero_panduan.png"/>
-        <div class="absolute inset-0 bg-primary/60"></div>
-        <div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full text-center md:text-left flex flex-col items-center md:items-start">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center px-4 py-1.5 bg-secondary text-on-secondary rounded-full mb-6 shadow-sm">
-                    <span class="font-label-sm text-sm font-bold uppercase tracking-wider">PUSAT INFORMASI K3 JASA MARGA</span>
-                </div>
-                <h1 class="font-display-lg text-4xl md:text-5xl text-on-primary mb-4 font-bold leading-tight">Panduan Keselamatan &amp; Kesehatan Kerja (K3)</h1>
-                <p class="font-body-lg text-lg text-on-primary/90 mb-8 max-w-2xl">
-                    Informasi komprehensif mengenai pedoman resmi standar keselamatan kerja di seluruh lingkungan operasional PT Jasa Marga (Persero) Tbk.
-                </p>
+<body>
+
+    <!-- Navbar persis seperti profil.html -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="beranda.html">
+            <div class="nav-logo-icon">
+                <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga">
             </div>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Perusahaan</a></li>
+            <li><a href="k3_apd.html" class="active">K3 &amp; APD</a></li>
+            <li><a href="lokasi_media.html">Lokasi &amp; Video</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+
+        <div class="nav-burger" id="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </section>
+    </nav>
 
-    <!-- Prinsip Utama -->
-    <section class="py-20 bg-white">
-        <div class="max-w-container-max mx-auto px-margin-desktop">
-            <div class="text-center mb-16">
-                <h2 class="font-headline-md text-3xl text-primary mb-4 font-bold">Prinsip Utama (Golden Rules)</h2>
-                <p class="text-on-surface-variant max-w-2xl mx-auto text-sm">Pondasi sistem budaya kerja aman yang wajib dipahami dan diterapkan oleh setiap individu tanpa pengecualian.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="section-hero" id="hero">
+            <div class="hero-bg">
+                <img src="img/hero_panduan.png" class="hero-img" alt="Construction Site">
+                <div class="hero-overlay"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                <!-- Card 1 -->
-                <div class="bg-primary text-white rounded-xl p-8 shadow-md">
-                    <span class="material-symbols-outlined text-[32px] mb-4">verified_user</span>
-                    <h3 class="font-label-md text-xl font-bold mb-3">Compliance</h3>
-                    <p class="text-sm opacity-90 leading-relaxed">Kepatuhan mutlak terhadap seluruh regulasi internal, standar ISO 45001, dan undang-undang K3 nasional dalam setiap aktivitas pekerjaan.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                    <span class="material-symbols-outlined text-[32px] text-primary mb-4">assignment_late</span>
-                    <h3 class="font-label-md text-xl font-bold text-on-surface mb-3">Risk Assessment</h3>
-                    <p class="text-sm text-on-surface-variant leading-relaxed">Melakukan identifikasi bahaya dan penilaian risiko (IBPR) secara proaktif sebelum memulai setiap pelaksanaan aktivitas di lapangan.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
-                    <span class="material-symbols-outlined text-[32px] text-primary mb-4">personal_injury</span>
-                    <h3 class="font-label-md text-xl font-bold text-on-surface mb-3">Personal Safety</h3>
-                    <p class="text-sm text-on-surface-variant leading-relaxed">Memastikan setiap individu memiliki wewenang untuk menghentikan pekerjaan (Stop Work Authority) jika ditemukan kondisi tidak aman.</p>
+            <div class="hero-content container">
+                <div class="hero-text text-center text-md-start mx-auto mx-md-0 reveal">
+                    <span class="hero-badge">PUSAT INFORMASI K3 JASA MARGA</span>
+                    <h1 class="hero-title">Panduan Keselamatan &amp; Kesehatan Kerja (K3)</h1>
+                    <p class="hero-subtitle">
+                        Informasi komprehensif mengenai pedoman resmi standar keselamatan kerja di seluruh lingkungan operasional PT Jasa Marga (Persero) Tbk.
+                    </p>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <!-- Card 4 -->
-                <div class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
-                    <div class="w-16 h-16 rounded bg-secondary flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-[32px] text-on-secondary">eco</span>
-                    </div>
-                    <div>
-                        <h3 class="font-label-md text-xl font-bold text-on-surface mb-2">Environment</h3>
-                        <p class="text-sm text-on-surface-variant">Memastikan setiap operasional, meminimalkan jejak karbon, pengelolaan limbah B3 sesuai standar pengelolaan lingkungan.</p>
-                    </div>
-                </div>
-                <!-- Card 5 -->
-                <div class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
-                    <div class="w-16 h-16 rounded bg-primary flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-[32px] text-white">health_and_safety</span>
-                    </div>
-                    <div>
-                        <h3 class="font-label-md text-xl font-bold text-on-surface mb-2">Health</h3>
-                        <p class="text-sm text-on-surface-variant">Pemeriksaan kesehatan secara berkala dan pemantauan kondisi kebugaran secara rutin. Medical Check Up dan pemeriksaan ringan per-kerja.</p>
-                    </div>
-                </div>
+            <div class="hero-scroll-hint">
+                <div class="scroll-dot"></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Prosedur Keselamatan -->
-    <section class="py-20 bg-[#F8F5FF]">
-        <div class="max-w-container-max mx-auto px-margin-desktop">
-            <div class="mb-12">
-                <h2 class="font-headline-md text-3xl text-primary mb-4 font-bold">Prosedur Keselamatan Operasional Detil</h2>
-                <p class="text-on-surface-variant text-sm">Instruksi kerja standar untuk menjaga bahaya keamanan di bidang risiko tinggi.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Proc 1 -->
-                <div class="bg-white rounded-xl border border-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-all">
-                    <div class="relative h-48">
-                        <img src="img/proc_jalan.png" class="w-full h-full object-cover" alt="Pemeliharaan Jalan">
-                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded">MAINTENANCE</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-label-md text-lg font-bold text-on-surface mb-3">Pemeliharaan Jalan Tol</h3>
-                        <p class="text-xs text-on-surface-variant mb-6">Aktivitas perbaikan arus lalu lintas, aspal perkerasan jalan, perbaikan jembatan dan struktur di sepanjang jalur Jasa Marga gerbang jalan.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Pemasangan rambu peringatan sesuai standar jarak 100m, 50m, hingga 20m sebelum mencapai area kerja dan pengalihan arus yang aman.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Penempatan Traffic Attenuator Mobile (TMA) sebagai peredam benturan di belakang area kerja untuk staf terlindungi di area perbaikan.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Selalu menggunakan APD standar pada kondisi area pencahayaan visual yang terlihat jelas oleh pengemudi di jarak jauh.</span>
-                            </li>
-                        </ul>
-                    </div>
+        <!-- Prinsip Utama -->
+        <section class="bg-white">
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Prinsip Utama (Golden Rules)</h2>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">Pondasi sistem budaya kerja aman yang wajib dipahami dan diterapkan oleh setiap individu tanpa pengecualian.</p>
                 </div>
-
-                <!-- Proc 2 -->
-                <div class="bg-white rounded-xl border border-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-all">
-                    <div class="relative h-48">
-                        <img src="img/proc_gerbang.png" class="w-full h-full object-cover" alt="Operasi Gerbang Tol">
-                        <div class="absolute top-4 left-4 bg-secondary text-on-secondary text-xs font-bold px-3 py-1 rounded">OPERATIONAL</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-label-md text-lg font-bold text-on-surface mb-3">Operasi Gerbang Tol</h3>
-                        <p class="text-xs text-on-surface-variant mb-6">Penerapan pengamanan petugas transaksi tol pada aktivitas observasi, pengawasan, pemeliharaan alat gardu elektronik gerbang.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Para gardu tol yang menyeberang jalur transaksi sembarang ke Gardu, menyeberang via jembatan penyeberangan/underpass gardu.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Pemeliharaan alat medikal toll lugas ini untuk mencegah arus pendek dan kelistrikan sistem gerbang terhindar dari tersetrum (GTO).</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Proses administrasi e-Toll untuk petugas gardu tol diganti/isi saldo pada gerbang tol dengan keamanan lalu lintas kendaraan dan potensi gangguan keamanan.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Proc 3 -->
-                <div class="bg-white rounded-xl border border-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-all">
-                    <div class="relative h-48">
-                        <img src="img/proc_konstruksi.png" class="w-full h-full object-cover" alt="Zona Konstruksi">
-                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded">CONSTRUCTION</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-label-md text-lg font-bold text-on-surface mb-3">Zona Konstruksi Baru</h3>
-                        <p class="text-xs text-on-surface-variant mb-6">Pembangunan infrastruktur tol baru dan fasilitas aset tol, berpotensi risiko tinggi yang memerlukan pengamanan ekstra ketat.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Setiap aktivitas bekerja tinggi harus memiliki ijin Kerja di Tempat Tinggi (IKTT) yang dikoordinasikan dan disetujui K3 dan penanggung jawab proyek.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Sertifikasi Keahlian (SKA) untuk seluruh ahli berat sepetti crans excavator, alat bor, aspal, dll. Diperlukan sebelum operasional harian.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check_circle</span>
-                                <span class="text-xs text-on-surface-variant leading-relaxed">Pemasangan alat ukur Load and System (LCA) pergabungan dokumentasi jalur konstruksi mengatur lalu lintas aktif supaya aman.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detail APD -->
-    <section class="py-20 bg-surface-container-lowest">
-        <div class="max-w-container-max mx-auto px-margin-desktop">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="w-full lg:w-1/2">
-                    <h2 class="font-headline-md text-3xl text-primary mb-10 font-bold max-w-sm leading-tight">Detail Panduan Alat Pelindung Diri (APD)</h2>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-white border border-outline-variant p-6 rounded-xl flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-white text-[20px]">sports_motorsports</span>
-                            </div>
-                            <div>
-                                <h4 class="font-label-md font-bold text-on-surface mb-2">Safety Helmet (Helm Proyek)</h4>
-                                <p class="text-xs text-on-surface-variant leading-relaxed">Wajib digunakan oleh seluruh staf operasional jalan tol, kontraktor, kru dalam konstruksi. Helm terbuat dari bahan HDPE tebal dan ringan, yang dirancang serap redaman mekanik dan tahan cuaca terik di lapangan dan area tol yang sedang dibangun. Identifikasi area berdasarkan warna: Putih (Supervisi/Tamu), Kuning (Pekerja), Biru (Mekanik), Hijau (K3/HSE).</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-white border border-outline-variant p-6 rounded-xl flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-white text-[20px]">apparel</span>
-                            </div>
-                            <div>
-                                <h4 class="font-label-md font-bold text-on-surface mb-2">Safety Vest (Rompi Reflektif)</h4>
-                                <p class="text-xs text-on-surface-variant leading-relaxed">Elemen krusial visibilitas staf di area lalu lintas operasional jalan tol, baik siang &amp; malam hari. Rompi harus memiliki pita reflektor standar EN ISO 20471. Kualitas warna cerah dan reflektor ini dirancang agar penerangan di malam hari/hujan mengurangi risiko tidak terlihat oleh pengemudi yang melintas. Rompi pelindung jalan ini harus selalu menempel pada kemeja operasional.</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-white border border-outline-variant p-6 rounded-xl flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-white text-[20px]">footprint</span>
-                            </div>
-                            <div>
-                                <h4 class="font-label-md font-bold text-on-surface mb-2">Safety Shoes (Sepatu Safety)</h4>
-                                <p class="text-xs text-on-surface-variant leading-relaxed">Melindungi kaki dari risiko benda tajam, kejatuhan beban, dan kepelesetan. Harus bersistem standard SNI 7079 dengan inner metal pelindung toe di ujung jari, yang mampu menahan beban minimal 200 Joule. Sol bawah sepatu anti slip, dan ditambahkan fitur ketahanan tahan air dan isolator listrik untuk para pekerja gardu dan pemeliharaan.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full lg:w-1/2">
-                    <img src="img/worker_ppe.png" alt="Worker PPE" class="w-full max-w-md mx-auto rounded-3xl shadow-xl object-cover bg-surface-container border border-outline-variant p-2">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Protokol Darurat -->
-    <section class="py-20 bg-primary text-white">
-        <div class="max-w-container-max mx-auto px-margin-desktop text-center">
-            <div class="mb-12">
-                <h2 class="font-headline-md text-3xl mb-4 font-bold">Protokol Penanganan Keadaan Darurat</h2>
-                <p class="text-white/80 max-w-2xl mx-auto text-sm">Tindakan responsif yang harus segera dilaksanakan saat terjadi insiden untuk meminimalisir dampak kerugian.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                <!-- Step 1 -->
-                <div class="bg-surface-container-highest/20 rounded-xl p-8 border border-white/10 hover:bg-surface-container-highest/30 transition-colors">
-                    <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold mb-6">01</div>
-                    <h4 class="font-label-md font-bold mb-3 text-lg">Evakuasi &amp; Lokalisasi</h4>
-                    <p class="text-xs text-white/70 leading-relaxed">Hentikan segera semua operasional. Arahkan semua personel menuju Titik Kumpul (Assembly Point) terdekat yang aman dari bahaya. Lokalisasi potensi bahaya di area tol (kecelakaan/mobil rusak/kebakaran blok area yang tertinggal) dengan traffic cone jarak minimum 50 m. Identifikasi korban &amp; area terdekat.</p>
-                </div>
-                <!-- Step 2 -->
-                <div class="bg-surface-container-highest/20 rounded-xl p-8 border border-white/10 hover:bg-surface-container-highest/30 transition-colors">
-                    <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold mb-6">02</div>
-                    <h4 class="font-label-md font-bold mb-3 text-lg">Aktivasi Jalur Pelaporan</h4>
-                    <p class="text-xs text-white/70 leading-relaxed">Berikan informasi jelas mengenai lokasi kejadian, jenis insiden (kecelakaan/banjir, kebakaran, dsb), perkiraan data korban, dan jumlah korban (jika ada) ke Pusat Trafic Information Center (TIC). Jangan menunda menginformasikan evakuasi pertolongan pertama (seperti ambulans).</p>
-                </div>
-                <!-- Step 3 -->
-                <div class="bg-surface-container-highest/20 rounded-xl p-8 border border-white/10 hover:bg-surface-container-highest/30 transition-colors">
-                    <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold mb-6">03</div>
-                    <h4 class="font-label-md font-bold mb-3 text-lg">Penanganan Awal &amp; Sterilisasi</h4>
-                    <p class="text-xs text-white/70 leading-relaxed">Lakukan tindakan P3K sebelum tim ambulans medis Jasa Marga tiba di lokasi. Ruang evakuasi harus dipastikan terbuka aman dari asap. Tunggu di area steril dan ikuti arahan petugas jalan raya K3 di lingkungan ini sampai tim evakuasi Senkom/Layanan Tol Tiba di area kejadian (jalan tol).</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Komitmen K3 -->
-    <section class="py-24 bg-surface-container-lowest">
-        <div class="max-w-4xl mx-auto px-margin-desktop">
-            <div class="bg-white rounded-3xl p-10 md:p-14 border border-outline-variant shadow-xl relative overflow-hidden">
-                <!-- Yellow top right corner deco -->
-                <div class="absolute -top-16 -right-16 w-40 h-40 bg-secondary/20 rounded-full"></div>
                 
-                <div class="flex flex-col items-center text-center relative z-10">
-                    <div class="w-16 h-16 rounded-full border-2 border-primary text-primary flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
-                    </div>
-                    
-                    <h2 class="font-headline-md text-3xl text-primary mb-6 font-bold">Ringkasan Komitmen K3 Jasa Marga</h2>
-                    
-                    <div class="border-l-4 border-secondary pl-6 mb-8 text-left italic w-full">
-                        <p class="text-lg text-on-surface-variant">"Keselamatan bukan sekedar aturan, melainkan nilai utama yang tidak dapat ditawar-menawar."</p>
-                    </div>
-                    
-                    <p class="text-sm text-on-surface-variant mb-10 leading-relaxed text-left w-full">Dewan Direksi dan Manajemen PT Jasa Marga (Persero) Tbk menegaskan komitmen kuat mereka untuk mencapai target <strong>Zero Fatality</strong> dan <strong>Zero Accident</strong> di setiap lini operasional. Budaya K3 adalah tanggung jawab proaktif yang dimulai dari kesadaran individu untuk menjaga diri sendiri, rekan kerja, dan lingkungan sekitar.</p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left mb-10">
-                        <div class="flex items-center gap-3 bg-surface-container-lowest border border-outline-variant rounded p-4">
-                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
-                            <span class="text-xs font-medium text-on-surface">Pengelolaan Keselamatan</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-surface-container-lowest border border-outline-variant rounded p-4">
-                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
-                            <span class="text-xs font-medium text-on-surface">Pemeliharaan yang Dilindungi</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-surface-container-lowest border border-outline-variant rounded p-4">
-                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
-                            <span class="text-xs font-medium text-on-surface">Keunggulan Operasional Aman</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-surface-container-lowest border border-outline-variant rounded p-4">
-                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
-                            <span class="text-xs font-medium text-on-surface">Perbaikan Berkelanjutan</span>
+                <div class="row g-4 mb-4 reveal">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow p-4 text-white hover-shadow-up" style="background-color: var(--primary);">
+                            <i class="bi bi-shield-check display-5 mb-4"></i>
+                            <h4 class="fw-bold mb-3" style="font-family: var(--font-heading);">Compliance</h4>
+                            <p class="opacity-75 small mb-0">Kepatuhan mutlak terhadap seluruh regulasi internal, standar ISO 45001, dan undang-undang K3 nasional dalam setiap aktivitas pekerjaan.</p>
                         </div>
                     </div>
-                    
-                    <p class="text-xs text-outline italic text-center w-full">Informasi diatas merupakan ringkasan umum pedoman kebijakan K3. Panduan lengkap dan SOP dipegang resmi PT Jasa Marga (Persero) Tbk.</p>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border border-light shadow-sm p-4 hover-shadow-up" style="background-color: var(--bg-light);">
+                            <i class="bi bi-clipboard-data display-5 mb-4" style="color: var(--primary);"></i>
+                            <h4 class="fw-bold mb-3" style="color: var(--dark); font-family: var(--font-heading);">Risk Assessment</h4>
+                            <p class="text-muted small mb-0">Melakukan identifikasi bahaya dan penilaian risiko (IBPR) secara proaktif sebelum memulai setiap pelaksanaan aktivitas di lapangan.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border border-light shadow-sm p-4 hover-shadow-up" style="background-color: var(--bg-light);">
+                            <i class="bi bi-person-exclamation display-5 mb-4" style="color: var(--primary);"></i>
+                            <h4 class="fw-bold mb-3" style="color: var(--dark); font-family: var(--font-heading);">Personal Safety</h4>
+                            <p class="text-muted small mb-0">Memastikan setiap individu memiliki wewenang untuk menghentikan pekerjaan (Stop Work Authority) jika ditemukan kondisi tidak aman.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 justify-content-center reveal">
+                    <!-- Card 4 -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border border-light shadow-sm p-4 hover-shadow-up" style="background-color: var(--bg-light);">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="rounded d-flex align-items-center justify-content-center flex-shrink-0" style="width: 60px; height: 60px; background-color: var(--secondary);">
+                                    <i class="bi bi-tree text-dark fs-2"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-2" style="color: var(--dark); font-family: var(--font-heading);">Environment</h4>
+                                    <p class="text-muted small mb-0">Memastikan setiap operasional, meminimalkan jejak karbon, pengelolaan limbah B3 sesuai standar pengelolaan lingkungan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border border-light shadow-sm p-4 hover-shadow-up" style="background-color: var(--bg-light);">
+                            <div class="d-flex align-items-start gap-4">
+                                <div class="rounded d-flex align-items-center justify-content-center flex-shrink-0" style="width: 60px; height: 60px; background-color: var(--primary);">
+                                    <i class="bi bi-heart-pulse text-white fs-2"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-2" style="color: var(--dark); font-family: var(--font-heading);">Health</h4>
+                                    <p class="text-muted small mb-0">Pemeriksaan kesehatan secara berkala dan pemantauan kondisi kebugaran secara rutin. Medical Check Up dan pemeriksaan ringan per-kerja.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prosedur Keselamatan -->
+        <section style="background-color: #F8F5FF;">
+            <div class="container">
+                <div class="mb-5 reveal">
+                    <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Prosedur Keselamatan Operasional Detil</h2>
+                    <p class="text-muted small">Instruksi kerja standar untuk menjaga bahaya keamanan di bidang risiko tinggi.</p>
+                </div>
+                
+                <div class="row g-4 reveal">
+                    <!-- Proc 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden hover-shadow-up">
+                            <div class="position-relative" style="height: 200px;">
+                                <img src="img/proc_jalan.png" class="w-100 h-100 object-fit-cover" alt="Pemeliharaan Jalan">
+                                <span class="badge position-absolute top-0 start-0 m-3" style="background-color: var(--primary);">MAINTENANCE</span>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3" style="color: var(--dark); font-family: var(--font-heading);">Pemeliharaan Jalan Tol</h5>
+                                <p class="small text-muted mb-4">Aktivitas perbaikan arus lalu lintas, aspal perkerasan jalan, perbaikan jembatan dan struktur di sepanjang jalur Jasa Marga gerbang jalan.</p>
+                                <ul class="list-unstyled space-y-3 mb-0">
+                                    <li class="d-flex align-items-start gap-2 mb-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Pemasangan rambu peringatan sesuai standar jarak 100m, 50m, hingga 20m sebelum mencapai area kerja dan pengalihan arus yang aman.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 mb-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Penempatan Traffic Attenuator Mobile (TMA) sebagai peredam benturan di belakang area kerja.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Selalu menggunakan APD standar pada kondisi area pencahayaan visual yang terlihat jelas oleh pengemudi di jarak jauh.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proc 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden hover-shadow-up">
+                            <div class="position-relative" style="height: 200px;">
+                                <img src="img/proc_gerbang.png" class="w-100 h-100 object-fit-cover" alt="Operasi Gerbang Tol">
+                                <span class="badge position-absolute top-0 start-0 m-3 text-dark" style="background-color: var(--secondary);">OPERATIONAL</span>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3" style="color: var(--dark); font-family: var(--font-heading);">Operasi Gerbang Tol</h5>
+                                <p class="small text-muted mb-4">Penerapan pengamanan petugas transaksi tol pada aktivitas observasi, pengawasan, pemeliharaan alat gardu elektronik gerbang.</p>
+                                <ul class="list-unstyled space-y-3 mb-0">
+                                    <li class="d-flex align-items-start gap-2 mb-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Para petugas tidak menyeberang jalur transaksi sembarangan, wajib menyeberang via jembatan/underpass gardu.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 mb-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Pemeliharaan alat mekanikal elektrikal gardu tol menggunakan prosedur yang aman dari risiko tersetrum.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Proses administrasi e-Toll petugas dipastikan aman dari lalu lintas kendaraan.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proc 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden hover-shadow-up">
+                            <div class="position-relative" style="height: 200px;">
+                                <img src="img/proc_konstruksi.png" class="w-100 h-100 object-fit-cover" alt="Zona Konstruksi">
+                                <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #dc3545;">CONSTRUCTION</span>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3" style="color: var(--dark); font-family: var(--font-heading);">Zona Konstruksi Baru</h5>
+                                <p class="small text-muted mb-4">Pembangunan infrastruktur tol baru dan fasilitas aset tol, berpotensi risiko tinggi yang memerlukan pengamanan ekstra ketat.</p>
+                                <ul class="list-unstyled space-y-3 mb-0">
+                                    <li class="d-flex align-items-start gap-2 mb-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Setiap aktivitas bekerja tinggi harus memiliki Ijin Kerja di Tempat Tinggi (IKTT) yang dikoordinasikan dengan HSE.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 mb-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Sertifikasi Keahlian (SKA) wajib untuk seluruh operator alat berat sebelum operasional harian.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--secondary-dark);"></i>
+                                        <span class="small text-muted">Pemasangan dokumentasi jalur konstruksi dan rekayasa lalu lintas aktif supaya aman.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail APD -->
+        <section style="background-color: var(--white);">
+            <div class="container">
+                <div class="row align-items-center gap-5 reveal">
+                    <div class="col-lg-6 reveal">
+                        <h2 class="fw-bold mb-5" style="color: var(--primary); font-family: var(--font-heading);">Detail Panduan Alat Pelindung Diri (APD)</h2>
+                        
+                        <div class="d-flex flex-column gap-4">
+                            <div class="card border border-light shadow-sm rounded-4 p-4 hover-shadow-up bg-white">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 45px; height: 45px; background-color: var(--primary);">
+                                        <i class="bi bi-person-bounding-box text-white fs-5"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2" style="color: var(--dark); font-family: var(--font-heading);">Safety Helmet (Helm Proyek)</h5>
+                                        <p class="small text-muted mb-0">Wajib digunakan oleh seluruh staf operasional jalan tol, kontraktor, kru dalam konstruksi. Helm terbuat dari bahan HDPE tebal dan ringan, dirancang serap redaman mekanik. Identifikasi warna: Putih (Supervisi), Kuning (Pekerja), Biru (Mekanik), Hijau (K3).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border border-light shadow-sm rounded-4 p-4 hover-shadow-up bg-white">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 45px; height: 45px; background-color: var(--primary);">
+                                        <i class="bi bi-layers text-white fs-5"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2" style="color: var(--dark); font-family: var(--font-heading);">Safety Vest (Rompi Reflektif)</h5>
+                                        <p class="small text-muted mb-0">Elemen krusial visibilitas staf di area lalu lintas operasional jalan tol, siang &amp; malam. Harus memiliki pita reflektor standar EN ISO 20471. Warna cerah dirancang agar penerangan di malam hari/hujan tetap terlihat pengemudi.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border border-light shadow-sm rounded-4 p-4 hover-shadow-up bg-white">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 45px; height: 45px; background-color: var(--primary);">
+                                        <i class="bi bi-capslock-fill text-white fs-5" style="transform: rotate(180deg);"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2" style="color: var(--dark); font-family: var(--font-heading);">Safety Shoes (Sepatu Safety)</h5>
+                                        <p class="small text-muted mb-0">Melindungi kaki dari risiko benda tajam, kejatuhan beban, dan kepelesetan. Bersistem standard SNI dengan inner metal pelindung jari. Sol anti slip, dan ditambahkan fitur ketahanan air dan isolator listrik.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center reveal">
+                        <img src="img/worker_ppe.png" alt="Worker PPE" class="img-fluid rounded-4 shadow bg-light border p-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protokol Darurat -->
+        <section style="background-color: var(--primary); color: white;">
+            <div class="container text-center">
+                <div class="mb-5">
+                    <h2 class="fw-bold mb-3" style="font-family: var(--font-heading);">Protokol Penanganan Keadaan Darurat</h2>
+                    <p class="opacity-75 mx-auto small" style="max-width: 600px;">Tindakan responsif yang harus segera dilaksanakan saat terjadi insiden untuk meminimalisir dampak kerugian.</p>
+                </div>
+                
+                <div class="row g-4 text-start">
+                    <!-- Step 1 -->
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 border border-light border-opacity-25 h-100 hover-shadow-up" style="background-color: rgba(255,255,255,0.05);">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px; background-color: var(--secondary); color: var(--primary-dark);">01</div>
+                            <h5 class="fw-bold mb-3" style="font-family: var(--font-heading);">Evakuasi &amp; Lokalisasi</h5>
+                            <p class="small opacity-75 mb-0">Hentikan segera semua operasional. Arahkan semua personel menuju Titik Kumpul (Assembly Point) terdekat. Lokalisasi potensi bahaya di area tol dengan traffic cone jarak minimum 50 m. Identifikasi korban &amp; area terdekat.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 border border-light border-opacity-25 h-100 hover-shadow-up" style="background-color: rgba(255,255,255,0.05);">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px; background-color: var(--secondary); color: var(--primary-dark);">02</div>
+                            <h5 class="fw-bold mb-3" style="font-family: var(--font-heading);">Aktivasi Jalur Pelaporan</h5>
+                            <p class="small opacity-75 mb-0">Berikan informasi jelas mengenai lokasi kejadian, jenis insiden, perkiraan data korban ke Pusat Traffic Information Center (TIC). Jangan menunda menginformasikan evakuasi pertolongan pertama ambulans.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="col-md-4">
+                        <div class="p-4 rounded-4 border border-light border-opacity-25 h-100 hover-shadow-up" style="background-color: rgba(255,255,255,0.05);">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px; background-color: var(--secondary); color: var(--primary-dark);">03</div>
+                            <h5 class="fw-bold mb-3" style="font-family: var(--font-heading);">Penanganan Awal &amp; Sterilisasi</h5>
+                            <p class="small opacity-75 mb-0">Lakukan tindakan P3K sebelum tim medis tiba. Ruang evakuasi dipastikan terbuka aman dari asap. Tunggu di area steril dan ikuti arahan petugas jalan raya sampai tim Senkom Tiba di area kejadian.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Komitmen K3 -->
+        <section style="background-color: var(--bg-light);">
+            <div class="container">
+                <div class="row justify-content-center reveal">
+                    <div class="col-lg-10">
+                        <div class="bg-white rounded-4 p-4 p-md-5 border shadow-sm position-relative overflow-hidden">
+                            <!-- Decor -->
+                            <div class="position-absolute rounded-circle" style="top: -50px; right: -50px; width: 150px; height: 150px; background-color: rgba(255, 209, 0, 0.2);"></div>
+                            
+                            <div class="position-relative z-1 text-center">
+                                <div class="rounded-circle border border-2 mx-auto d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px; border-color: var(--primary)!important; color: var(--primary);">
+                                    <i class="bi bi-award fs-3"></i>
+                                </div>
+                                
+                                <h3 class="fw-bold mb-4" style="color: var(--primary); font-family: var(--font-heading);">Ringkasan Komitmen K3 Jasa Marga</h3>
+                                
+                                <div class="border-start border-4 text-start ps-4 mb-5" style="border-color: var(--secondary)!important;">
+                                    <p class="fs-5 text-muted fst-italic mb-0">"Keselamatan bukan sekedar aturan, melainkan nilai utama yang tidak dapat ditawar-menawar."</p>
+                                </div>
+                                
+                                <p class="text-start small text-muted mb-5">Dewan Direksi dan Manajemen PT Jasa Marga (Persero) Tbk menegaskan komitmen kuat mereka untuk mencapai target <strong class="text-dark">Zero Fatality</strong> dan <strong class="text-dark">Zero Accident</strong> di setiap lini operasional. Budaya K3 adalah tanggung jawab proaktif yang dimulai dari kesadaran individu untuk menjaga diri sendiri, rekan kerja, dan lingkungan sekitar.</p>
+                                
+                                <div class="row g-3 text-start mb-5">
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-center gap-3 bg-light border rounded p-3">
+                                            <i class="bi bi-check-circle-fill" style="color: var(--primary);"></i>
+                                            <span class="small fw-bold">Pengelolaan Keselamatan</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-center gap-3 bg-light border rounded p-3">
+                                            <i class="bi bi-check-circle-fill" style="color: var(--primary);"></i>
+                                            <span class="small fw-bold">Pemeliharaan yang Dilindungi</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-center gap-3 bg-light border rounded p-3">
+                                            <i class="bi bi-check-circle-fill" style="color: var(--primary);"></i>
+                                            <span class="small fw-bold">Keunggulan Operasional Aman</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex align-items-center gap-3 bg-light border rounded p-3">
+                                            <i class="bi bi-check-circle-fill" style="color: var(--primary);"></i>
+                                            <span class="small fw-bold">Perbaikan Berkelanjutan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <p class="small text-muted fst-italic mb-0 text-center">Informasi diatas merupakan ringkasan umum pedoman kebijakan K3. Panduan lengkap dan SOP dipegang resmi PT Jasa Marga (Persero) Tbk.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--primary); color: white; padding-top: 60px;">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <h3 class="fw-bold mb-4" style="font-family: var(--font-heading);">Jasa Marga</h3>
+                    <p class="opacity-75 small mb-4">Menghubungkan Nusantara melalui infrastruktur jalan tol yang handal, aman, dan berstandar internasional.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 40px; height: 40px;"><i class="bi bi-globe"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 40px; height: 40px;"><i class="bi bi-share"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4" style="color: var(--secondary);">Tentang Kami</h5>
+                    <ul class="list-unstyled small opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-shadow-up">Gambaran Umum</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Visi &amp; Misi</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Laporan Tahunan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4" style="color: var(--secondary);">Informasi K3</h5>
+                    <ul class="list-unstyled small opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Galeri APD</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Prosedur Evakuasi</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">HSE Management System</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-4" style="color: var(--secondary);">Hubungi Kami</h5>
+                    <ul class="list-unstyled small opacity-75">
+                        <li class="mb-3"><a href="#" class="text-white text-decoration-none">Pusat Kontak</a></li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone"></i>
+                            <span>14080 (24 Jam)</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope"></i>
+                            <span>info@jasamarga.co.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-top border-light border-opacity-25 py-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <div class="small opacity-50">© 2024 Jasa Marga. All Rights Reserved.</div>
+                <div class="d-flex gap-4 small opacity-75">
+                    <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none">Syarat &amp; Ketentuan</a>
                 </div>
             </div>
         </div>
-    </section>
-</main>
-<!-- Footer Shell -->
-<footer class="bg-primary text-on-primary">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
-<div class="space-y-6">
-<div class="font-headline-lg text-headline-lg font-black text-on-primary">
-                    Jasa Marga
-                </div>
-<p class="text-on-primary/80 font-body-md">
-                    Menghubungkan Nusantara melalui infrastruktur jalan tol yang handal, aman, dan berstandar internasional.
-                </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
-<span class="material-symbols-outlined">share</span>
-</a>
-</div>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-secondary-container mb-6">Tentang Kami</h4>
-<ul class="space-y-4">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Gambaran Umum</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Visi &amp; Misi</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Laporan Tahunan</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-secondary-container mb-6">Informasi K3</h4>
-<ul class="space-y-4">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Galeri APD</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Prosedur Evakuasi</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">HSE Management System</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-md text-label-md text-secondary-container mb-6">Hubungi Kami</h4>
-<ul class="space-y-4">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors" href="#">Pusat Kontak</a></li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px]">call</span>
-<span class="text-on-primary/80">14080 (24 Jam)</span>
-</li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px]">mail</span>
-<span class="text-on-primary/80">info@jasamarga.co.id</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-white/10 py-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-<div class="text-on-primary/60 font-label-sm">
-                © 2024 Jasa Marga. All Rights Reserved.
-            </div>
-<div class="flex gap-6 font-label-sm text-on-primary/60">
-<a class="hover:text-white" href="#">Kebijakan Privasi</a>
-<a class="hover:text-white" href="#">Syarat &amp; Ketentuan</a>
-</div>
-</div>
-</footer>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script/profil.js"></script>
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -7,6 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 <script id="tailwind-config">
   tailwind.config = {
     darkMode: "class",
@@ -163,11 +164,7 @@
           Pusat informasi visual panduan keselamatan kerja (K3) dan pemetaan area operasional untuk memastikan standar keamanan tertinggi di seluruh ruas Jasa Marga.
         </p>
         <div class="flex gap-4">
-          <a href="#denah" class="flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-white/15 transition-all">
-            <span class="material-symbols-outlined text-[20px]">map</span>
-            Jelajahi Peta
-          </a>
-          <a href="#video-gallery" class="flex items-center gap-2 bg-secondary-container text-on-secondary-container px-6 py-3 rounded-lg font-label-md text-label-md hover:brightness-95 transition-all">
+          <a href="#video-gallery" class="flex items-center gap-2 bg-secondary-container text-on-secondary-container px-7 py-3 font-label-md text-label-md hover:brightness-95 transition-all" style="border-radius:40px;">
             <span class="material-symbols-outlined text-[20px]">play_circle</span>
             Tonton Edukasi
           </a>
@@ -183,11 +180,11 @@
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-3">
       <div>
         <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Denah &amp; Jalur Evakuasi</h2>
-        <p class="text-on-surface-variant font-body-md text-body-md mt-1">Area Operasional Ruas Tol Jakarta - Cikampek</p>
+        <p class="text-on-surface-variant font-body-md text-body-md mt-1">PT Jasa Marga (Persero) Tbk – Wilayah Malang</p>
       </div>
-      <span class="inline-flex items-center gap-2 bg-primary text-on-primary text-label-sm font-bold px-4 py-2 rounded-lg self-start md:self-auto">
+      <span id="lantai-badge" class="inline-flex items-center gap-2 bg-primary text-on-primary text-label-sm font-bold px-4 py-2 rounded-lg self-start md:self-auto">
         <span class="material-symbols-outlined text-[16px]">apartment</span>
-        LANTAI DASAR – HQ
+        LANTAI 1 – PELAYANAN &amp; GUDANG
       </span>
     </div>
 
@@ -196,9 +193,29 @@
 
       <!-- Floor Plan Card (left, wider) -->
       <div class="lg:col-span-2 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm">
-        <!-- SVG Floor Plan -->
-        <div class="relative bg-[#1a2535] h-72 md:h-80 overflow-hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" class="w-full h-full" preserveAspectRatio="xMidYMid meet">
+
+        <!-- Lantai Tabs -->
+        <div class="flex border-b border-outline-variant bg-surface-container-low">
+          <button onclick="switchLantai(1)" id="tab-1"
+            class="lantai-tab flex-1 py-3 text-label-sm font-semibold text-primary border-b-2 border-primary bg-surface-container-lowest transition-all">
+            Lantai 1 – Pelayanan
+          </button>
+          <button onclick="switchLantai(2)" id="tab-2"
+            class="lantai-tab flex-1 py-3 text-label-sm font-semibold text-on-surface-variant border-b-2 border-transparent hover:text-primary transition-all">
+            Lantai 2 – Administrasi
+          </button>
+          <button onclick="switchLantai(3)" id="tab-3"
+            class="lantai-tab flex-1 py-3 text-label-sm font-semibold text-on-surface-variant border-b-2 border-transparent hover:text-primary transition-all">
+            Lantai 3 – SENKOM
+          </button>
+        </div>
+
+        <!-- Floor Plan Image -->
+        <div class="relative bg-white overflow-hidden" style="height: 380px;">
+          <img id="denah-img" src="img/denah/lantai1.jpg" alt="Denah Lantai 1 – Pelayanan &amp; Gudang"
+               class="w-full h-full object-contain transition-opacity duration-300"/>
+          <!-- SVG placeholder (hidden, kept as fallback) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" class="w-full h-full hidden" preserveAspectRatio="xMidYMid meet">
             <defs>
               <marker id="arrowEvac" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
                 <path d="M0,0.5 L0,6.5 L7,3.5 Z" fill="#ef4444"/>
@@ -345,23 +362,31 @@
 
         <!-- Legend -->
         <div class="px-5 py-4 border-t border-outline-variant">
-          <p class="text-label-sm font-label-sm text-on-surface-variant mb-3 uppercase tracking-wider">Legenda Peta</p>
-          <div class="grid grid-cols-2 gap-x-6 gap-y-2">
+          <p class="text-label-sm font-label-sm text-on-surface-variant mb-3 uppercase tracking-wider">Keterangan Rambu Keselamatan</p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2">
             <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-blue-500 flex-shrink-0"></span>
-              <span class="text-label-sm text-on-surface-variant">Jalur Pejalan Kaki</span>
+              <i class="bi bi-fire text-red-600 text-[15px]"></i>
+              <span class="text-label-sm text-on-surface-variant">Alat Pemadam Api (APAR)</span>
             </div>
             <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-green-500 flex-shrink-0"></span>
-              <span class="text-label-sm text-on-surface-variant">Titik Kumpul Evakuasi</span>
+              <i class="bi bi-plus-square-fill text-green-600 text-[15px]"></i>
+              <span class="text-label-sm text-on-surface-variant">Kotak P3K</span>
             </div>
             <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-red-500 flex-shrink-0"></span>
-              <span class="text-label-sm text-on-surface-variant">Rute Evakuasi Utama</span>
+              <i class="bi bi-people-fill text-green-500 text-[15px]"></i>
+              <span class="text-label-sm text-on-surface-variant">Titik Kumpul (Assembly Point)</span>
             </div>
             <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-gray-600 flex-shrink-0"></span>
-              <span class="text-label-sm text-on-surface-variant">Peralatan Pemadam Api</span>
+              <i class="bi bi-p-square-fill text-blue-600 text-[15px]"></i>
+              <span class="text-label-sm text-on-surface-variant">Parkir (Disabled)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-droplet-fill text-red-500 text-[15px]"></i>
+              <span class="text-label-sm text-on-surface-variant">Hidran</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="bi bi-sign-turn-right-fill text-gray-600 text-[15px]"></i>
+              <span class="text-label-sm text-on-surface-variant">Tangga / Akses Darurat</span>
             </div>
           </div>
         </div>
@@ -455,13 +480,13 @@
     <!-- Video Cards Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 
-      <!-- Card 1: Standar Operasional -->
-      <a href="https://www.youtube.com/watch?v=tLAbc133oU4" target="_blank" rel="noopener"
+      <!-- Card 1 -->
+      <a href="https://youtu.be/ifkujLi23Vc" target="_blank" rel="noopener"
          class="video-card group block bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
         <div class="relative h-48 overflow-hidden bg-gray-900">
           <img
-            src="https://img.youtube.com/vi/tLAbc133oU4/hqdefault.jpg"
-            alt="K3 pada Jalan Raya - Standar Operasional"
+            src="https://img.youtube.com/vi/ifkujLi23Vc/hqdefault.jpg"
+            alt="Video Edukasi K3 Jasa Marga"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
           <div class="absolute inset-0 bg-black/35 flex items-center justify-center">
@@ -474,19 +499,19 @@
           </div>
         </div>
         <div class="p-4">
-          <span class="inline-block bg-blue-100 text-blue-700 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded mb-3">Standar Operasional</span>
-          <h4 class="font-semibold text-on-surface text-[15px] leading-snug mb-1">Standar Operasional K3 di Ruas Tol</h4>
-          <p class="text-on-surface-variant text-label-sm leading-relaxed">Panduan lengkap prosedur keselamatan bagi petugas jalan tol agar bertugas di lapangan.</p>
+          <span class="inline-block bg-blue-100 text-blue-700 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded mb-3">Keselamatan Kerja</span>
+          <h4 class="font-semibold text-on-surface text-[15px] leading-snug mb-1">10 Tips Keselamatan di Proyek Konstruksi</h4>
+          <p class="text-on-surface-variant text-label-sm leading-relaxed">10 tips penting menjaga keselamatan di lingkungan kerja proyek konstruksi sesuai standar K3.</p>
         </div>
       </a>
 
-      <!-- Card 2: Perlengkapan Dasar -->
-      <a href="https://www.youtube.com/watch?v=wCKjGrXwql0" target="_blank" rel="noopener"
+      <!-- Card 2 -->
+      <a href="https://youtu.be/e5ib5rlZHGE" target="_blank" rel="noopener"
          class="video-card group block bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
         <div class="relative h-48 overflow-hidden bg-gray-900">
           <img
-            src="https://img.youtube.com/vi/wCKjGrXwql0/hqdefault.jpg"
-            alt="Animasi K3 - Pentingnya Alat Pelindung Diri APD"
+            src="https://img.youtube.com/vi/e5ib5rlZHGE/hqdefault.jpg"
+            alt="Video Edukasi K3 Jasa Marga"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
           <div class="absolute inset-0 bg-black/35 flex items-center justify-center">
@@ -499,19 +524,19 @@
           </div>
         </div>
         <div class="p-4">
-          <span class="inline-block bg-green-100 text-green-700 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded mb-3">Perlengkapan Dasar</span>
-          <h4 class="font-semibold text-on-surface text-[15px] leading-snug mb-1">Penggunaan Alat Pelindung Diri (APD)</h4>
-          <p class="text-on-surface-variant text-label-sm leading-relaxed">Tutorial pemilihan dan cara penggunaan APD yang benar untuk mengurangi risiko kecelakaan.</p>
+          <span class="inline-block bg-green-100 text-green-700 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded mb-3">Pertolongan Pertama</span>
+          <h4 class="font-semibold text-on-surface text-[15px] leading-snug mb-1">Panduan P3K di Tempat Kerja</h4>
+          <p class="text-on-surface-variant text-label-sm leading-relaxed">Cara memberikan pertolongan pertama yang benar saat terjadi kecelakaan di lingkungan kerja.</p>
         </div>
       </a>
 
-      <!-- Card 3: Tanggap Darurat -->
-      <a href="https://www.youtube.com/watch?v=1zYO_RMT00w" target="_blank" rel="noopener"
+      <!-- Card 3 -->
+      <a href="https://youtu.be/kiRquN6agZs" target="_blank" rel="noopener"
          class="video-card group block bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
         <div class="relative h-48 overflow-hidden bg-gray-900">
           <img
-            src="https://img.youtube.com/vi/1zYO_RMT00w/hqdefault.jpg"
-            alt="K3 Tanggap Darurat - Manajemen Krisis"
+            src="https://img.youtube.com/vi/kiRquN6agZs/hqdefault.jpg"
+            alt="Safety Video Sosialisasi K3 - Saya Pilih Selamat"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
           <div class="absolute inset-0 bg-black/35 flex items-center justify-center">
@@ -524,9 +549,9 @@
           </div>
         </div>
         <div class="p-4">
-          <span class="inline-block bg-purple-100 text-purple-700 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded mb-3">Tanggap Darurat</span>
-          <h4 class="font-semibold text-on-surface text-[15px] leading-snug mb-1">Manajemen Krisis &amp; Komunikasi</h4>
-          <p class="text-on-surface-variant text-label-sm leading-relaxed">Prosedur koordinasi antar unit saat terjadi insiden besar di area operasional jalan tol.</p>
+          <span class="inline-block bg-purple-100 text-purple-700 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded mb-3">Sosialisasi K3</span>
+          <h4 class="font-semibold text-on-surface text-[15px] leading-snug mb-1">Saya Pilih Selamat</h4>
+          <p class="text-on-surface-variant text-label-sm leading-relaxed">Video sosialisasi K3 yang mendorong budaya keselamatan kerja di lingkungan industri.</p>
         </div>
       </a>
 
@@ -537,47 +562,73 @@
 
 <!-- Footer -->
 <footer class="bg-primary text-on-primary border-t border-primary-container">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
-    <div class="space-y-4">
-      <div class="font-headline-md text-headline-md font-black text-on-primary">Jasa Marga K3</div>
-      <p class="text-on-primary/80 font-body-md text-body-md text-[14px]">Berkomitmen untuk menciptakan lingkungan kerja yang aman, sehat dan selamat demi memastikan kelancaran operasi jalan tol di seluruh Indonesia.</p>
-      <div class="flex space-x-3">
-        <a class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#">
-          <span class="material-symbols-outlined text-[18px]">public</span>
-        </a>
-        <a class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#">
-          <span class="material-symbols-outlined text-[18px]">alternate_email</span>
-        </a>
+  <div class="px-margin-desktop py-section-gap max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+
+      <!-- Brand + Logo + Sosmed -->
+      <div class="space-y-5 md:col-span-1">
+        <div>
+          <div class="bg-white rounded-lg px-3 py-2 inline-block">
+            <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga" class="h-8 w-auto block"/>
+          </div>
+        </div>
+        <p class="text-on-primary/80 text-[13px] leading-relaxed">Berkomitmen menciptakan lingkungan kerja yang aman, sehat, dan selamat demi kelancaran operasi jalan tol Indonesia.</p>
+        <!-- Social Media -->
+        <div class="flex gap-3">
+          <a href="#" aria-label="Facebook"
+             class="w-9 h-9 rounded-full bg-white/10 hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-colors">
+            <i class="bi bi-facebook text-[16px]"></i>
+          </a>
+          <a href="#" aria-label="Instagram"
+             class="w-9 h-9 rounded-full bg-white/10 hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-colors">
+            <i class="bi bi-instagram text-[16px]"></i>
+          </a>
+          <a href="#" aria-label="X (Twitter)"
+             class="w-9 h-9 rounded-full bg-white/10 hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-colors">
+            <i class="bi bi-twitter-x text-[16px]"></i>
+          </a>
+          <a href="#" aria-label="YouTube"
+             class="w-9 h-9 rounded-full bg-white/10 hover:bg-secondary-container hover:text-on-secondary-container flex items-center justify-center transition-colors">
+            <i class="bi bi-youtube text-[16px]"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="space-y-4">
-      <h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Informasi</h4>
-      <ul class="space-y-3">
-        <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Tentang Kami</a></li>
-        <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Kebijakan Privasi</a></li>
-        <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">HSE Standards</a></li>
-      </ul>
-    </div>
-    <div class="space-y-4">
-      <h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Bantuan</h4>
-      <ul class="space-y-3">
-        <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Syarat &amp; Ketentuan</a></li>
-        <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Layanan Pelanggan</a></li>
-        <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="space-y-4">
-      <h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Kontak Darurat</h4>
-      <ul class="space-y-3">
-        <li class="flex items-start gap-2">
-          <span class="material-symbols-outlined text-secondary-container text-[18px] mt-0.5">phone_in_talk</span>
-          <span class="text-on-primary/80 text-[14px]">14080 (Pusat Panggilan Darurat)</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="material-symbols-outlined text-secondary-container text-[18px] mt-0.5">location_on</span>
-          <span class="text-on-primary/80 text-[14px]">Plaza Tol Ciputat, Jl. Pajajaran No.1</span>
-        </li>
-      </ul>
+
+      <!-- Informasi -->
+      <div class="space-y-4">
+        <h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Informasi</h4>
+        <ul class="space-y-3">
+          <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Tentang Kami</a></li>
+          <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Kebijakan Privasi</a></li>
+          <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">HSE Standards</a></li>
+        </ul>
+      </div>
+
+      <!-- Bantuan -->
+      <div class="space-y-4">
+        <h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Bantuan</h4>
+        <ul class="space-y-3">
+          <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Syarat &amp; Ketentuan</a></li>
+          <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Layanan Pelanggan</a></li>
+          <li><a class="text-on-primary/80 hover:text-secondary-container transition-colors text-[14px]" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div class="space-y-4">
+        <h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Kontak Darurat</h4>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-secondary-container text-[18px] mt-0.5">phone_in_talk</span>
+            <span class="text-on-primary/80 text-[14px]">14080 (Pusat Panggilan Darurat)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-secondary-container text-[18px] mt-0.5">location_on</span>
+            <span class="text-on-primary/80 text-[14px]">Plaza Tol Ciputat, Jl. Pajajaran No.1</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </div>
   <div class="border-t border-white/10 pt-6 pb-8 text-center px-margin-desktop max-w-container-max mx-auto">
@@ -596,6 +647,50 @@
       header.classList.remove('shadow-md');
     }
   });
+
+  // ── Denah tab switching ──
+  const denahData = {
+    1: {
+      img: 'img/denah/lantai1.jpg',
+      alt: 'Denah Lantai 1 – Pelayanan & Gudang',
+      badge: 'LANTAI 1 – PELAYANAN &amp; GUDANG'
+    },
+    2: {
+      img: 'img/denah/lantai2.jpg',
+      alt: 'Denah Lantai 2 – Administrasi & Fasilitas',
+      badge: 'LANTAI 2 – ADMINISTRASI &amp; FASILITAS'
+    },
+    3: {
+      img: 'img/denah/lantai3.jpg',
+      alt: 'Denah Lantai 3 – SENKOM & Pusat Data',
+      badge: 'LANTAI 3 – SENKOM &amp; PUSAT DATA'
+    }
+  };
+
+  function switchLantai(n) {
+    const data = denahData[n];
+    const img = document.getElementById('denah-img');
+    const badge = document.getElementById('lantai-badge');
+
+    img.style.opacity = '0';
+    setTimeout(() => {
+      img.src = data.img;
+      img.alt = data.alt;
+      img.style.opacity = '1';
+    }, 200);
+
+    badge.innerHTML = `<span class="material-symbols-outlined text-[16px]">apartment</span> ${data.badge}`;
+
+    document.querySelectorAll('.lantai-tab').forEach((btn, i) => {
+      const active = i + 1 === n;
+      btn.classList.toggle('text-primary', active);
+      btn.classList.toggle('border-primary', active);
+      btn.classList.toggle('bg-surface-container-lowest', active);
+      btn.classList.toggle('text-on-surface-variant', !active);
+      btn.classList.toggle('border-transparent', !active);
+      btn.classList.toggle('bg-transparent', !active);
+    });
+  }
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

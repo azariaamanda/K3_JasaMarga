@@ -14,180 +14,156 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- Material Icons (Since original used them) -->
+    <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
     <!-- Custom CSS (Konsisten dengan Profil) -->
     <link rel="stylesheet" href="style/profil.css">
     <link rel="stylesheet" href="style/inovasi_digital.css">
 
     <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
         .hover-shadow-up { transition: all 0.3s ease; }
         .hover-shadow-up:hover { transform: translateY(-5px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
-        .bg-primary-jm { background-color: var(--primary); }
     </style>
 </head>
-<body>
+<body style="background-color: var(--bg-light);">
 
-    <!-- Navbar persis seperti profil.html/k3_apd.html -->
-    <nav class="navbar" id="navbar">
-        <a class="nav-logo" href="beranda.html">
-            <div class="nav-logo-icon">
-                <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga">
-            </div>
-        </a>
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="beranda.html">Beranda</a></li>
-            <li><a href="profil.html">Profil Perusahaan</a></li>
-            <li><a href="k3_apd.html">K3 &amp; APD</a></li>
-            <li><a href="inovasi_digital.html" class="active">Inovasi Digital</a></li>
-            <li><a href="lokasi_media.html">Lokasi &amp; Video</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-
-        <div class="nav-burger" id="burger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
 
     <main>
         <!-- Hero Section -->
         <section class="section-hero" id="hero">
             <div class="hero-bg">
-                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" class="hero-img" alt="Digital Innovation">
-                <div class="hero-overlay"></div>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBjcHBnO4X1VBJf5sndgpMaevJnI9Ml6bqIdahG0sP41_oOjNDRijpLAs1ADT14FZZgLYuE59fj_FQimDoO3JxpjwIFALcomhD9ZuaIwGUH4ltx1mndjRFhCq3Rr0NryarX92m0UmEIH_xeZduNbqVD6tr5UXKT_CCi3riIFKevo6RQBhvYpE0IfpEcewH-NeR6SPF5C_uhgJ3oq_TzS1IDFBJwwxrXxO4V1ywd-XXTlux8_qyy9OlCV8RSMdgfBc2Pq64plvn0TrC" class="hero-img" alt="Digital Highway">
+                <div class="hero-overlay" style="background: linear-gradient(to right, rgba(0,74,153,0.9), transparent);"></div>
             </div>
             <div class="hero-content container">
                 <div class="hero-text reveal">
-                    <span class="hero-badge"><i class="bi bi-lightbulb me-2"></i>INOVASI DIGITAL 4.0</span>
-                    <h1 class="hero-title">Inovasi Digital untuk Mobilitas yang Lebih Cerdas</h1>
-                    <p class="hero-subtitle">
+                    <span class="hero-badge" style="background-color: var(--secondary); color: var(--primary-dark);">INOVASI DIGITAL 4.0</span>
+                    <h1 class="hero-title text-white fw-bold mb-4">Inovasi Digital untuk Mobilitas yang Lebih Cerdas</h1>
+                    <p class="hero-subtitle text-white-50 mb-4 fs-5">
                         PT Jasa Marga terus melakukan transformasi digital untuk menghadirkan layanan jalan tol yang lebih aman, efisien, dan terintegrasi. Kami memanfaatkan teknologi mutakhir untuk memastikan pengalaman berkendara terbaik bagi seluruh masyarakat Indonesia.
                     </p>
-                    <div class="hero-cta d-flex flex-wrap gap-3" style="position: relative; z-index: 9999; pointer-events: auto;">
-                        <a href="#inovasi" class="btn-hero-primary text-decoration-none">Eksplorasi Inovasi <i class="bi bi-arrow-right-circle"></i></a>
-                        <a href="#" class="btn btn-outline-light rounded-pill px-4 fw-bold d-inline-flex align-items-center gap-2" style="padding-top: 1rem; padding-bottom: 1rem; border: 2px solid white; color: white;">Unduh Travoy <i class="bi bi-download"></i></a>
+                    <div class="hero-cta d-flex flex-wrap gap-3">
+                        <a href="#pilar" class="btn-hero-primary text-decoration-none">Eksplorasi Inovasi <i class="material-symbols-outlined ms-2">arrow_forward</i></a>
+                        <a href="#" class="btn btn-outline-light rounded-pill px-4 py-3 fw-bold d-inline-flex align-items-center gap-2 border-2">Unduh Travoy</a>
                     </div>
                 </div>
             </div>
-            <div class="hero-scroll-hint">
-                <div class="scroll-dot"></div>
-            </div>
         </section>
 
-        <!-- Empat Pilar Transformasi Section -->
-        <section style="background-color: var(--bg-light);" id="pilar">
-            <div class="container">
-                <div class="text-center mb-5 reveal">
-                    <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Empat Pilar Transformasi</h2>
-                    <div class="title-line mx-auto" style="width: 60px; height: 4px; background: var(--secondary); margin-top: 10px; border-radius: 2px;"></div>
+        <!-- Empat Pilar Transformasi -->
+        <section id="pilar" class="py-5" style="background-color: var(--white);">
+            <div class="container py-5">
+                <div class="section-header text-center reveal">
+                    <h2 class="section-title text-primary">Empat Pilar Transformasi</h2>
+                    <div class="title-underline"></div>
                 </div>
-
+                
                 <div class="row g-4 reveal">
                     <div class="col-md-6 col-lg-3">
-                        <div class="pillar-card hover-shadow-up text-center">
+                        <div class="pillar-card text-center">
                             <div class="pillar-icon-wrap mx-auto">
-                                <i class="material-icons">hub</i>
+                                <i class="material-symbols-outlined">hub</i>
                             </div>
-                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Transformasi Digital</h4>
-                            <p class="small text-muted mb-0">
-                                Modernisasi infrastruktur inti melalui adopsi cloud computing dan sistem manajemen terpusat.
-                            </p>
+                            <h4 class="fw-bold mb-3 fs-5" style="color: var(--dark);">Transformasi Digital</h4>
+                            <p class="text-muted small mb-0">Modernisasi infrastruktur inti melalui adopsi cloud computing dan sistem manajemen terpusat.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="pillar-card hover-shadow-up text-center">
+                        <div class="pillar-card text-center">
                             <div class="pillar-icon-wrap mx-auto">
-                                <i class="material-icons">traffic</i>
+                                <i class="material-symbols-outlined">traffic</i>
                             </div>
-                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Manajemen Lalu Lintas</h4>
-                            <p class="small text-muted mb-0">
-                                Sistem pemantauan real-time cerdas untuk mengurai kemacetan dan meningkatkan keselamatan.
-                            </p>
+                            <h4 class="fw-bold mb-3 fs-5" style="color: var(--dark);">Manajemen Lalu Lintas</h4>
+                            <p class="text-muted small mb-0">Sistem pemantauan real-time cerdas untuk mengurai kemacetan dan meningkatkan keselamatan.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="pillar-card hover-shadow-up text-center">
+                        <div class="pillar-card text-center">
                             <div class="pillar-icon-wrap mx-auto">
-                                <i class="material-icons">person_pin</i>
+                                <i class="material-symbols-outlined">person_pin</i>
                             </div>
-                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Layanan Pengguna</h4>
-                            <p class="small text-muted mb-0">
-                                Personalisasi pengalaman perjalanan melalui aplikasi digital terpadu dalam satu genggaman.
-                            </p>
+                            <h4 class="fw-bold mb-3 fs-5" style="color: var(--dark);">Layanan Pengguna</h4>
+                            <p class="text-muted small mb-0">Personalisasi pengalaman perjalanan melalui aplikasi digital terpadu dalam satu genggaman.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="pillar-card hover-shadow-up text-center">
+                        <div class="pillar-card text-center">
                             <div class="pillar-icon-wrap mx-auto">
-                                <i class="material-icons">database</i>
+                                <i class="material-symbols-outlined">database</i>
                             </div>
-                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Operasional Data</h4>
-                            <p class="small text-muted mb-0">
-                                Pengambilan keputusan strategis berbasis analitik data besar untuk efisiensi berkelanjutan.
-                            </p>
+                            <h4 class="fw-bold mb-3 fs-5" style="color: var(--dark);">Operasional Data</h4>
+                            <p class="text-muted small mb-0">Pengambilan keputusan strategis berbasis analitik data besar untuk efisiensi berkelanjutan.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Inovasi Digital Utama Section -->
-        <section id="inovasi" style="background-color: white;">
-            <div class="container">
-                <div class="row align-items-end mb-5 gy-4 reveal">
-                    <div class="col-lg-8">
-                        <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Inovasi Digital Utama</h2>
-                        <p class="text-muted mb-0">Ekosistem teknologi yang kami bangun untuk mendefinisikan masa depan infrastruktur jalan tol di Indonesia.</p>
+        <!-- Inovasi Digital Utama -->
+        <section class="py-5 bg-light" id="inovasi">
+            <div class="container py-5">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 reveal gap-4">
+                    <div>
+                        <h2 class="section-title text-primary mb-2">Inovasi Digital Utama</h2>
+                        <p class="text-muted mb-0" style="max-width: 600px;">Ekosistem teknologi yang kami bangun untuk mendefinisikan masa depan infrastruktur jalan tol di Indonesia.</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                            <i class="material-symbols-outlined">chevron_left</i>
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                            <i class="material-symbols-outlined">chevron_right</i>
+                        </button>
                     </div>
                 </div>
 
                 <div class="row g-4 reveal">
                     <!-- JID -->
-                    <div class="col-lg-6">
-                        <div class="inov-card h-100 hover-shadow-up">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Jasamarga Integrated Digitalmap">
-                            <div class="inov-card-overlay">
+                    <div class="col-md-6">
+                        <div class="inov-card h-100" style="min-height: 300px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJ529U8H14i9X2WNYILdAkB5-bHiJ6Mr48IXKYc6PIWRbO_TsM9c72WNYPlgZxCWhW79sPdK-U8R2Vp8gHts5QxcLnqBZ2unkhvRFM9Ih3RcsQYltz3e3wGzwilf9EnpHY9Zt1AempsPPemHz0MMTQxQhP014Mz23MPVQf1fvWy79VrKafrDOa7zFU66mqfgoY1YBdvAjGCHqJ2JJDjxlS1Z5aIMFN0sj8urd1rlaUgvQpztfmjmH4yr9fe0-E-AlsKyftN8tvynx" alt="JID Dashboard">
+                            <div class="inov-card-overlay p-4">
                                 <h3>Jasamarga Integrated Digitalmap</h3>
                                 <p>Dashboard operasional terpadu yang memetakan seluruh aset secara digital.</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- E-Toll -->
-                    <div class="col-lg-6">
-                        <div class="row g-4 h-100">
-                            <div class="col-12">
-                                <div class="inov-card h-100 hover-shadow-up" style="min-height: 200px;">
-                                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1974&auto=format&fit=crop" alt="Electronic Toll Payment">
-                                    <div class="inov-card-overlay">
-                                        <h4>Electronic Toll Payment</h4>
-                                        <p>Efisiensi maksimal melalui pembayaran nirsentuh.</p>
-                                    </div>
-                                </div>
+                    <!-- Electronic Toll -->
+                    <div class="col-md-6">
+                        <div class="inov-card h-100" style="min-height: 300px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACZrsNM89KO49KKxKeKOFxWLXAWB0wn2G2gNcmUn-_qgxMCDOBoEKN7sOBtK04cadFCGkG-chseN6oIpJQhl4IlQ3n2f6Crm9ei7AO1dZlpfcx3sc1Yk2R17-6fqZ5EsYBKtuBpj0bPXCbog29w4gXBD3hNX6kJdynBKqCWzITaPWBlGP0ecexLPt-z2qMExVWRezrqUNolUt2OWlJof_oU-DT_yB_g_85O2dbN33hKcsi0_7QhtKW2m7ceF6VDfwoaOYyLvmRDeop" alt="Electronic Toll Payment">
+                            <div class="inov-card-overlay p-4">
+                                <h4>Electronic Toll Payment</h4>
+                                <p>Efisiensi maksimal melalui pembayaran nirsentuh.</p>
                             </div>
-                            <!-- AI -->
-                            <div class="col-sm-6">
-                                <div class="inov-card h-100 hover-shadow-up" style="min-height: 250px;">
-                                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop" alt="AI dan Big Data">
-                                    <div class="inov-card-overlay">
-                                        <h4>AI &amp; Big Data Analytics</h4>
-                                        <p>Prediksi pola lalu lintas dan pemeliharaan cerdas.</p>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <!-- AI Big Data -->
+                    <div class="col-md-6">
+                        <div class="inov-card h-100" style="min-height: 300px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrPsRochrivef3NnQAgKusV4_R282t647DDz2pBveNY7ZMOaSpFXDvXnHl-jZqMRLMqChVRwr6tj9u1AgVLmj25jYtEG3LUssif3L2ghZPgAltkKZyNVHoVYjZODESw06SVcXjFYHb3JPsntMqHw3jXkviH-PyBxWBStPk4RDUAXYle2Oi9KD-xt9XbOGf2McZLY4m5guszmMdWPBMK7NQ7bfc1Z3NEGohc_4lp-yH4uwJE3YwFK8JfcqgZRH4y0Lf58R4zPHy2y8T" alt="AI and Big Data">
+                            <div class="inov-card-overlay p-4">
+                                <h4 class="fs-5">AI &amp; Big Data Analytics</h4>
+                                <p>Prediksi pola lalu lintas dan pemeliharaan cerdas.</p>
                             </div>
-                            <!-- IoT -->
-                            <div class="col-sm-6">
-                                <div class="inov-card h-100 hover-shadow-up" style="min-height: 250px;">
-                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="IoT Monitoring">
-                                    <div class="inov-card-overlay">
-                                        <h4>IoT Monitoring</h4>
-                                        <p>Sensor infrastruktur untuk keamanan berkelanjutan.</p>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <!-- IoT Infrastructure -->
+                    <div class="col-md-6">
+                        <div class="inov-card h-100" style="min-height: 300px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKmUee9RQ1ojXTGZvDX1_v7sjfe_JV-yPC2ceDeTbHsKlWSwXMrL47UQPXBqy8TsdOq9odik7qXiUO5Ivkz7d8i21odt-3trF0YBSJl9-AACLcXdIS1fOGm9mBVrMwnkPyXiZd-nyPxIOiR9Z8JpN_1YCnJbiBmwA0qZbCt6qWcf8QYCX5u8VqRupkvYUfCyXy5RC6Uo-FCCOmFxsIa7Rahuz4MGA5O6JM_iC-92HcdK-KHNRLnoBjHzYSLSCoWJKTNGXGUPKAnxK1" alt="IoT Monitoring">
+                            <div class="inov-card-overlay p-4">
+                                <h4 class="fs-5">IoT Monitoring</h4>
+                                <p>Sensor infrastruktur untuk keamanan berkelanjutan.</p>
                             </div>
                         </div>
                     </div>
@@ -195,11 +171,172 @@
             </div>
         </section>
 
+        <!-- Digital Ecosystem Workflow -->
+        <section class="py-5 overflow-hidden" style="background-color: var(--white);">
+            <div class="container py-5">
+                <div class="text-center mb-5 reveal">
+                    <h2 class="section-title text-primary">Bagaimana Ekosistem Kami Bekerja</h2>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">Integrasi data hulu ke hilir untuk menciptakan siklus peningkatan layanan yang terus menerus.</p>
+                </div>
+                
+                <div class="position-relative reveal mt-5 pt-3">
+                    <div class="row g-4 position-relative z-1">
+                        <!-- Step 1 -->
+                        <div class="col-md-4 col-lg flex-fill">
+                            <div class="workflow-step">
+                                <div class="workflow-bubble">
+                                    <i class="material-symbols-outlined">sensors</i>
+                                </div>
+                                <h5 class="fw-bold text-primary fs-6 mb-2">1. Pengumpulan Data</h5>
+                                <p class="text-muted small">Sensor IoT, CCTV, dan aplikasi mengumpulkan data real-time.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="col-md-4 col-lg flex-fill">
+                            <div class="workflow-step">
+                                <div class="workflow-bubble">
+                                    <i class="material-symbols-outlined">terminal</i>
+                                </div>
+                                <h5 class="fw-bold text-primary fs-6 mb-2">2. Analisis &amp; Pemrosesan</h5>
+                                <p class="text-muted small">AI memproses data besar untuk mendeteksi anomali.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="col-md-4 col-lg flex-fill">
+                            <div class="workflow-step">
+                                <div class="workflow-bubble accent">
+                                    <i class="material-symbols-outlined">monitoring</i>
+                                </div>
+                                <h5 class="fw-bold text-primary fs-6 mb-2">3. Monitoring Real-Time</h5>
+                                <p class="text-muted small">Visualisasi status jaringan jalan tol melalui dashboard JID.</p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="col-md-6 col-lg flex-fill">
+                            <div class="workflow-step">
+                                <div class="workflow-bubble">
+                                    <i class="material-symbols-outlined">gavel</i>
+                                </div>
+                                <h5 class="fw-bold text-primary fs-6 mb-2">4. Pengambilan Keputusan</h5>
+                                <p class="text-muted small">Tim operasional bertindak berdasarkan data akurat.</p>
+                            </div>
+                        </div>
+                        <!-- Step 5 -->
+                        <div class="col-md-6 col-lg flex-fill">
+                            <div class="workflow-step">
+                                <div class="workflow-bubble">
+                                    <i class="material-symbols-outlined">auto_awesome</i>
+                                </div>
+                                <h5 class="fw-bold text-primary fs-6 mb-2">5. Peningkatan Layanan</h5>
+                                <p class="text-muted small">Feedback sistem digunakan untuk optimasi berkelanjutan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-5" style="background-color: var(--primary); color: white;">
+            <div class="container py-5">
+                <div class="row align-items-center g-5 reveal">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4" style="font-family: var(--font-heading);">Manfaat Nyata bagi Stakeholder</h2>
+                        <p class="mb-5 text-white-50" style="font-size: 1.1rem; line-height: 1.8;">
+                            Implementasi teknologi digital kami tidak hanya tentang kecanggihan, tetapi tentang memberikan nilai tambah yang nyata bagi pengguna jalan, pemegang saham, dan negara.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="benefit-item">
+                                    <i class="material-symbols-outlined">speed</i>
+                                    <div>
+                                        <h5 class="fw-bold fs-6 mb-1">Efisiensi Operasional</h5>
+                                        <p class="small text-white-50 mb-0">Mengurangi biaya manual dan meningkatkan throughput kendaraan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="benefit-item">
+                                    <i class="material-symbols-outlined">sentiment_satisfied</i>
+                                    <div>
+                                        <h5 class="fw-bold fs-6 mb-1">Pengalaman Pengguna</h5>
+                                        <p class="small text-white-50 mb-0">Perjalanan lebih terprediksi dan nyaman tanpa hambatan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="benefit-item">
+                                    <i class="material-symbols-outlined">security</i>
+                                    <div>
+                                        <h5 class="fw-bold fs-6 mb-1">Keamanan Maksimal</h5>
+                                        <p class="small text-white-50 mb-0">Respons cepat terhadap insiden dan pemantauan 24/7.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="benefit-item">
+                                    <i class="material-symbols-outlined">precision_manufacturing</i>
+                                    <div>
+                                        <h5 class="fw-bold fs-6 mb-1">Pemeliharaan Prediktif</h5>
+                                        <p class="small text-white-50 mb-0">Mencegah kerusakan sebelum terjadi, menghemat waktu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi8GSQbHCloX1hoOUxge4lT3jjz93VXUW8zuUydSf66UHkCXAlEnVzhB-hI9cZ_LGq2Mbo3J7WqZWQqpqPEE6ABOFRkbfzNrlGz9N2C6DFC_Yj8Hqf80PKOjwPT7akvZgQF-MFuOLEQBaVh8IUCTnGDGHWRsgpo43VazNoBUL6PXbO3CxC8fYg5FFy30kvfer-CgsI399plzmhA9lc03h8Ux8-gOXjsi6ja_S4DdAXc6U-tkmi9mHN7Hmo8paihbZEXsLHttC5dk29" class="img-fluid rounded-4 shadow-lg hover-shadow-up" alt="Stakeholder Benefits">
+                            <div class="position-absolute bottom-0 start-0 translate-middle p-4 bg-warning text-primary rounded-3 shadow-lg d-none d-md-block" style="margin-left: 2rem; margin-bottom: -1rem;">
+                                <div class="fw-bold" style="font-size: 2.5rem; line-height: 1;">30%</div>
+                                <div class="fw-bold small text-uppercase">Peningkatan Efisiensi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Vision -->
+        <section class="py-5 bg-white text-center">
+            <div class="container py-5 reveal">
+                <div class="vision-box mx-auto">
+                    <span class="d-block text-primary fw-bold small text-uppercase tracking-widest mb-3">Visi Masa Depan</span>
+                    <h2 class="fw-bold text-primary mb-4" style="font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem);">Menuju Jalan Tol Cerdas 2030</h2>
+                    <p class="text-muted mx-auto mb-5" style="max-width: 800px; font-size: 1.1rem; line-height: 1.8;">
+                        Kami berkomitmen untuk terus menjadi pionir dalam integrasi AI, IoT, dan solusi berkelanjutan. Visi kami adalah menciptakan ekosistem transportasi yang "Zero Congestion, Zero Accident, dan Zero Carbon" di seluruh jaringan Jasa Marga.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 gap-md-5">
+                        <div class="vision-milestone">
+                            <div class="vision-milestone-num">01</div>
+                            <span class="fw-bold text-primary small text-uppercase">Fully Autonomous Traffic Mgmt</span>
+                        </div>
+                        <div class="vision-milestone">
+                            <div class="vision-milestone-num">02</div>
+                            <span class="fw-bold text-primary small text-uppercase">Green Tech Infrastructure</span>
+                        </div>
+                        <div class="vision-milestone">
+                            <div class="vision-milestone-num">03</div>
+                            <span class="fw-bold text-primary small text-uppercase">Quantum-Safe Connectivity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-5" style="background-color: var(--bg-light);">
+            <div class="container py-5 text-center reveal">
+                <h2 class="fw-bold text-primary mb-4" style="font-family: var(--font-heading);">Bersama Teknologi, Membangun Mobilitas Masa Depan</h2>
+                <p class="text-muted mx-auto mb-5" style="max-width: 700px; font-size: 1.1rem;">
+                    Jadilah bagian dari revolusi infrastruktur digital Indonesia. Akses layanan kami sekarang dan rasakan kemudahan berkendara yang belum pernah ada sebelumnya.
+                </p>
+                <a href="beranda.html" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-sm hover-shadow-up">Kembali ke Beranda</a>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer persis seperti profil.html (dapat ditambahkan dari komponen yang ada) -->
-    <!-- Assuming footer code is usually added or included, I'll provide a placeholder or skip if not explicitly present in k3_apd.html - wait, k3_apd.html didn't have footer inline? Let me check -->
-    
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     

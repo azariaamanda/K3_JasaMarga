@@ -3,14 +3,24 @@
     display: inline-block;
     vertical-align: middle;
 }
-.hero-overlay {
-    background: linear-gradient(180deg, rgba(0, 52, 111, 0.7) 0%, rgba(0, 52, 111, 0.4) 100%);
-}
+
 .glass-card {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.text-shadow-sm {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+/* Footer link hover */
+.footer-link:hover {
+    color: var(--secondary) !important;
+    transition: color 0.2s;
+}
+
+/* Btn outline primary override to match brand */
+.btn-outline-primary {
+    --bs-btn-color: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-bg: var(--primary);
+    --bs-btn-hover-border-color: var(--primary);
+    --bs-btn-hover-color: #fff;
 }

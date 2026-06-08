@@ -4,106 +4,15 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Jasa Marga - Menghubungkan Negeri</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-secondary-container": "#6f5900",
-                    "on-error": "#ffffff",
-                    "surface-dim": "#dadadc",
-                    "tertiary-fixed": "#e1e3e4",
-                    "inverse-on-surface": "#f0f0f3",
-                    "surface": "#f9f9fc",
-                    "inverse-primary": "#abc7ff",
-                    "secondary": "#725c00",
-                    "surface-variant": "#e2e2e5",
-                    "secondary-fixed": "#ffe07f",
-                    "outline": "#737783",
-                    "on-tertiary-fixed-variant": "#454748",
-                    "on-surface": "#1a1c1e",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-fixed-variant": "#564500",
-                    "primary-fixed": "#d7e2ff",
-                    "on-primary-fixed": "#001b3f",
-                    "tertiary-fixed-dim": "#c5c7c8",
-                    "tertiary": "#333537",
-                    "on-primary-fixed-variant": "#00458f",
-                    "error": "#ba1a1a",
-                    "on-surface-variant": "#424751",
-                    "on-secondary": "#ffffff",
-                    "surface-container": "#eeeef0",
-                    "primary-fixed-dim": "#abc7ff",
-                    "primary-container": "#004a99",
-                    "surface-container-low": "#f3f3f6",
-                    "tertiary-container": "#4a4c4d",
-                    "error-container": "#ffdad6",
-                    "on-primary-container": "#9bbdff",
-                    "on-tertiary-fixed": "#191c1d",
-                    "surface-tint": "#255dad",
-                    "surface-container-high": "#e8e8ea",
-                    "inverse-surface": "#2f3133",
-                    "surface-container-highest": "#e2e2e5",
-                    "surface-bright": "#f9f9fc",
-                    "on-primary": "#ffffff",
-                    "on-secondary-fixed": "#231b00",
-                    "outline-variant": "#c2c6d3",
-                    "primary": "#00346f",
-                    "on-error-container": "#93000a",
-                    "on-tertiary-container": "#bbbcbd",
-                    "on-background": "#1a1c1e",
-                    "secondary-container": "#fed000",
-                    "secondary-fixed-dim": "#edc200",
-                    "background": "#f9f9fc"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "gutter": "24px",
-                    "base": "8px",
-                    "section-gap": "80px",
-                    "margin-desktop": "40px",
-                    "container-max": "1280px",
-                    "margin-mobile": "16px"
-            },
-            "fontFamily": {
-                    "label-md": ["Poppins"],
-                    "label-sm": ["Poppins"],
-                    "headline-md": ["Montserrat"],
-                    "display-lg": ["Montserrat"],
-                    "body-lg": ["Poppins"],
-                    "body-md": ["Poppins"],
-                    "headline-lg": ["Montserrat"],
-                    "display-lg-mobile": ["Montserrat"]
-            },
-            "fontSize": {
-                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}]
-            }
-          },
-        },
-      }
-    </script>
-<link rel="stylesheet" href="style/beranda.css">
-<link rel="stylesheet" href="style/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/profil.css">
+    <link rel="stylesheet" href="style/beranda.css">
+    <link rel="stylesheet" href="style/navbar.css">
 </head>
-<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<body>
 <!-- TopNavBar -->
 <nav class="navbar" id="navbar">
     <a class="nav-logo" href="beranda.html">
@@ -126,162 +35,155 @@
         <span></span>
     </div>
 </nav>
-<main class="pt-20">
+<main>
 <!-- Hero Section -->
-<section class="relative h-[870px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="Indonesian Toll Road" class="w-full h-full object-cover" data-alt="A cinematic wide shot of a modern multi-lane toll road in Indonesia during the golden hour. The asphalt is pristine and sleek, reflecting the warm orange and pink hues of the sunset. In the background, lush green tropical landscapes and a clear sky create a sense of national progress and connectivity. The lighting is soft yet dramatic, emphasizing the massive scale of the civil engineering infrastructure under a professional corporate aesthetic." src="https://lh3.googleusercontent.com/aida/AP1WRLstZ5_XmJNPq04lcU35KvrrC7p__SnC169wF3mJEYG0xhX2WruNYr2AayZBlZeywKXNb2tY2PBTzBr9F5pNixUdNwx1kz_5l24Gv6rDUDlZPm41usVb8A0Gu4lLhGZAPD4SJVpini1VGAOomlyNlF6Om5F75gLs2Eore8dS5ek3yi259qcgKwT9v_Hb6tGR0lzZly79b2rKr7e96EgMOhhjgYgzJ4gkshbJYGiWh6-BjKPMG-T_GKlBq7A"/>
-<div class="absolute inset-0 hero-overlay"></div>
-</div>
-<div class="relative z-10 w-full px-margin-desktop max-w-container-max mx-auto text-on-primary">
-<div class="max-w-2xl">
-<h1 class="font-display-lg text-display-lg mb-6 text-shadow-sm">Menghubungkan <br/><span class="text-secondary-container">Seluruh Negeri</span></h1>
-<p class="font-body-lg text-body-lg mb-8 text-on-primary/90">Dedikasi Jasa Marga dalam membangun infrastruktur jalan tol yang handal dan berkelanjutan untuk kemajuan bangsa Indonesia.</p>
-<div class="flex space-x-4">
-<a href="lokasi_media.html" class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md text-label-md hover:brightness-95 transition-all inline-block text-center text-decoration-none">Jelajahi Rute</a>
-</div>
-</div>
-</div>
+<section class="section-hero" id="hero">
+    <div class="hero-bg">
+        <img alt="Indonesian Toll Road" class="hero-img" src="https://lh3.googleusercontent.com/aida/AP1WRLstZ5_XmJNPq04lcU35KvrrC7p__SnC169wF3mJEYG0xhX2WruNYr2AayZBlZeywKXNb2tY2PBTzBr9F5pNixUdNwx1kz_5l24Gv6rDUDlZPm41usVb8A0Gu4lLhGZAPD4SJVpini1VGAOomlyNlF6Om5F75gLs2Eore8dS5ek3yi259qcgKwT9v_Hb6tGR0lzZly79b2rKr7e96EgMOhhjgYgzJ4gkshbJYGiWh6-BjKPMG-T_GKlBq7A"/>
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+        <div class="hero-text reveal">
+            <span class="hero-badge">Menghubungkan Seluruh Negeri</span>
+            <h1 class="hero-title">Dedikasi Jasa Marga</h1>
+            <p class="hero-subtitle">Membangun infrastruktur jalan tol yang handal dan berkelanjutan untuk kemajuan bangsa Indonesia.</p>
+            <div class="hero-cta">
+                <a href="profil.html" class="btn-hero-primary">Kenali Jasa Marga <i class="bi bi-arrow-right-circle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <div class="scroll-dot"></div>
+    </div>
 </section>
 <!-- Company at a Glance (Sekilas Perusahaan) -->
-<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-5 space-y-6">
-<span class="text-primary font-label-md text-label-md tracking-widest">SEKILAS PERUSAHAAN</span>
-<h2 class="font-headline-lg text-headline-lg text-primary">Infrastruktur untuk Masa Depan Bangsa</h2>
-<p class="text-on-surface-variant font-body-md text-body-md">Sebagai pelopor penyelenggara jalan tol di Indonesia, Jasa Marga terus berkomitmen meningkatkan kualitas pelayanan dan konektivitas nasional melalui inovasi berkelanjutan dan operasional yang prima.</p>
-<a class="inline-flex items-center text-primary font-label-md text-label-md font-bold group" href="profil.html">
-                        BACA SELENGKAPNYA <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<div class="lg:col-span-7">
-<div class="aspect-video bg-black rounded-xl border border-outline-variant overflow-hidden shadow-md relative">
-    <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-        <source src="video/inovasi_digital.mp4" type="video/mp4">
-        Video tidak didukung oleh browser Anda.
-    </video>
-</div>
-</div>
-</div>
+<section id="sekilas-perusahaan" class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 reveal">
+                <span class="section-badge">Sekilas Perusahaan</span>
+                <h2 class="section-title text-start mb-3">Infrastruktur untuk Masa Depan Bangsa</h2>
+                <div class="title-underline mx-0 mb-4"></div>
+                <p class="text-muted mb-4">Sebagai pelopor penyelenggara jalan tol di Indonesia, Jasa Marga terus berkomitmen meningkatkan kualitas pelayanan dan konektivitas nasional melalui inovasi berkelanjutan dan operasional yang prima.</p>
+                <a href="inovasi_digital.html" class="btn btn-outline-primary rounded-pill fw-bold px-4 py-2">
+                    Baca Selengkapnya <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="col-lg-7 reveal">
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+                    <video class="w-100 h-100 object-fit-cover" style="object-fit: cover;" autoplay loop muted playsinline>
+                        <source src="video/inovasi_digital.mp4" type="video/mp4">
+                        Video tidak didukung oleh browser Anda.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Infrastructure & K3 Focus -->
-<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-<div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Komitmen Keamanan &amp; Keselamatan</h2>
-<p class="text-on-surface-variant">Keselamatan kerja (K3) adalah prioritas utama kami. Kami menerapkan standar keamanan tertinggi di setiap proyek konstruksi dan operasional jalan tol.</p>
-</div>
-<a href="k3_apd.html" class="border border-primary text-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all text-center inline-block">Lihat Standar K3</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<a href="sop_keselamatan.html" class="group relative block h-80 overflow-hidden rounded-xl border border-outline-variant">
-<img alt="Construction Work" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional close-up shot of an Indonesian construction worker wearing high-visibility safety gear including a bright yellow helmet and orange reflective vest. He is inspecting a steel bridge structure against a bright blue sky. The lighting is sharp and professional, highlighting the textures of the safety gear and the steel. The image conveys a strong sense of safety, professionalism, and rigorous industrial standards." src="https://lh3.googleusercontent.com/aida/AP1WRLuWzEEunyY351z93nFRQ20oJiNdSj3v9dv-YCY5wtcFBOX2rOBtDLACwR4X2pFsmMi8ZE4vSiJkQetfQXbe4NkUOF0XQR6uNuPTL97uJsVSUDGdaunvyZ_M-Ciu8Kt_5frk2PteOKpzx96PWLq3JEQQh44i8AODevUt6sXYDaF6C_LG1ZN8U0PAqCemwMn7Bxa5sFYO2BRPy7jBo6dMFah_5TiffhSI-gROxiSd6gBmqhXWY0KooRc9YOI"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-<div>
-<h3 class="text-on-primary font-headline-md text-headline-md mb-2">Budaya K3L</h3>
-<p class="text-on-primary/80 text-label-sm">Implementasi nihil kecelakaan kerja di seluruh unit bisnis.</p>
-</div>
-</div>
-</a>
-<a href="inovasi_digital.html" class="group relative block h-80 overflow-hidden rounded-xl border border-outline-variant">
-<img alt="Modern Building" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A low-angle shot of a modern glass office building representing Jasa Marga's corporate headquarters. The glass reflects a clear blue sky and wispy white clouds. The architecture is sharp and minimalist, symbolizing transparency and corporate integrity. The lighting is crisp and airy, following a bright light-mode aesthetic that feels fresh and professional." src="https://lh3.googleusercontent.com/aida/AP1WRLtpN67bkjalr9ApJetzKKQzhlm7WYMcse6mFOJthzWovxp6fN8cLxQchNn9pGEuRExJqf3CbY3GP2xyrqGpx_hdZbrw4UKHPHPzVjfeQ--1q7GyMDvAkHBpvS1kk5r3Cp9cMaTW7XGroEVFPp2239MmAnrtIsgRmoDEPBb9JYQ-_p4ciz8c0t7ZHczgxxOl9ghas_uhdEqI5KAVlOjXuIPpRq6fdPNE-EV42T4ZP5pUMlsedxabSCyGSA"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-<div>
-<h3 class="text-on-primary font-headline-md text-headline-md mb-2">Inovasi Digital</h3>
-<p class="text-on-primary/80 text-label-sm">Monitoring real-time lalu lintas dengan teknologi AI terbaru.</p>
-</div>
-</div>
-</a>
-<a href="kontak.html" class="group relative block h-80 overflow-hidden rounded-xl border border-outline-variant">
-<img alt="Control Room" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A high-tech traffic control center with multiple glowing screens displaying live video feeds from Indonesian highways and complex map data. Operators are visible in silhouette, working in a dimly lit room with blue ambient lighting. The scene looks like a modern command center, projecting an image of advanced technology, efficiency, and tireless surveillance for public safety." src="https://lh3.googleusercontent.com/aida/AP1WRLsJkLI-VjyZ4Re-IUy7dU6Vq7B8k7x2mgCo2enGj8PC4PKRi70vZ0WGHTNRGq00GtnsXr_oAtG5iEgrQwIIyIlGvGsycU_CZiSjCpAFm9qnMYU4ogNF7T7lAAMvMprMYunC_Mm_pwNdeX5nIkylB-sMSlMbzS9s711HyQw4j1W4s3sIUqv_yf4RQ55aAAcOTsnUgFCiPx1i4CDIVjiH0Dx1lQQFid_HlRLqDoA49sehy2BRZSmhTlxUync"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-<div>
-<h3 class="text-on-primary font-headline-md text-headline-md mb-2">Pelayanan Pelanggan</h3>
-<p class="text-on-primary/80 text-label-sm">Bantuan jalan tol 24 jam untuk kenyamanan pengguna jalan.</p>
-</div>
-</div>
-</a>
-</div>
+<section class="py-5">
+    <div class="container py-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 gap-4">
+            <div class="max-w-xl" style="max-width: 600px;">
+                <span class="section-badge">Fokus Utama</span>
+                <h2 class="section-title text-start mb-3">Komitmen Keamanan &amp; Keselamatan</h2>
+                <div class="title-underline mx-0 mb-3"></div>
+                <p class="text-muted mb-0">Keselamatan kerja (K3) adalah prioritas utama kami. Kami menerapkan standar keamanan tertinggi di setiap proyek konstruksi dan operasional jalan tol.</p>
+            </div>
+            <a href="k3_apd.html" class="btn btn-outline-primary rounded-pill fw-bold px-4 py-2 text-nowrap">Lihat Standar K3</a>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 reveal">
+                <a href="sop_keselamatan.html" class="d-block position-relative rounded-4 overflow-hidden shadow-sm text-decoration-none" style="height: 320px;">
+                    <img alt="Construction Work" class="position-absolute w-100 h-100 object-fit-cover" style="transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" src="https://lh3.googleusercontent.com/aida/AP1WRLuWzEEunyY351z93nFRQ20oJiNdSj3v9dv-YCY5wtcFBOX2rOBtDLACwR4X2pFsmMi8ZE4vSiJkQetfQXbe4NkUOF0XQR6uNuPTL97uJsVSUDGdaunvyZ_M-Ciu8Kt_5frk2PteOKpzx96PWLq3JEQQh44i8AODevUt6sXYDaF6C_LG1ZN8U0PAqCemwMn7Bxa5sFYO2BRPy7jBo6dMFah_5TiffhSI-gROxiSd6gBmqhXWY0KooRc9YOI"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="text-white position-relative z-1">
+                            <h3 class="h5 fw-bold mb-2">Budaya K3L</h3>
+                            <p class="small mb-0 opacity-75">Implementasi nihil kecelakaan kerja di seluruh unit bisnis.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 reveal">
+                <a href="inovasi_digital.html" class="d-block position-relative rounded-4 overflow-hidden shadow-sm text-decoration-none" style="height: 320px;">
+                    <img alt="Modern Building" class="position-absolute w-100 h-100 object-fit-cover" style="transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" src="https://lh3.googleusercontent.com/aida/AP1WRLtpN67bkjalr9ApJetzKKQzhlm7WYMcse6mFOJthzWovxp6fN8cLxQchNn9pGEuRExJqf3CbY3GP2xyrqGpx_hdZbrw4UKHPHPzVjfeQ--1q7GyMDvAkHBpvS1kk5r3Cp9cMaTW7XGroEVFPp2239MmAnrtIsgRmoDEPBb9JYQ-_p4ciz8c0t7ZHczgxxOl9ghas_uhdEqI5KAVlOjXuIPpRq6fdPNE-EV42T4ZP5pUMlsedxabSCyGSA"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="text-white position-relative z-1">
+                            <h3 class="h5 fw-bold mb-2">Inovasi Digital</h3>
+                            <p class="small mb-0 opacity-75">Monitoring real-time lalu lintas dengan teknologi AI terbaru.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 reveal">
+                <a href="kontak.html" class="d-block position-relative rounded-4 overflow-hidden shadow-sm text-decoration-none" style="height: 320px;">
+                    <img alt="Control Room" class="position-absolute w-100 h-100 object-fit-cover" style="transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" src="https://lh3.googleusercontent.com/aida/AP1WRLsJkLI-VjyZ4Re-IUy7dU6Vq7B8k7x2mgCo2enGj8PC4PKRi70vZ0WGHTNRGq00GtnsXr_oAtG5iEgrQwIIyIlGvGsycU_CZiSjCpAFm9qnMYU4ogNF7T7lAAMvMprMYunC_Mm_pwNdeX5nIkylB-sMSlMbzS9s711HyQw4j1W4s3sIUqv_yf4RQ55aAAcOTsnUgFCiPx1i4CDIVjiH0Dx1lQQFid_HlRLqDoA49sehy2BRZSmhTlxUync"/>
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                        <div class="text-white position-relative z-1">
+                            <h3 class="h5 fw-bold mb-2">Pelayanan Pelanggan</h3>
+                            <p class="small mb-0 opacity-75">Bantuan jalan tol 24 jam untuk kenyamanan pengguna jalan.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-primary text-on-primary py-section-gap border-t border-primary-container">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
-<div class="space-y-6">
-<div class="font-headline-lg text-headline-lg font-black text-on-primary">Jasa Marga</div>
-<p class="text-on-primary/80 font-body-md text-body-md">Membangun konektivitas untuk kemajuan bangsa dengan pelayanan jalan tol terbaik di Indonesia.</p>
-<div class="flex space-x-4">
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined">phone_in_talk</span></a>
-</div>
-</div>
-<div class="space-y-4">
-<h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Tentang Kami</h4>
-<ul class="space-y-3">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Gambaran Umum</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Visi &amp; Misi</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Tata Kelola Perusahaan</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Laporan Keuangan</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Layanan</h4>
-<ul class="space-y-3">
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Galeri APD</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Prosedur Evakuasi</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Informasi Tarif</a></li>
-<li><a class="text-on-primary/80 hover:text-secondary-container transition-colors font-body-md text-body-md" href="#">Peta Jalan Tol</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="font-label-md text-label-md text-secondary-container uppercase tracking-widest">Hubungi Kami</h4>
-<ul class="space-y-3">
-<li class="flex items-start space-x-3">
-<span class="material-symbols-outlined text-secondary-container">location_on</span>
-<span class="text-on-primary/80 text-body-md">Plaza Tol Ciputat, Jl. Pajajaran No.1, Tangerang Selatan</span>
-</li>
-<li class="flex items-center space-x-3">
-<span class="material-symbols-outlined text-secondary-container">call</span>
-<span class="text-on-primary/80 text-body-md">14080 (Pusat Kontak)</span>
-</li>
-<li class="flex items-center space-x-3">
-<span class="material-symbols-outlined text-secondary-container">mail</span>
-<span class="text-on-primary/80 text-body-md">kontak@jasamarga.co.id</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="mt-section-gap border-t border-white/10 pt-8 text-center px-margin-desktop max-w-container-max mx-auto">
-<p class="text-on-primary/60 text-label-sm font-label-sm">© 2024 Jasa Marga. All Rights Reserved.</p>
-</div>
+<footer style="background-color: var(--primary); color: #fff;">
+    <div class="container py-5">
+        <div class="row g-5 pb-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="fw-black fs-4 mb-3" style="font-family: var(--font-heading); font-weight: 800;">Jasa Marga</div>
+                <p class="text-white-50">Membangun konektivitas untuk kemajuan bangsa dengan pelayanan jalan tol terbaik di Indonesia.</p>
+                <div class="d-flex gap-2 mt-3">
+                    <a class="d-flex align-items-center justify-content-center rounded-circle text-white" href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='var(--secondary)';this.style.color='var(--primary-dark)'" onmouseout="this.style.background='rgba(255,255,255,0.1)';this.style.color='#fff'"><i class="bi bi-globe2"></i></a>
+                    <a class="d-flex align-items-center justify-content-center rounded-circle text-white" href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='var(--secondary)';this.style.color='var(--primary-dark)'" onmouseout="this.style.background='rgba(255,255,255,0.1)';this.style.color='#fff'"><i class="bi bi-envelope-fill"></i></a>
+                    <a class="d-flex align-items-center justify-content-center rounded-circle text-white" href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='var(--secondary)';this.style.color='var(--primary-dark)'" onmouseout="this.style.background='rgba(255,255,255,0.1)';this.style.color='#fff'"><i class="bi bi-telephone-fill"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-uppercase fw-bold mb-3 tracking-widest" style="color: var(--secondary); font-size: 0.7rem; letter-spacing: 0.12em;">Tentang Kami</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Gambaran Umum</a></li>
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Visi &amp; Misi</a></li>
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Tata Kelola</a></li>
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Laporan Keuangan</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-uppercase fw-bold mb-3" style="color: var(--secondary); font-size: 0.7rem; letter-spacing: 0.12em;">Layanan</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Galeri APD</a></li>
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Prosedur Evakuasi</a></li>
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Informasi Tarif</a></li>
+                    <li class="mb-2"><a class="text-white-50 text-decoration-none footer-link" href="#">Peta Jalan Tol</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h6 class="text-uppercase fw-bold mb-3" style="color: var(--secondary); font-size: 0.7rem; letter-spacing: 0.12em;">Hubungi Kami</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-3 d-flex gap-2">
+                        <i class="bi bi-geo-alt-fill mt-1 flex-shrink-0" style="color: var(--secondary);"></i>
+                        <span class="text-white-50">Plaza Tol Ciputat, Jl. Pajajaran No.1, Tangerang Selatan</span>
+                    </li>
+                    <li class="mb-2 d-flex align-items-center gap-2">
+                        <i class="bi bi-telephone-fill flex-shrink-0" style="color: var(--secondary);"></i>
+                        <span class="text-white-50">14080 (Pusat Kontak)</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-2">
+                        <i class="bi bi-envelope-fill flex-shrink-0" style="color: var(--secondary);"></i>
+                        <span class="text-white-50">kontak@jasamarga.co.id</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color: rgba(255,255,255,0.1);">
+        <p class="text-center text-white-50 small mb-0">© 2024 Jasa Marga. All Rights Reserved.</p>
+    </div>
 </footer>
-<script>
-        // Smooth shadow transition for header on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 10) {
-                header.classList.add('shadow-md');
-            } else {
-                header.classList.remove('shadow-md');
-            }
-        });
-
-        // Simple animation trigger for stats
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('translate-y-0', 'opacity-100');
-                    entry.target.classList.remove('translate-y-8', 'opacity-0');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.grid > div').forEach(div => {
-            div.classList.add('transition-all', 'duration-700', 'translate-y-8', 'opacity-0');
-            observer.observe(div);
-        });
-    </script>
-    <script src="script/profil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/profil.js"></script>
 </body></html>

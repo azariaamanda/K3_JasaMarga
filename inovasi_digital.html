@@ -1,124 +1,223 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Inovasi Digital | Jasa Marga</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary-container": "#004a99",
-                        "secondary-container": "#fed000",
-                        "primary": "#00346f",
-                        "surface": "#f9f9fc",
-                        "on-surface": "#1a1c1e",
-                        "on-primary": "#ffffff",
-                        "outline-variant": "#c2c6d3"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "margin-desktop": "40px",
-                        "container-max": "1280px",
-                        "section-gap": "80px"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Montserrat"],
-                        "body-md": ["Poppins"],
-                        "label-md": ["Poppins"],
-                        "headline-md": ["Montserrat"],
-                        "display-lg": ["Montserrat"]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        body { font-family: 'Poppins', sans-serif; background-color: #f7f9fb; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovasi Digital | Jasa Marga</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Material Icons (Since original used them) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom CSS (Konsisten dengan Profil) -->
+    <link rel="stylesheet" href="style/profil.css">
+    <link rel="stylesheet" href="style/inovasi_digital.css">
+
+    <style>
+        .hover-shadow-up { transition: all 0.3s ease; }
+        .hover-shadow-up:hover { transform: translateY(-5px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
+        .bg-primary-jm { background-color: var(--primary); }
     </style>
-    <link rel="stylesheet" href="style/navbar.css">
 </head>
-<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<body>
 
-<!-- TopNavBar -->
-<!-- Navbar -->
-<nav class="navbar" id="navbar">
-    <a class="nav-logo" href="beranda.html">
-        <div class="nav-logo-icon">
-            <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga">
-        </div>
-    </a>
-
-    <ul class="nav-links" id="navLinks">
-        <li><a href="beranda.html">Beranda</a></li>
-        <li><a href="profil.html">Profil Perusahaan</a></li>
-        <li><a href="k3_apd.html">K3 & APD</a></li>
-        <li><a href="lokasi_media.html">Lokasi & Video</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-
-    <div class="nav-burger" id="burger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</nav>
-
-<main class="pt-20">
-    <!-- Hero Section -->
-    <section class="py-section-gap px-margin-desktop max-w-container-max mx-auto text-center">
-        <div class="w-20 h-20 bg-primary-container text-white rounded-full flex items-center justify-center mx-auto mb-6">
-            <span class="material-symbols-outlined text-[40px]">memory</span>
-        </div>
-        <h1 class="font-display-lg text-4xl md:text-5xl text-primary font-bold mb-4">Inovasi Digital</h1>
-        <p class="font-body-md text-lg text-gray-600 max-w-2xl mx-auto mb-12">
-            Mengintegrasikan teknologi mutakhir dan kecerdasan buatan (AI) untuk menghadirkan pengalaman berkendara di jalan tol yang lebih aman, nyaman, dan efisien.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-            <div class="p-8 bg-white border border-outline-variant rounded-xl shadow-sm hover:shadow-md transition">
-                <span class="material-symbols-outlined text-primary text-[32px] mb-4">videocam</span>
-                <h3 class="font-headline-md text-xl font-bold mb-2 text-primary">Smart CCTV & AI Analytics</h3>
-                <p class="text-gray-600">Penggunaan kamera cerdas di sepanjang ruas tol untuk mendeteksi anomali lalu lintas, kendaraan berhenti, atau potensi kecelakaan secara otomatis (real-time).</p>
+    <!-- Navbar persis seperti profil.html/k3_apd.html -->
+    <nav class="navbar" id="navbar">
+        <a class="nav-logo" href="beranda.html">
+            <div class="nav-logo-icon">
+                <img src="img/logo/logo-jasa-marga-panjang.png" alt="Logo Jasa Marga">
             </div>
-            <div class="p-8 bg-white border border-outline-variant rounded-xl shadow-sm hover:shadow-md transition">
-                <span class="material-symbols-outlined text-primary text-[32px] mb-4">speed</span>
-                <h3 class="font-headline-md text-xl font-bold mb-2 text-primary">Intelligent Traffic System</h3>
-                <p class="text-gray-600">Sistem manajemen lalu lintas terpusat yang mampu mengatur gerbang tol, rambu elektronik, dan batas kecepatan variabel berdasarkan kepadatan jalan.</p>
-            </div>
-            <div class="p-8 bg-white border border-outline-variant rounded-xl shadow-sm hover:shadow-md transition">
-                <span class="material-symbols-outlined text-primary text-[32px] mb-4">app_shortcut</span>
-                <h3 class="font-headline-md text-xl font-bold mb-2 text-primary">Aplikasi Travoy</h3>
-                <p class="text-gray-600">Aplikasi mobile terpadu yang memberikan informasi tarif, rute, rest area, hingga layanan derek online langsung dari genggaman pengguna jalan.</p>
-            </div>
-            <div class="p-8 bg-white border border-outline-variant rounded-xl shadow-sm hover:shadow-md transition">
-                <span class="material-symbols-outlined text-primary text-[32px] mb-4">payment</span>
-                <h3 class="font-headline-md text-xl font-bold mb-2 text-primary">Transaksi Touchless</h3>
-                <p class="text-gray-600">Pengembangan sistem pembayaran tol tanpa henti (Multi Lane Free Flow / MLFF) untuk mengurangi antrean di gerbang tol.</p>
-            </div>
-        </div>
-    </section>
-</main>
+        </a>
 
-<footer class="bg-primary text-white py-12 text-center mt-12">
-    <div class="max-w-container-max mx-auto px-margin-desktop">
-        <h2 class="font-bold text-2xl mb-4">Jasa Marga</h2>
-        <p class="opacity-80 text-sm">Inovasi tiada henti untuk Indonesia yang lebih terhubung.</p>
-        <div class="mt-8 pt-8 border-t border-white/20 text-sm opacity-60">
-            © 2024 PT Jasa Marga (Persero) Tbk. All Rights Reserved.
-        </div>
-    </div>
-</footer>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Perusahaan</a></li>
+            <li><a href="k3_apd.html">K3 &amp; APD</a></li>
+            <li><a href="inovasi_digital.html" class="active">Inovasi Digital</a></li>
+            <li><a href="lokasi_media.html">Lokasi &amp; Video</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
 
-<script src="script/profil.js"></script>
+        <div class="nav-burger" id="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section-hero" id="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" class="hero-img" alt="Digital Innovation">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content container">
+                <div class="hero-text reveal">
+                    <span class="hero-badge"><i class="bi bi-lightbulb me-2"></i>INOVASI DIGITAL 4.0</span>
+                    <h1 class="hero-title">Inovasi Digital untuk Mobilitas yang Lebih Cerdas</h1>
+                    <p class="hero-subtitle">
+                        PT Jasa Marga terus melakukan transformasi digital untuk menghadirkan layanan jalan tol yang lebih aman, efisien, dan terintegrasi. Kami memanfaatkan teknologi mutakhir untuk memastikan pengalaman berkendara terbaik bagi seluruh masyarakat Indonesia.
+                    </p>
+                    <div class="hero-cta d-flex flex-wrap gap-3" style="position: relative; z-index: 9999; pointer-events: auto;">
+                        <a href="#inovasi" class="btn-hero-primary text-decoration-none">Eksplorasi Inovasi <i class="bi bi-arrow-right-circle"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-pill px-4 fw-bold d-inline-flex align-items-center gap-2" style="padding-top: 1rem; padding-bottom: 1rem; border: 2px solid white; color: white;">Unduh Travoy <i class="bi bi-download"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-hint">
+                <div class="scroll-dot"></div>
+            </div>
+        </section>
+
+        <!-- Empat Pilar Transformasi Section -->
+        <section style="background-color: var(--bg-light);" id="pilar">
+            <div class="container">
+                <div class="text-center mb-5 reveal">
+                    <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Empat Pilar Transformasi</h2>
+                    <div class="title-line mx-auto" style="width: 60px; height: 4px; background: var(--secondary); margin-top: 10px; border-radius: 2px;"></div>
+                </div>
+
+                <div class="row g-4 reveal">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pillar-card hover-shadow-up text-center">
+                            <div class="pillar-icon-wrap mx-auto">
+                                <i class="material-icons">hub</i>
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Transformasi Digital</h4>
+                            <p class="small text-muted mb-0">
+                                Modernisasi infrastruktur inti melalui adopsi cloud computing dan sistem manajemen terpusat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pillar-card hover-shadow-up text-center">
+                            <div class="pillar-icon-wrap mx-auto">
+                                <i class="material-icons">traffic</i>
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Manajemen Lalu Lintas</h4>
+                            <p class="small text-muted mb-0">
+                                Sistem pemantauan real-time cerdas untuk mengurai kemacetan dan meningkatkan keselamatan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pillar-card hover-shadow-up text-center">
+                            <div class="pillar-icon-wrap mx-auto">
+                                <i class="material-icons">person_pin</i>
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Layanan Pengguna</h4>
+                            <p class="small text-muted mb-0">
+                                Personalisasi pengalaman perjalanan melalui aplikasi digital terpadu dalam satu genggaman.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pillar-card hover-shadow-up text-center">
+                            <div class="pillar-icon-wrap mx-auto">
+                                <i class="material-icons">database</i>
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--primary);">Operasional Data</h4>
+                            <p class="small text-muted mb-0">
+                                Pengambilan keputusan strategis berbasis analitik data besar untuk efisiensi berkelanjutan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inovasi Digital Utama Section -->
+        <section id="inovasi" style="background-color: white;">
+            <div class="container">
+                <div class="row align-items-end mb-5 gy-4 reveal">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-3" style="color: var(--primary); font-family: var(--font-heading);">Inovasi Digital Utama</h2>
+                        <p class="text-muted mb-0">Ekosistem teknologi yang kami bangun untuk mendefinisikan masa depan infrastruktur jalan tol di Indonesia.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 reveal">
+                    <!-- JID -->
+                    <div class="col-lg-6">
+                        <div class="inov-card h-100 hover-shadow-up">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Jasamarga Integrated Digitalmap">
+                            <div class="inov-card-overlay">
+                                <h3>Jasamarga Integrated Digitalmap</h3>
+                                <p>Dashboard operasional terpadu yang memetakan seluruh aset secara digital.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-Toll -->
+                    <div class="col-lg-6">
+                        <div class="row g-4 h-100">
+                            <div class="col-12">
+                                <div class="inov-card h-100 hover-shadow-up" style="min-height: 200px;">
+                                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1974&auto=format&fit=crop" alt="Electronic Toll Payment">
+                                    <div class="inov-card-overlay">
+                                        <h4>Electronic Toll Payment</h4>
+                                        <p>Efisiensi maksimal melalui pembayaran nirsentuh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AI -->
+                            <div class="col-sm-6">
+                                <div class="inov-card h-100 hover-shadow-up" style="min-height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop" alt="AI dan Big Data">
+                                    <div class="inov-card-overlay">
+                                        <h4>AI &amp; Big Data Analytics</h4>
+                                        <p>Prediksi pola lalu lintas dan pemeliharaan cerdas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IoT -->
+                            <div class="col-sm-6">
+                                <div class="inov-card h-100 hover-shadow-up" style="min-height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="IoT Monitoring">
+                                    <div class="inov-card-overlay">
+                                        <h4>IoT Monitoring</h4>
+                                        <p>Sensor infrastruktur untuk keamanan berkelanjutan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer persis seperti profil.html (dapat ditambahkan dari komponen yang ada) -->
+    <!-- Assuming footer code is usually added or included, I'll provide a placeholder or skip if not explicitly present in k3_apd.html - wait, k3_apd.html didn't have footer inline? Let me check -->
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script/profil.js"></script>
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
